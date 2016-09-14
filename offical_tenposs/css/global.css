@@ -88,12 +88,12 @@ h1, h2, h3, h4, p {
   z-index: 1000; }
   /* line 99, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
   .header.bg-color {
-    background: white;
+    background: #288CDC;
     border-bottom: 1px solid #CDCDCD;
     box-shadow: 0 2px 3px 0 #ddd; }
     /* line 104, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
     .header.bg-color .main-navigation a {
-      color: #686868; }
+      color: white; }
   @media screen and (max-width: 767px) {
     /* line 92, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
     .header {
@@ -102,12 +102,12 @@ h1, h2, h3, h4, p {
   @media screen and (max-width: 479px) {
     /* line 92, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
     .header {
-      background: white;
+      background: #288CDC;
       border-bottom: 1px solid #CDCDCD;
       box-shadow: 0 2px 3px 0 #ddd; }
       /* line 118, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
       .header .main-navigation a {
-        color: #686868; } }
+        color: white; } }
   /* line 126, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
   .header .logo img {
     transform: scale(0.7);
