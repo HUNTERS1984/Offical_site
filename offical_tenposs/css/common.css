@@ -265,6 +265,9 @@ h1, h2, h3, h4, p {
   @media screen and (max-width: 767px) {
     .middle.page {
       padding-top: 12rem; } }
+  @media screen and (max-width: 479px) {
+    .middle.page {
+      padding-top: 8rem; } }
   .middle.page .static-banner .breadcrum {
     padding: 15px 0; }
   .middle.page .static-banner .breadcrum-me {

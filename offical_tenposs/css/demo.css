@@ -79,12 +79,56 @@ h1, h2, h3, h4, p {
     box-shadow: 0 2px 3px 0 #ddd; }
     .header.bg-color .main-navigation a {
       color: #686868; }
+  @media screen and (max-width: 767px) {
+    .header {
+      height: auto;
+      padding: 1rem 0; } }
+  @media screen and (max-width: 479px) {
+    .header {
+      background: white;
+      border-bottom: 1px solid #CDCDCD;
+      box-shadow: 0 2px 3px 0 #ddd; }
+      .header .main-navigation a {
+        color: #686868; } }
+  .header .logo img {
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7); }
+    @media screen and (max-width: 767px) {
+      .header .logo img {
+        margin: 0 auto 10px; } }
+    @media screen and (max-width: 479px) {
+      .header .logo img {
+        margin: 0;
+        float: left; } }
+  @media screen and (max-width: 767px) {
+    .header .navbar-header {
+      float: right; }
+      .header .navbar-header .collapse-me {
+        border: 1px solid #CDCDCD;
+        padding: 6px 20px; } }
   .header .main-navigation {
     list-style-type: none;
     text-align: right; }
+    @media screen and (max-width: 767px) {
+      .header .main-navigation {
+        float: none;
+        text-align: center; } }
+    @media screen and (max-width: 479px) {
+      .header .main-navigation {
+        text-align: center; } }
     .header .main-navigation li {
       display: inline-block;
       padding: 10px 15px; }
+      @media screen and (max-width: 979px) {
+        .header .main-navigation li {
+          padding: 10px 6px; } }
+      @media screen and (max-width: 767px) {
+        .header .main-navigation li {
+          padding: 10px 8px; } }
+      @media screen and (max-width: 479px) {
+        .header .main-navigation li {
+          display: block; } }
       .header .main-navigation li a {
         display: block;
         color: white;
@@ -96,13 +140,24 @@ h1, h2, h3, h4, p {
         -o-transition: all 0.3s; }
         .header .main-navigation li a:hover, .header .main-navigation li a:focus {
           text-decoration: underline !important; }
+        @media screen and (max-width: 979px) {
+          .header .main-navigation li a {
+            font-size: 1.2rem; } }
+        @media screen and (max-width: 479px) {
+          .header .main-navigation li a {
+            font-size: 1.2rem;
+            color: #505050; } }
 
 .banner {
   padding-top: 8rem;
   background: url("../img/top/bg-top-banner.png") no-repeat;
-  background-size: 100%;
+  background-size: cover;
   height: 64rem;
   overflow: hidden; }
+  @media screen and (max-width: 979px) {
+    .banner {
+      height: auto;
+      padding-top: 12rem; } }
   .banner .inner-banner {
     display: table; }
     .banner .inner-banner .left-banner, .banner .inner-banner .right-banner {
@@ -110,8 +165,18 @@ h1, h2, h3, h4, p {
       vertical-align: middle;
       width: 50%;
       text-align: center; }
+      @media screen and (max-width: 767px) {
+        .banner .inner-banner .left-banner, .banner .inner-banner .right-banner {
+          display: block;
+          width: 100%; } }
     .banner .inner-banner .right-banner {
       padding-left: 70px; }
+      @media screen and (max-width: 767px) {
+        .banner .inner-banner .right-banner {
+          padding-left: 0;
+          margin-top: 20px; }
+          .banner .inner-banner .right-banner img {
+            margin: 0 auto; } }
     .banner .inner-banner .title-banner {
       font-size: 2.2rem;
       font-family: "HiraKakuPro-W6-AlphaNum";
@@ -123,11 +188,17 @@ h1, h2, h3, h4, p {
       color: white;
       line-height: 2.2rem;
       margin-bottom: 15px; }
+      @media screen and (max-width: 979px) {
+        .banner .inner-banner p.sub-title-banner {
+          font-size: 1.4rem; } }
     .banner .inner-banner .btn-me {
       color: white; }
 
 .section {
   padding: 80px 0; }
+  @media screen and (max-width: 979px) {
+    .section {
+      padding: 60px 0; } }
   .section h2.title-section {
     font-size: 2.2rem;
     font-family: "HiraKakuPro-W6-AlphaNum";
@@ -137,7 +208,7 @@ h1, h2, h3, h4, p {
 
 .contact-section {
   background: url("../img/bg-section-contact.png") no-repeat;
-  background-size: 100%;
+  background-size: cover;
   position: relative; }
   .contact-section .wrap-contact {
     text-align: center;
@@ -153,15 +224,33 @@ h1, h2, h3, h4, p {
       width: 70%;
       margin: 0 auto;
       margin-top: 50px; }
+      @media screen and (max-width: 979px) {
+        .contact-section .wrap-contact .wrap-button-contact {
+          float: none; } }
+      @media screen and (max-width: 979px) {
+        .contact-section .wrap-contact .wrap-button-contact {
+          margin-top: 25px; } }
       .contact-section .wrap-contact .wrap-button-contact a.btn-me {
         display: inline-block;
         color: white;
         font-weight: 600; }
         .contact-section .wrap-contact .wrap-button-contact a.btn-me.btn-contact-left {
           float: left; }
+          @media screen and (max-width: 979px) {
+            .contact-section .wrap-contact .wrap-button-contact a.btn-me.btn-contact-left {
+              float: none;
+              margin-bottom: 20px; } }
         .contact-section .wrap-contact .wrap-button-contact a.btn-me.btn-contact-right {
           float: right;
           color: #288CDC; }
+          @media screen and (max-width: 979px) {
+            .contact-section .wrap-contact .wrap-button-contact a.btn-me.btn-contact-right {
+              float: none;
+              margin-bottom: 10px; } }
+        @media screen and (max-width: 979px) {
+          .contact-section .wrap-contact .wrap-button-contact a.btn-me .btn-me {
+            max-width: none;
+            margin-bottom: 10px; } }
   .contact-section .img-up {
     position: absolute;
     left: 50%;
@@ -173,6 +262,12 @@ h1, h2, h3, h4, p {
 
 .middle.page {
   padding-top: 80px; }
+  @media screen and (max-width: 767px) {
+    .middle.page {
+      padding-top: 12rem; } }
+  @media screen and (max-width: 479px) {
+    .middle.page {
+      padding-top: 8rem; } }
   .middle.page .static-banner .breadcrum {
     padding: 15px 0; }
   .middle.page .static-banner .breadcrum-me {
@@ -198,7 +293,7 @@ h1, h2, h3, h4, p {
         text-decoration: underline !important; }
   .middle.page .static-banner .page-banner {
     display: table;
-    background-size: 100%;
+    background-size: cover;
     width: 100%;
     height: 320px; }
     .middle.page .static-banner .page-banner .is-table-cell {
@@ -226,8 +321,14 @@ h1, h2, h3, h4, p {
     font-style: italic;
     font-family: 'vni-cooperheavy';
     margin-bottom: 20px; }
+    @media screen and (max-width: 767px) {
+      .footer .wrap-nav h3.title-footer {
+        text-align: center; } }
   .footer .wrap-nav ul {
     list-style-type: none; }
+    @media screen and (max-width: 767px) {
+      .footer .wrap-nav ul {
+        text-align: center; } }
     .footer .wrap-nav ul li {
       display: block;
       margin-bottom: 5px; }
@@ -237,6 +338,9 @@ h1, h2, h3, h4, p {
         color: white;
         font-family: "HiraKakuPro-W6-AlphaNum";
         font-size: 1.2rem; }
+  @media screen and (max-width: 767px) {
+    .footer .wrap-nav {
+      margin-bottom: 30px; } }
   .footer .wrap-info a.btn-footer {
     display: block;
     width: 100%;
@@ -248,6 +352,9 @@ h1, h2, h3, h4, p {
     padding: 8px 0;
     border-radius: 4px;
     text-align: center; }
+    @media screen and (max-width: 767px) {
+      .footer .wrap-info a.btn-footer {
+        margin: 0 auto 20px; } }
   .footer .wrap-info span.line {
     height: 1px;
     width: 100%;
@@ -262,6 +369,9 @@ h1, h2, h3, h4, p {
       font-size: 2rem;
       font-style: italic;
       margin-bottom: 15px; }
+      @media screen and (max-width: 767px) {
+        .footer .wrap-info div.wrap-info-hunter h1 {
+          font-size: 1.8rem; } }
     .footer .wrap-info div.wrap-info-hunter .wrap-ic {
       text-align: center; }
       .footer .wrap-info div.wrap-info-hunter .wrap-ic a {
@@ -283,22 +393,39 @@ h1, h2, h3, h4, p {
     width: 80%;
     float: left;
     padding-right: 15px; }
+    @media screen and (max-width: 479px) {
+      .demo-top-section .container-top-demo div.wrap-form .left {
+        width: 100%;
+        float: none;
+        margin-bottom: 10px;
+        padding-left: 0; } }
   .demo-top-section .container-top-demo div.wrap-form .right {
     width: 20%;
     float: left; }
+    @media screen and (max-width: 479px) {
+      .demo-top-section .container-top-demo div.wrap-form .right {
+        width: 100%;
+        float: none; } }
     .demo-top-section .container-top-demo div.wrap-form .right input.btn-button {
       display: block;
       background: #28A0F0;
       color: white;
       border: none;
       padding: 6px 12px;
-      text-align: center; }
+      text-align: center;
+      border-radius: 4px; }
+      @media screen and (max-width: 479px) {
+        .demo-top-section .container-top-demo div.wrap-form .right input.btn-button {
+          margin: 0 auto; } }
 
 .demo-section h2.title-section {
   color: #505050; }
 
 .demo-section table.table-fee {
   width: 100%; }
+  @media screen and (max-width: 767px) {
+    .demo-section table.table-fee {
+      margin-bottom: 30px; } }
   .demo-section table.table-fee thead th {
     color: white;
     text-align: center;
@@ -339,6 +466,9 @@ h1, h2, h3, h4, p {
 
 .testimonial-demo-section h2.title-section {
   color: #505050; }
+
+.testimonial-demo-section .wrap-img-mobile img {
+  margin: 0 auto 10px; }
 
 .testimonial-demo-section .wrap-top-testi {
   margin-bottom: 40px; }
@@ -390,6 +520,10 @@ h1, h2, h3, h4, p {
     .testimonial-demo-section .wrap-top-testi .wrap-text a {
       color: #288CDC;
       display: block; }
+
+@media screen and (max-width: 767px) {
+  .testimonial-demo-section .wrap-bottom-testi .each-testi {
+    margin-bottom: 20px; } }
 
 .testimonial-demo-section .wrap-bottom-testi .each-testi p.title-testi {
   font-size: 1.4rem;

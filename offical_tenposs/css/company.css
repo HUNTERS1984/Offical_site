@@ -73,18 +73,23 @@ h1, h2, h3, h4, p {
   width: 100%;
   top: 0;
   z-index: 1000; }
-  @media screen and (max-width: 767px) {
-    .header {
-      height: auto;
-      padding: 1rem 0; }
-      .header .main-navigation a {
-        color: #686868; } }
   .header.bg-color {
     background: white;
     border-bottom: 1px solid #CDCDCD;
     box-shadow: 0 2px 3px 0 #ddd; }
     .header.bg-color .main-navigation a {
       color: #686868; }
+  @media screen and (max-width: 767px) {
+    .header {
+      height: auto;
+      padding: 1rem 0; } }
+  @media screen and (max-width: 479px) {
+    .header {
+      background: white;
+      border-bottom: 1px solid #CDCDCD;
+      box-shadow: 0 2px 3px 0 #ddd; }
+      .header .main-navigation a {
+        color: #686868; } }
   .header .logo img {
     transform: scale(0.7);
     -webkit-transform: scale(0.7);
@@ -92,12 +97,25 @@ h1, h2, h3, h4, p {
     @media screen and (max-width: 767px) {
       .header .logo img {
         margin: 0 auto 10px; } }
+    @media screen and (max-width: 479px) {
+      .header .logo img {
+        margin: 0;
+        float: left; } }
+  @media screen and (max-width: 767px) {
+    .header .navbar-header {
+      float: right; }
+      .header .navbar-header .collapse-me {
+        border: 1px solid #CDCDCD;
+        padding: 6px 20px; } }
   .header .main-navigation {
     list-style-type: none;
     text-align: right; }
     @media screen and (max-width: 767px) {
       .header .main-navigation {
         float: none;
+        text-align: center; } }
+    @media screen and (max-width: 479px) {
+      .header .main-navigation {
         text-align: center; } }
     .header .main-navigation li {
       display: inline-block;
@@ -108,6 +126,9 @@ h1, h2, h3, h4, p {
       @media screen and (max-width: 767px) {
         .header .main-navigation li {
           padding: 10px 8px; } }
+      @media screen and (max-width: 479px) {
+        .header .main-navigation li {
+          display: block; } }
       .header .main-navigation li a {
         display: block;
         color: white;
@@ -122,6 +143,10 @@ h1, h2, h3, h4, p {
         @media screen and (max-width: 979px) {
           .header .main-navigation li a {
             font-size: 1.2rem; } }
+        @media screen and (max-width: 479px) {
+          .header .main-navigation li a {
+            font-size: 1.2rem;
+            color: #505050; } }
 
 .banner {
   padding-top: 8rem;
@@ -240,6 +265,9 @@ h1, h2, h3, h4, p {
   @media screen and (max-width: 767px) {
     .middle.page {
       padding-top: 12rem; } }
+  @media screen and (max-width: 479px) {
+    .middle.page {
+      padding-top: 8rem; } }
   .middle.page .static-banner .breadcrum {
     padding: 15px 0; }
   .middle.page .static-banner .breadcrum-me {
@@ -502,9 +530,18 @@ h1, h2, h3, h4, p {
   .company-section.company05 .wrap-logo .container-logo .left {
     width: 49%;
     float: left; }
+    @media screen and (max-width: 767px) {
+      .company-section.company05 .wrap-logo .container-logo .left {
+        float: none;
+        width: 100%;
+        margin-bottom: 30px; } }
   .company-section.company05 .wrap-logo .container-logo .right {
     width: 49%;
     float: right; }
+    @media screen and (max-width: 767px) {
+      .company-section.company05 .wrap-logo .container-logo .right {
+        float: none;
+        width: 100%; } }
   .company-section.company05 .wrap-logo .container-logo img {
     margin-bottom: 20px; }
   .company-section.company05 .wrap-logo .container-logo a.btn-download {
