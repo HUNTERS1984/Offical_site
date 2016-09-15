@@ -1,0 +1,44 @@
+@import 'common';
+
+#support{
+	background-image:url('../img/support/tenposs-support-02.png');
+}
+
+.search-support-section{
+	.formSearchSupport{
+		.form-search{
+			position:relative;
+			.icon{
+				position:absolute;
+				top:8px;
+				left:15px;
+				.btn-lg{
+					padding:0;
+				}
+			}
+			input{
+				padding-left:50px;
+				height:40px;
+				border:1px solid $cl-xam;
+			}
+
+		}
+	}
+}
+.support-section{
+	h3.title-support{
+		font-size:2rem;
+		@include fontW6;
+		color:$cl-xanhduong;
+		margin-bottom:30px;
+	}
+	.each-support{
+		margin-bottom:100px;
+		select{
+			height:40px;
+			width:100%;
+			border-radius:4px;
+			padding:6px 12px;
+		}
+	}
+}

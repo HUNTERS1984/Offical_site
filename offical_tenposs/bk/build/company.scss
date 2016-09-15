@@ -1,0 +1,253 @@
+// @import 'common';
+
+#company{
+	background-image:url('../img/company/company-banner-02.png');
+}
+
+
+
+.company-section{
+	.content-section{
+		.wrap-tab{
+			margin-bottom:50px;
+			ul.tab-company{
+				text-align:center;
+				li{
+					display:inline-block;
+					a{
+						display:block;
+						color:$cl-xanhduong;
+						background:#F5F5F5;
+						font-size:1.4rem;
+						@include fontW6;
+						padding:12px 25px;
+						border-radius:4px;
+					}
+					&:hover, &.active{
+						a{
+							background:$cl-xanhduong;
+							color:white
+						}
+					}
+				}
+			}
+		}
+
+		.block-company{
+			padding:15px 0;
+			border-bottom:1px solid $cl-xanhnhat;
+			&.last{
+				border-bottom:none;
+			}
+			p.text-company{
+				font-size:1.4rem;
+				color:$cl-den2;
+				@include fontW3;
+				padding-left:3rem;
+			}
+		}
+	}
+	&.company02, &.company03{
+		h3.title-company{
+			font-size:1.8rem;
+			@include fontW6;
+			color:$cl-xanhduong;
+			margin-bottom:25px;
+			text-align:center;
+		}
+		
+		.wrap-top{
+			margin-bottom:100px;
+			h3.title-company{
+				margin-bottom:40px;
+			}
+			p.sub-title{
+				font-size:2rem;
+				@include fontW6;
+				color:$cl-den;
+				margin-bottom:25px;
+				text-align:center;
+			}
+			p.content{
+				font-size:1.4rem;
+				@include fontW3;
+				color:$cl-den2;
+			}
+			.wrap-content-company03{
+				p{
+					font-size:1.4rem;
+					@include fontW3;
+					color:$cl-den2;
+					margin-bottom:20px;
+				}
+			}
+		}
+		.wrap-articles{
+			.wrap-article{
+				h3.title-article{
+					font-size:1.8rem;
+					@include fontW6;
+					color:$cl-den;
+					margin-bottom:20px;
+				}
+				p{
+					font-size:1.4rem;
+					@include fontW3;
+					color:$cl-den2;
+					margin-bottom:10px;
+				}
+			}
+		}
+	}
+	&.company04{
+		h3.title-company{
+			font-size:1.8rem;
+			@include fontW6;
+			color:$cl-xanhduong;
+			margin-bottom:70px;
+			text-align:center;
+		}
+		div.container-img{
+			img{
+				margin:0 auto;
+			}
+		}
+		div.each-company{
+			padding:0 20px;
+			text-align:center;
+			margin-bottom:20px;
+			img{
+				margin:0 auto 10px;
+			}
+			h3.name{
+				font-size:1.6rem;
+				@include fontW6;
+				color:$cl-den;
+				margin-bottom:10px;
+			}
+			p.desc{
+				font-size:1.4rem;
+				@include fontW3;
+				color:$cl-den2;
+				a{
+					color:$cl-den2;
+				}
+			}
+			&.join-us{
+				img{
+					margin:0 auto 30px;
+				}
+			}
+		}
+	}
+
+	&.company05{
+		.wrap-top{
+			margin-bottom:20px;
+			h3.title-company{
+				font-size:1.8rem;
+				@include fontW6;
+				color:$cl-xanhduong;
+				margin-bottom:20px;
+				text-align:center;
+			}
+			.container-bg{
+				background:url('../img/company/sub/company-sub-07.png')no-repeat;
+				background-size:cover;
+				display:table;
+				height:240px;
+				.is-table-cell{
+					vertical-align:middle;
+					display:table-cell;
+				}
+				p{
+					font-size:1.6rem;
+					@include fontW6;
+					text-align:center;
+					color:$cl-den2;
+				}
+			}
+		}
+		.howto{
+			margin-bottom:80px;
+			h3.title-howto{
+				font-size:1.8rem;
+				@include fontW6;
+				color:$cl-xanhduong;
+				margin-bottom:50px;
+				text-align:center;
+			}
+			img{
+				margin:0 auto;
+			}
+		}
+		.wrap-logo{
+			h3.title-logo{
+				font-size:1.8rem;
+				@include fontW6;
+				color:$cl-xanhduong;
+				margin-bottom:20px;
+				text-align:center;
+			}
+			p.sub-logo{
+				font-size:1.6rem;
+				@include fontW6;
+				color:$cl-den;
+				text-align:center;
+			}
+			.container-logo{
+				margin-top:20px;
+				.left{
+					width:49%;
+					float:left;
+					@include media(767px){
+						float:none;
+						width:100%;
+						margin-bottom:30px
+					}
+						
+				}
+				.right{
+					width:49%;
+					float:right;
+					@include media(767px){
+						float:none;
+						width:100%;
+					}
+				}
+				img{
+					margin-bottom:20px;
+				}
+				a.btn-download{
+					padding:10px 50px;
+					text-align:center;
+					color:white;
+					position:relative;
+					background:$cl-xanhduong;
+					margin-right:10px;
+					border-radius:4px;
+					&:before{
+						content:'';
+						position:absolute;
+						width:20px;
+						height:17px;
+						background:url('../img/company/sub/company-sub-05.png')no-repeat;
+						left:10px;
+					}
+					&.last{
+						margin-right:0;
+					}
+				}
+			}
+		}
+	}
+}
+
+.map-section{
+	h2.title-section{
+		font-weight:600;
+		color:$cl-den;
+		margin-bottom:60px;
+	}
+
+}

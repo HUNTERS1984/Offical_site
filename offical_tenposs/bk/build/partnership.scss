@@ -1,0 +1,82 @@
+@import 'common';
+
+#partnership{
+	background-image:url('../img/partnership/tenposs-partnership-01-02.png');
+}
+.parnert01-section{
+	.content-section{
+		line-height:2.4rem;
+		p.content-partner{
+			font-size:1.4rem;
+			@include fontW6;
+			color:$cl-den2;
+			margin-bottom:110px;
+			text-align:center;
+		}
+		.wrap-comming{
+			text-align:center;
+			h3.title-coming{
+				font-size:3.2rem;
+				@include fontCooperb;
+				margin-bottom:40px;
+				color:$cl-xanhduong;
+				font-style:italic;
+			}
+			.btn-me{
+				color:white;
+				margin-bottom:30px;
+			}
+			p{
+				font-size:1.4rem;
+				@include fontW6;
+				color:$cl-xanhduong
+			}
+		}
+
+		// PARTNERSHIP 02
+		.each-partner{
+			margin-bottom:40px;
+			text-align:center;
+			img{
+				margin:0 auto 20px;
+			}
+			h3.title-each-partner{
+				font-size:1.6rem;
+				@include fontW6;
+				color:$cl-den;
+				margin-bottom:10px;
+			}
+			p.content{
+				font-size:1.4rem;
+				@include fontW3;
+				color:$cl-den2;
+			}
+		}
+		.wrap-pagination{
+			ul.pagination{
+				li{
+					display:inline-block;
+					padding:0 7px;
+					a{
+						display:block;
+						width:35px;
+						height:35px;
+						border-radius:50%;
+						border:1px solid $cl-xanhduong;
+						color:$cl-xanhduong;
+						&:hover, &:focus{
+							background:$cl-xanhduong;
+							color:white;
+						}
+					}
+					&.active{
+						a{
+							background:$cl-xanhduong;
+							color:white;
+						}
+					}
+				}
+			}
+		}
+	}
+}

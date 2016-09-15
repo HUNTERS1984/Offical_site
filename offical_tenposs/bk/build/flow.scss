@@ -1,0 +1,150 @@
+@import 'common';
+
+#flow{
+	background-image:url('../img/flow/tenposs-flow-05.png');
+}
+.flow-top-section{
+	.content-section{
+		img.pull-md-right{
+			float:right;
+			@include media(767px){
+				float:none;
+				margin:0 auto 20px;
+			}
+				
+		}
+		.wrap-top-section{
+			p.title-top{
+				font-size:2rem;
+				@include fontW6;
+				color:white;
+				margin-bottom:30px;
+				text-align:center;
+				span{
+					color:$cl-xanhnhat;
+				}
+			}
+			p.content{
+				font-size:1.2rem;
+				@include fontW3;
+				color:white;
+				line-height:2.4rem;
+				margin-bottom:30px;
+			}
+			.wrap-btn{
+				@include media(767px){
+					text-align:center;
+				}
+					
+				.btn-left{
+					float:left;
+					color:white;
+					background:#28A0F0;
+					@include media(767px){
+						float:none;
+						margin-bottom:20px;
+					}
+						
+				}
+				.btn-right{
+					float:right;
+					color:$cl-xanhnhat;
+					@include media(767px){
+						float:none;
+					}
+				}
+			}
+		}
+	}
+}
+
+.main-flow-section{
+	.content-section{
+		.container-top-content{
+			margin-bottom:80px;
+			p.title-container{
+				font-size:2rem;
+				@include fontW6;
+				margin-bottom:10px;
+				color:$cl-den;
+			}
+			p.title-top-content{
+				font-size:1.4rem;
+				@include fontW6;
+				color:$cl-den2;
+				margin-bottom:15px;
+				text-align:center;
+			}
+			p.content{
+				font-size:1.2rem;
+				@include fontW3;
+				color:$cl-den2;
+				margin-bottom:15px;
+			}
+		}
+		.each-flow{
+			margin-bottom:80px;
+			padding:30px 20px;
+			background:rgba(40,140,220,0.3);
+			border-radius:4px;
+			position:relative;
+			.left-each{
+				width:30%;
+				display:inline-block;
+				vertical-align:middle;
+				padding-left:50px;
+				position:relative;
+				color:$cl-den;
+				font-size:1.4rem;
+				@include fontW6;
+				&:before{
+					content:attr(data-number);
+					display:block;
+					color:$cl-xanhduong;
+					position:absolute;
+					left:0;
+					top:-5px;
+					@include fontCooperb;
+					font-size:2rem;
+					font-style:italic;
+				}
+			}
+			.right-each{
+				width:68%;
+				display:inline-block;
+				vertical-align:middle;
+				color:$cl-den2;
+				@include fontW3;
+				font-size:1.4rem;
+			}
+			&:before{
+				content:'';
+				position:absolute;
+				bottom:-60px;
+				left:50%;
+				transform:translateX(-50%);
+				-webkit-transform:translateX(-50%);
+				-moz-transform:translateX(-50%);
+				width:33px;
+				height:40px;
+				background:url('../img/flow/tenposs-flow-03.png')no-repeat;
+			}
+			&.have-note{
+				&:after{
+					content: attr(data-text);
+					position:absolute;
+					left:55%;
+					bottom:-50px;
+					color:$cl-den;
+					@include fontW6;
+				}
+			}
+			&.last{
+				&:before{
+					content:'';
+					display:none;
+				}
+			}
+		}
+	}
+}

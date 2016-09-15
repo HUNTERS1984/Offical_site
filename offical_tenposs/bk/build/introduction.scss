@@ -1,0 +1,72 @@
+@import 'common';
+
+#introduction{
+	background-image:url('../img/introduction/tenposs-introduction-04.png');
+}
+
+.introduction-section{
+	.section-content{
+		p.sub-section{
+			font-size:1.6rem;
+			@include fontW6;
+			color:$cl-den2;
+			margin-bottom:50px;
+		}
+		.each-introduction{
+			text-align:center;
+			padding:0 30px;
+			img{
+				margin:0 auto 15px;
+			}
+			h3.title-each{
+				font-size:2rem;
+				@include fontW6;
+				color:$cl-xanhduong;
+				margin-bottom:15px;
+			}
+			p.content-each{
+				font-size:1.2rem;
+				@include fontW3;
+				color:$cl-den2;
+
+			}
+		}
+		.wrap-bottom{
+			margin:60px 0 0;
+			.wrap-form-introduction{
+				.left{
+					width:77%;
+					float:left;
+				}
+				.right{
+					width:20%;
+					float:right;
+					input.btn-button{
+						width:100%;
+						border:none;
+						border-radius:4px;
+						color:white;
+						text-align:center;
+						padding:6px 12px;
+					}
+				}
+			}
+
+		}
+		.text-middle{
+			text-align:center;
+			font-size:1.6rem;
+			@include fontW6;
+			color:$cl-den;
+			margin:20px 0;
+		}
+		.wrap-icon{
+			margin-top:50px;
+			text-align:center;
+			a{
+				padding:0 25px;
+			}
+		}
+
+	}
+}

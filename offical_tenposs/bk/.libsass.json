@@ -1,0 +1,12 @@
+{
+    "output": {
+        "dir": "css", // This path gets normalized, so `..`s get handled
+        "structure": "flat"
+    },
+    "compile": {
+        "line-comments": true,
+        "line-numbers":  false,
+        "style":         "nested",
+        "load-path":     "build" // Get your fill of bourbon or point to compass!
+    }
+}
