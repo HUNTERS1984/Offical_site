@@ -1,0 +1,126 @@
+/* FLOW */
+#flow-page {
+    text-align: center;
+    padding: 60px 0 100px 0;
+}
+#flow-page h3{
+    font-weight: bold;
+}
+#flow-page p{
+}
+#flow-page .title{
+    text-align: left;
+    margin-bottom: 40px;
+}
+#flow-page .title h3{
+    color: #00A49A;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+#flow-page .title h4{
+    font-weight: bold;
+}
+#flow-page .title p{
+    color: #778185;
+}
+#liststep{
+    padding-left: 50px;
+    margin-top: 100px;
+    position: relative;
+}
+#liststep .step{
+    position: relative;
+    padding-bottom: 100px;
+}
+#liststep .step:last-child{
+    padding-bottom: 0;
+}
+#liststep .step:before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: -64px;
+    background: url(../image/step_round.png) no-repeat center center/cover;
+    z-index: 10;
+}
+#liststep .step:after{
+    content: "";
+    top: 0;
+    left: -50px;
+    position: absolute;
+    background-color: #e8f0f0;
+    width: 2px;
+    height: 100%;
+    z-index: 9;
+}
+#liststep .step:last-child:after{
+    background: #fff;
+}
+#liststep .step .imgright .image{
+    float: right;
+    position: relative;
+}
+#liststep .step_img a{
+    background: url('../image/btn_more.png') no-repeat;
+    display: inline-block;
+    width: 320px;
+    line-height: 54px;
+    float: left;
+    margin-top: 70px;
+}
+#liststep .step_img a:hover{
+    text-decoration: none;
+    opacity: 0.9;
+    color: #fff;
+}
+#liststep .step .step_img .focus_img{
+    position: absolute;
+    float: none;
+    left: -20%;
+    top: 15%;
+}
+/* REPONSIVE */
+@media (max-width:768px){
+    #liststep .step .imgright .image img{
+        max-width: 100%;
+    }
+    #liststep .step_img a{
+        float: initial;
+    }
+    #liststep .step .imgright .image .focus_img{
+        max-width: 30%
+    }
+    
+}
+@media (max-width:992px){
+    #liststep .step_img a{
+        float: initial;
+    }
+    #liststep .step .imgright .image .focus_img{
+        max-width: 40%
+    }
+}
+@media (max-width:603px){
+    #liststep .step_img a{
+        float: initial;
+    }
+    #liststep .step .imgright .image .focus_img{
+        max-width: 40%
+    }
+    #liststep .step .imgright .image img {
+    max-width: 90%;
+    margin-left: 30px;
+    }
+    #liststep .step .imgright .image img {
+    max-width: 90%;
+    margin-left: 30px;
+}
+}
+@media (max-width: 320px){
+    #liststep .step_img .btn-list{
+        background: url(../image/btn_signup_01.png) left top no-repeat;
+        width: 240px;
+        line-height: 48px;
+    }
+}

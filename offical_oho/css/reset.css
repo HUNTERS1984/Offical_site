@@ -1,0 +1,14 @@
+body{
+    line-height: 28px;
+    overflow-x: hidden;
+}
+dd, dt{
+    line-height: 28px;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+a:hover,a:focus{
+    color: #00d6c2;
+}

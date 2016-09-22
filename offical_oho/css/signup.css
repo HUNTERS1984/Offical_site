@@ -1,0 +1,126 @@
+body{
+    padding-top: 0;
+}
+.box{
+    overflow: hidden;
+    position: relative;
+    padding-top: 128px;
+}
+/* Welcome */
+#wellcome {
+    position: relative;
+    overflow: hidden;
+    padding: 70px 0 115px;
+    color: #ffffff;
+}
+#wellcome.indexpage{
+    padding: 150px 0 440px;
+}
+#wellcome .input-text{
+    width: 46%;
+}
+#wellcome .input-text h1{
+    position: relative;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+#wellcome .input-text h1:after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 40px;
+    border-bottom: 1px solid #fff;
+}
+#wellcome .input-text h3{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 40px;
+}
+#wellcome .input-text p{
+    margin-bottom: 50px;
+}
+#wellcome .input-text .next{
+    border-top: 1px solid;
+    margin-top: 60px;
+    padding-top: 30px;
+}
+#wellcome .input-text .form-group input{
+    margin-bottom: 20px;
+    border-radius: 4px;
+    height: 40px;
+    width: 80%;
+}
+#wellcome .input-text .signup{
+    background: url(../image/btn_signup_01.png) no-repeat;
+    padding: 10px 34px;
+    margin-top: 20px;
+    width: 240px;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+}
+#wellcome .input-text .signup:hover{
+    color: #fff;
+    opacity: 0.9;
+    text-decoration: none;
+}
+#wellcome .welcome-banner{
+    position: absolute;
+    top: 30px;
+    left: 45%;
+    width: 940px;
+}
+#wellcome .welcome-banner img{
+    max-width: 100%;
+}
+/* REPONSIVE */
+
+@media (max-width: 992px){
+    #wellcome.indexpage{
+        padding: 20px 0;
+    }
+    #wellcome .input-text{
+        width: 100%;
+        text-align: center;
+    }
+    #wellcome .input-text p.next{
+        text-align: left;
+    }
+    #wellcome .welcome-banner{
+        position: static;
+        width: 100%;
+    }
+    #wellcome .input-text h1:after {
+        left: 50%;
+        margin-left: -20px;
+    }
+}
+@media (max-width: 768px){
+    #wellcome .welcome-banner{
+        display: none;
+    }
+    #wellcome .input-text p{
+        text-align: left;
+    }
+    #wellcome.indexpage{
+        margin-bottom: 200px;
+    }
+    #wellcome .input-text .form-group input{
+        width: 100%;
+    }
+}
+@media (max-width: 603px){
+        #wellcome .welcome-banner{
+        display: none;
+    }
+    #wellcome .input-text p{
+        text-align: left;
+    }
+    #wellcome.indexpage{
+        margin-bottom: 200px;
+    }
+    #wellcome .input-text .form-group input{
+        width: 100%;
+    }
+}
