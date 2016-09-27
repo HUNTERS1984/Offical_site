@@ -1,0 +1,14 @@
+/* Privacy policy */
+#policy-page{
+	padding: 80px 0 60px 0;
+}
+#policy-page h5{
+	margin-bottom: 40px;
+	line-height: 24px;
+}
+#policy-page p{
+	margin-bottom: 20px;
+}
+#policy-page .policy{
+	margin: 0 20px;
+}

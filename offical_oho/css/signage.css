@@ -1,0 +1,31 @@
+/* SIGNAGE */
+#signage-page{
+	padding: 60px 0 100px 0;	
+}
+#signage-page dl{
+	margin: 0 20px;
+}
+#signage-page dl dt{
+	font-weight: normal;
+	width: 200px;
+	vertical-align: top;
+	float: left;
+}
+
+#signage-page dl dd{
+	vertical-align: top;
+	padding-bottom: 30px;
+	line-height: 24px;
+}
+@media (max-width:993px){
+    
+}
+@media (max-width:768px){
+    
+}
+@media (max-width:603px){
+    #signage-page dl dt{
+    	float: none;
+    	width: initial;
+    }
+}

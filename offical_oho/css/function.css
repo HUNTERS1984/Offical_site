@@ -1,0 +1,87 @@
+/* FUNCTION */
+#function-page h3{
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 70px;
+}
+#function-page .function{
+    padding: 20px 0 20px;
+}
+#function-page .function .image{
+    float: right;
+    margin-left: 20px;
+    margin-right: -60px;
+}
+#function-page .function:nth-child(odd) .image{
+    float: left;
+    margin-right: 20px;
+    margin-left: -60px;
+}
+#function-page .function dl{
+    float: left;
+    width: 45%;
+}
+#function-page .function:nth-child(odd) dl{
+    float: right;
+}
+#function-page dl dt{
+    font-size: 18px;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    position: relative;
+    border-bottom: 2px solid #f8fcfc;
+}
+#function-page dl dt:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 65px;
+    border-bottom: 2px solid #00A49A;
+}
+#function-page .btn-more{
+    margin-top: 90px;
+}
+/* REPONSIVE */
+@media (max-width: 992px){
+    #function-page .function .image,#function .function:nth-child(odd) .image {
+        float: none; 
+        margin-left: 0; 
+        margin-right: 0;     
+        text-align: center;
+    }
+    #function-page .function .image img{
+        max-width: 100%;
+    }
+    #function-page .function dl{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    #function-page dl dt:after {
+        left: 50%;
+        margin-left: -33px;
+    }
+}
+
+@media (max-width:768px){
+    #function-page .function:nth-child(odd) .image{
+        margin-left: 60px;
+        margin-right: 0;
+    }
+}
+@media (max-width:603px){
+    #function-page .function:nth-child(odd) .image{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+@media (max-width: 320px){
+    #function-page .btn-more{
+        background: url(../image/btn_signup_01.png) left top no-repeat;
+        width: 240px;
+        line-height: 48px;
+    }
+}
