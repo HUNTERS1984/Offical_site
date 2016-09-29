@@ -21,7 +21,6 @@ class BlogController extends Controller
 	}
     public function index(){
     	$data = $this->entity->select('id','title','content','order','status')->orderBy('order','DESC')->get();
-    	// dd($data);
     	return view('admin::pages.blog.index',compact('data'));
     }
 
@@ -57,6 +56,7 @@ class BlogController extends Controller
 
     	$data = [
     		'title' => $this->request->input('title'),
+            'slug' => \Unicode::make($this->request->input('title')),
     		'content' => $this->request->input('content'),
     		'order' => $current,
     		'img_url' => $img_url,
@@ -95,6 +95,7 @@ class BlogController extends Controller
         }
         $data = $this->entity->find($id);
         $data->title = $this->request->input('title');
+        $data->slug = \Unicode::make($this->request->input('title'));
         $data->content = $this->request->input('content');
         $data->order = $this->request->input('order');
         $data->status = $this->request->has('status') ? '1' : '0';

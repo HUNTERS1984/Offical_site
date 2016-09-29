@@ -51,9 +51,9 @@
 					<div class="wrap-info-hunter">
 						<h1>HUNTERS.Co.Ltd</h1>
 						<div class="wrap-ic">
-							<a href="#"><img src="{{env('PATH_FRONTEND')}}/img/twitter.png" height="40" width="40" alt=""></a>
-							<a href="#"><img src="{{env('PATH_FRONTEND')}}/img/fb.png" height="40" width="40" alt=""></a>
-							<a href="#"><img src="{{env('PATH_FRONTEND')}}/img/youtube.png" height="40" width="40" alt=""></a>
+							<a href="#"><img src="{{asset(env('PATH_FRONTEND'))}}/img/twitter.png" height="40" width="40" alt=""></a>
+							<a href="#"><img src="{{asset(env('PATH_FRONTEND'))}}/img/fb.png" height="40" width="40" alt=""></a>
+							<a href="#"><img src="{{asset(env('PATH_FRONTEND'))}}/img/youtube.png" height="40" width="40" alt=""></a>
 						</div>
 					</div>
 				</div>

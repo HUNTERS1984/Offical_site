@@ -42,8 +42,8 @@
 									<div class="each-blog {{$item == $data->last() ? 'last' : ''}}">
 										<p class="time">{{date_format($item->created_at,'Y.m.d')}}</p>
 
-										<a href="{{route('blog.detail',$item->id)}}" class="name-blog">{{$item->title}}</a>
-										<a href="{{route('blog.detail',$item->id)}}"><img src="{{asset($item->img_url)}}" class="img-responsive" alt=""></a>
+										<a href="{{route('blog.detail',[$item->id,$item->slug])}}" class="name-blog">{{$item->title}}</a>
+										<a href="{{route('blog.detail',[$item->id,$item->slug])}}"><img src="{{asset($item->img_url)}}" class="img-responsive" alt=""></a>
 										<p>{{Str::words($item->content,30)}}</p>
 									</div>
 									@endforeach
@@ -61,7 +61,7 @@
 										<ul class="list-box">
 											@if(!$random->isEmpty())
 												@foreach($random as $item_ran)
-												<li><a href="{{route('blog.detail',$item->id)}}">{{$item_ran->title}}</a></li>
+												<li><a href="{{route('blog.detail',[$item_ran->id,$item_ran->slug])}}">{{$item_ran->title}}</a></li>
 												@endforeach
 											@endif
 										</ul>

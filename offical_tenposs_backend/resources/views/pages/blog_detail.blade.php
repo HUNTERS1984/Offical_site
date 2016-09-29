@@ -37,7 +37,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-md-8">
-								<div class="wrap-main-blog blog-detail">
+								<div class="wrap-main-detail blog-detail">
 									<h2 class="title">{{$data->title}}</h2>
 									<img src="{{asset($data->img_url)}}" class="img-responsive" alt="">
 									<div class="content">
@@ -52,11 +52,11 @@
 											プレスルーム
 										</h4>
 										<ul class="list-box">
-											<li><a href="#">プレスリリース</a></li>
-											<li><a href="#">調査リリース</a></li>
-											<li><a href="#">メディア掲載</a></li>
-											<li><a href="#">登壇情報</a></li>
-											<li><a href="#">その他</a></li>
+											@if(!$random->isEmpty())
+											@foreach($random as $item_ran)
+												<li><a href="{{route('blog.detail',$item_ran->id)}}">{{$item_ran->title}}</a></li>
+											@endforeach
+											@endif
 										</ul>
 									</div>
 									<div class="box-blog">
@@ -64,11 +64,11 @@
 											プレスルーム
 										</h4>
 										<ul class="list-box">
-											<li><a href="#">プレスリリース</a></li>
-											<li><a href="#">調査リリース</a></li>
-											<li><a href="#">メディア掲載</a></li>
-											<li><a href="#">登壇情報</a></li>
-											<li><a href="#">その他</a></li>
+											@if(!$view_top->isEmpty())
+											@foreach($view_top as $item_top)
+												<li><a href="{{route('blog.detail',$item_top->id)}}">{{$item_top->title}}</a></li>
+											@endforeach
+											@endif
 										</ul>
 									</div>
 								</div>

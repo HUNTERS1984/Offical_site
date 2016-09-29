@@ -162,6 +162,7 @@ return [
         Intervention\Image\ImageServiceProvider::class,
         Krucas\Notification\NotificationServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
+        DaveJamesMiller\Breadcrumbs\ServiceProvider::class,
 
     ],
 
@@ -216,6 +217,7 @@ return [
          'Notification' => Krucas\Notification\Facades\Notification::class,
          'Debugbar' => Barryvdh\Debugbar\Facade::class,
          'Str'      => Illuminate\Support\Str::class,
+         'Breadcrumbs' => DaveJamesMiller\Breadcrumbs\Facade::class,
 
     ],
 

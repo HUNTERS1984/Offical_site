@@ -8,5 +8,5 @@ class Partnership extends Model
 {
     public $table = "partnerships";
 
-    protected $fillable =['title','content','img_url','status','order'];
+    protected $fillable =['title','slug','content','img_url','status','order'];
 }

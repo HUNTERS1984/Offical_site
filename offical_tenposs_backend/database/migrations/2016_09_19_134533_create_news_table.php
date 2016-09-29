@@ -21,6 +21,7 @@ class CreateNewsTable extends Migration
             $table->string('img_alt');
             $table->boolean('status')->default('1');
             $table->integer('order');
+            $table->integer('view')->default('0');
             $table->timestamps();
         });
     }

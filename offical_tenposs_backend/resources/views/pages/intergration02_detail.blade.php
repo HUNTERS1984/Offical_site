@@ -39,24 +39,19 @@
 		<!-- END STATIC BANNER -->
 
 		<div class="section intergration02-section">
-			<h2 class="title-section">tenposs 連携アプリ</h2>
 			<div class="content-section">
 				<div class="container">
 					<div class="row">
-						@if(!$data->isEmpty())
-							@foreach($data as $item)
-							<div class="each-intergration02 clearfix">
-								<div class="col-md-3">
-									<a href="{{route('intergration02.detail',[$item->id, $item->slug])}}"><img src="{{$item->img_url}}" alt=""></a>
-								</div>
-								<div class="col-md-9">
-									<div class="left">
-										<a href="{{route('intergration02.detail',[$item->id, $item->slug])}}"><h3 class="title-inter">{{$item->title}}</h3></a>
-										<p>{{Str::words($item->content,30)}}</p>
+						@if($data)
+							<div class="col-sm-12">
+								<div class="wrap-main-detail">
+									<h2 class="title">{{$data->title}}</h2>
+									<img src="{{$data->img_url}}" alt="">
+									<div class="content">
+										<p>{{$data->content}}</p>
 									</div>
 								</div>
 							</div>
-							@endforeach
 						@endif
 					</div>
 				</div>

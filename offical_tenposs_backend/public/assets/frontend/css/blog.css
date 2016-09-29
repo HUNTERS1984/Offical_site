@@ -1,483 +1,16 @@
-@font-face {
-  font-family: 'vni-cooperheavy';
-  src: url("../fonts/cooperb/vcooperb-webfont.woff2") format("woff2"), url("../fonts/cooperb/vcooperb-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
+/** Common **/
+@import url(../fonts/cooperb/font.css);
+@import url(../fonts/HiraKakuPro-W3/font.css);
+@import url(../fonts/HiraKakuPro-W6/font.css);
+@import url(common.css);
 
-@font-face {
-  font-family: 'HiraKakuPro-W3-AlphaNum';
-  src: url("../fonts/HiraKakuPro-W3/HiraKakuPro-W3-AlphaNum.eot?#iefix") format("embedded-opentype"), url("../fonts/HiraKakuPro-W3/HiraKakuPro-W3-AlphaNum.otf") format("opentype"), url("../fonts/HiraKakuPro-W3/HiraKakuPro-W3-AlphaNum.woff") format("woff"), url("../fonts/HiraKakuPro-W3/HiraKakuPro-W3-AlphaNum.ttf") format("truetype"), url("../fonts/HiraKakuPro-W3/HiraKakuPro-W3-AlphaNum.svg#HiraKakuPro-W3-AlphaNum") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'HiraKakuPro-W6-AlphaNum';
-  src: url("../fonts/HiraKakuPro-W6/HiraKakuPro-W6-AlphaNum.eot?#iefix") format("embedded-opentype"), url("../fonts/HiraKakuPro-W6/HiraKakuPro-W6-AlphaNum.otf") format("opentype"), url("../fonts/HiraKakuPro-W6/HiraKakuPro-W6-AlphaNum.woff") format("woff"), url("../fonts/HiraKakuPro-W6/HiraKakuPro-W6-AlphaNum.ttf") format("truetype"), url("../fonts/HiraKakuPro-W6/HiraKakuPro-W6-AlphaNum.svg#HiraKakuPro-W6-AlphaNum") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-/* line 26, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-* {
-  margin: 0;
-  padding: 0; }
-
-/* line 27, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-html {
-  font-size: 62.5%; }
-
-/* line 28, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-body {
-  font-size: 14px;
-  font-size: 1.4rem;
-  line-height: 2.4rem; }
-
-/* line 29, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-ul, ol {
-  margin: 0; }
-
-/* line 30, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-a, a:hover {
-  text-decoration: none !important;
-  outline: none !important; }
-
-/* line 31, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-h1, h2, h3, h4, p {
-  margin: 0;
-  padding: 0;
-  font-size: 1.4rem; }
-
-/* line 33, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-.clear {
-  clear: both; }
-
-/* line 49, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-.bg-blue, .btn-xanhduong {
-  background: #288CDC; }
-
-/* line 50, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-.btn-hong {
-  background: #F078A0; }
-
-/* line 51, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-.btn-trang {
-  background: white; }
-
-/* line 76, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-.btn-me {
-  width: 100%;
-  padding: 8px 0;
-  max-width: 280px;
-  display: inline-block;
-  text-align: center;
-  border-radius: 5px;
-  font-size: 1.4rem;
-  transition: all 0.4s;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -o-transition: all 0.4s; }
-  /* line 85, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-  .btn-me:hover, .btn-me:focus {
-    box-shadow: 1px 1px 5px 0 #67747a; }
-
-/* line 92, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-.header {
-  height: 8rem;
-  padding-top: 2rem;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1000; }
-  /* line 99, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-  .header.bg-color {
-    background: #288CDC;
-    box-shadow: 0 2px 3px 0 #ddd; }
-    /* line 103, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-    .header.bg-color .main-navigation a {
-      color: white; }
-  @media screen and (max-width: 767px) {
-    /* line 92, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-    .header {
-      height: auto;
-      padding: 1rem 0; } }
-  @media screen and (max-width: 479px) {
-    /* line 92, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-    .header {
-      background: #288CDC;
-      box-shadow: 0 2px 3px 0 #ddd; }
-      /* line 116, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-      .header .main-navigation a {
-        color: white; } }
-  /* line 124, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-  .header .logo img {
-    transform: scale(0.7);
-    -webkit-transform: scale(0.7);
-    -moz-transform: scale(0.7); }
-    @media screen and (max-width: 767px) {
-      /* line 124, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-      .header .logo img {
-        margin: 0 auto 10px; } }
-    @media screen and (max-width: 479px) {
-      /* line 124, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-      .header .logo img {
-        margin: 0;
-        float: left; } }
-  @media screen and (max-width: 767px) {
-    /* line 138, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-    .header .navbar-header {
-      float: right; }
-      /* line 140, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-      .header .navbar-header .collapse-me {
-        border: 1px solid #CDCDCD;
-        padding: 6px 20px;
-        color: white; } }
-  /* line 151, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-  .header .main-navigation {
-    list-style-type: none;
-    text-align: right; }
-    @media screen and (max-width: 767px) {
-      /* line 151, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-      .header .main-navigation {
-        float: none;
-        text-align: center; } }
-    @media screen and (max-width: 479px) {
-      /* line 151, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-      .header .main-navigation {
-        text-align: center; } }
-    /* line 163, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-    .header .main-navigation li {
-      display: inline-block;
-      padding: 10px 15px;
-      transition: all 0.3s;
-      -webkit-transition: all 0.3s;
-      -moz-transition: all 0.3s;
-      -o-transition: all 0.3s; }
-      @media screen and (max-width: 979px) {
-        /* line 163, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-        .header .main-navigation li {
-          padding: 10px 6px; } }
-      @media screen and (max-width: 767px) {
-        /* line 163, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-        .header .main-navigation li {
-          padding: 10px 8px; } }
-      @media screen and (max-width: 479px) {
-        /* line 163, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-        .header .main-navigation li {
-          display: block; } }
-      /* line 177, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-      .header .main-navigation li a {
-        display: block;
-        color: white;
-        font-size: 1.4rem;
-        font-family: "HiraKakuPro-W6-AlphaNum";
-        transition: all 0.3s;
-        -webkit-transition: all 0.3s;
-        -moz-transition: all 0.3s;
-        -o-transition: all 0.3s; }
-        @media screen and (max-width: 979px) {
-          /* line 177, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-          .header .main-navigation li a {
-            font-size: 1.2rem; } }
-        @media screen and (max-width: 479px) {
-          /* line 177, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-          .header .main-navigation li a {
-            font-size: 1.2rem;
-            color: #505050; } }
-      /* line 192, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-      .header .main-navigation li:hover, .header .main-navigation li.active {
-        border-bottom: 1px solid white; }
-
-/* line 199, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-.banner {
-  padding-top: 8rem;
-  background: url("../img/top/bg-top-banner.png") no-repeat;
-  background-size: cover;
-  height: 64rem;
-  overflow: hidden; }
-  @media screen and (max-width: 979px) {
-    /* line 199, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-    .banner {
-      height: auto;
-      padding-top: 12rem; } }
-  /* line 209, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-  .banner .inner-banner {
-    display: table; }
-    /* line 211, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-    .banner .inner-banner .left-banner, .banner .inner-banner .right-banner {
-      display: table-cell;
-      vertical-align: middle;
-      width: 50%;
-      text-align: center; }
-      @media screen and (max-width: 767px) {
-        /* line 211, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-        .banner .inner-banner .left-banner, .banner .inner-banner .right-banner {
-          display: block;
-          width: 100%; } }
-    /* line 223, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-    .banner .inner-banner .right-banner {
-      padding-left: 70px; }
-      @media screen and (max-width: 767px) {
-        /* line 223, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-        .banner .inner-banner .right-banner {
-          padding-left: 0;
-          margin-top: 20px; }
-          /* line 228, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-          .banner .inner-banner .right-banner img {
-            margin: 0 auto; } }
-    /* line 234, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-    .banner .inner-banner .title-banner {
-      font-size: 2.2rem;
-      font-family: "HiraKakuPro-W6-AlphaNum";
-      color: white;
-      margin-bottom: 20px; }
-    /* line 240, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-    .banner .inner-banner p.sub-title-banner {
-      font-size: 1.6rem;
-      font-family: "HiraKakuPro-W3-AlphaNum";
-      color: white;
-      line-height: 2.8rem;
-      letter-spacing: 3px;
-      margin-bottom: 15px; }
-      @media screen and (max-width: 979px) {
-        /* line 240, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-        .banner .inner-banner p.sub-title-banner {
-          font-size: 1.4rem; } }
-    /* line 252, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-    .banner .inner-banner .btn-me {
-      color: white; }
-
-/* line 258, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-.section {
-  padding: 80px 0; }
-  @media screen and (max-width: 979px) {
-    /* line 258, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-    .section {
-      padding: 60px 0; } }
-  /* line 263, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-  .section h2.title-section {
-    font-size: 2.2rem;
-    font-family: "HiraKakuPro-W6-AlphaNum";
-    margin-bottom: 80px;
-    text-align: center;
-    color: #288CDC; }
-
-/* line 272, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-.contact-section {
-  background: url("../img/bg-section-contact.png") no-repeat;
-  background-size: cover;
-  position: relative; }
-  /* line 276, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-  .contact-section .wrap-contact {
-    text-align: center;
-    color: white; }
-    /* line 279, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-    .contact-section .wrap-contact .title-contact {
-      font-family: "HiraKakuPro-W6-AlphaNum";
-      font-size: 2.2rem;
-      margin-bottom: 20px; }
-    /* line 284, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-    .contact-section .wrap-contact p.sub-contact {
-      font-size: 1.2rem;
-      font-family: "HiraKakuPro-W3-AlphaNum"; }
-    /* line 288, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-    .contact-section .wrap-contact .wrap-button-contact {
-      width: 70%;
-      margin: 0 auto;
-      margin-top: 50px; }
-      @media screen and (max-width: 979px) {
-        /* line 288, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-        .contact-section .wrap-contact .wrap-button-contact {
-          float: none; } }
-      @media screen and (max-width: 979px) {
-        /* line 288, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-        .contact-section .wrap-contact .wrap-button-contact {
-          margin-top: 25px; } }
-      /* line 299, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-      .contact-section .wrap-contact .wrap-button-contact a.btn-me {
-        display: inline-block;
-        color: white;
-        font-weight: 600; }
-        /* line 305, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-        .contact-section .wrap-contact .wrap-button-contact a.btn-me.btn-contact-right {
-          float: right;
-          color: #288CDC; }
-          @media screen and (max-width: 979px) {
-            /* line 305, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-            .contact-section .wrap-contact .wrap-button-contact a.btn-me.btn-contact-right {
-              float: none;
-              margin-bottom: 10px; } }
-        @media screen and (max-width: 979px) {
-          /* line 314, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-          .contact-section .wrap-contact .wrap-button-contact a.btn-me .btn-me {
-            max-width: none;
-            margin-bottom: 10px; } }
-  /* line 323, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-  .contact-section .img-up {
-    position: absolute;
-    left: 50%;
-    bottom: -40px;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    cursor: pointer; }
-
-/* line 334, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-.middle.page {
-  padding-top: 80px; }
-  @media screen and (max-width: 767px) {
-    /* line 334, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-    .middle.page {
-      padding-top: 12rem; } }
-  @media screen and (max-width: 479px) {
-    /* line 334, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-    .middle.page {
-      padding-top: 8rem; } }
-  /* line 344, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-  .middle.page .static-banner .breadcrum {
-    padding: 15px 0; }
-  /* line 347, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-  .middle.page .static-banner .breadcrum-me {
-    list-style-type: none; }
-    /* line 349, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-    .middle.page .static-banner .breadcrum-me li {
-      display: inline-block;
-      padding: 0 15px;
-      position: relative; }
-      /* line 353, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-      .middle.page .static-banner .breadcrum-me li a {
-        display: block;
-        font-family: "HiraKakuPro-W3-AlphaNum";
-        font-size: 1.4rem;
-        color: #505050; }
-      /* line 359, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-      .middle.page .static-banner .breadcrum-me li:after {
-        content: '>';
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0; }
-      /* line 366, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-      .middle.page .static-banner .breadcrum-me li:last-child:after {
-        content: ''; }
-      /* line 370, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-      .middle.page .static-banner .breadcrum-me li.active a {
-        text-decoration: underline !important; }
-  /* line 376, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-  .middle.page .static-banner .page-banner {
-    display: table;
-    background-size: cover;
-    width: 100%;
-    height: 320px; }
-    /* line 381, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-    .middle.page .static-banner .page-banner .is-table-cell {
-      display: table-cell;
-      vertical-align: middle;
-      text-align: center; }
-      /* line 385, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-      .middle.page .static-banner .page-banner .is-table-cell h1.title-page {
-        font-size: 4.2rem;
-        font-family: 'vni-cooperheavy';
-        color: white;
-        font-style: italic;
-        margin-bottom: 30px; }
-      /* line 392, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-      .middle.page .static-banner .page-banner .is-table-cell p.sub-title-page {
-        font-size: 2.2rem;
-        font-family: "HiraKakuPro-W6-AlphaNum";
-        color: white; }
-
-/* line 403, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-.footer {
-  background: #383838;
-  color: white;
-  padding: 70px 0 120px; }
-  /* line 408, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-  .footer .wrap-nav h3.title-footer {
-    color: #CDCDCD;
-    font-size: 1.8rem;
-    font-style: italic;
-    font-family: 'vni-cooperheavy';
-    margin-bottom: 20px; }
-    @media screen and (max-width: 767px) {
-      /* line 408, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-      .footer .wrap-nav h3.title-footer {
-        text-align: center; } }
-  /* line 418, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-  .footer .wrap-nav ul {
-    list-style-type: none; }
-    @media screen and (max-width: 767px) {
-      /* line 418, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-      .footer .wrap-nav ul {
-        text-align: center; } }
-    /* line 424, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-    .footer .wrap-nav ul li {
-      display: block;
-      margin-bottom: 5px; }
-      /* line 427, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-      .footer .wrap-nav ul li a {
-        display: block;
-        padding: 3px 0;
-        color: white;
-        font-family: "HiraKakuPro-W6-AlphaNum";
-        font-size: 1.2rem; }
-  @media screen and (max-width: 767px) {
-    /* line 407, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-    .footer .wrap-nav {
-      margin-bottom: 30px; } }
-  /* line 442, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-  .footer .wrap-info a.btn-footer {
-    display: block;
-    width: 100%;
-    max-width: 220px;
-    margin-bottom: 20px;
-    color: White;
-    font-family: "HiraKakuPro-W6-AlphaNum";
-    font-size: 1.4rem;
-    padding: 8px 0;
-    border-radius: 4px;
-    text-align: center; }
-    @media screen and (max-width: 767px) {
-      /* line 442, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-      .footer .wrap-info a.btn-footer {
-        margin: 0 auto 20px; } }
-  /* line 458, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-  .footer .wrap-info span.line {
-    height: 1px;
-    width: 100%;
-    display: block;
-    background: #CDCDCD;
-    margin-bottom: 20px; }
-  /* line 465, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-  .footer .wrap-info div.wrap-info-hunter {
-    color: #CDCDCD;
-    text-align: center; }
-    /* line 468, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-    .footer .wrap-info div.wrap-info-hunter h1 {
-      font-family: 'vni-cooperheavy';
-      font-size: 2rem;
-      font-style: italic;
-      margin-bottom: 15px; }
-      @media screen and (max-width: 767px) {
-        /* line 468, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-        .footer .wrap-info div.wrap-info-hunter h1 {
-          font-size: 1.8rem; } }
-    /* line 478, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-    .footer .wrap-info div.wrap-info-hunter .wrap-ic {
-      text-align: center; }
-      /* line 480, E:/xampp/xampp/htdocs/tenpossoffical/build/common.scss */
-      .footer .wrap-info div.wrap-info-hunter .wrap-ic a {
-        display: inline-block;
-        padding: 0 10px; }
-
-/* line 3, E:/xampp/xampp/htdocs/tenpossoffical/build/blog.scss */
 #blog {
   background-image: url("../img/blog/blog-banner-02.png"); }
 
 @media screen and (max-width: 767px) {
-  /* line 9, E:/xampp/xampp/htdocs/tenpossoffical/build/blog.scss */
   .blog-section .section-content .wrap-main-blog {
     margin-bottom: 20px; } }
 
-/* line 13, E:/xampp/xampp/htdocs/tenpossoffical/build/blog.scss */
 .blog-section .section-content .wrap-main-blog h3.title-blog {
   font-size: 2.2rem;
   font-family: "HiraKakuPro-W6-AlphaNum";
@@ -487,22 +20,16 @@ h1, h2, h3, h4, p {
   border-bottom: 1px solid #288CDC;
   padding-left: 15px; }
 
-/* line 23, E:/xampp/xampp/htdocs/tenpossoffical/build/blog.scss */
 .blog-section .section-content .wrap-main-blog div.each-blog {
   margin-bottom: 30px;
   padding-bottom: 20px;
   border-bottom: 1px solid #288CDC; }
-  /* line 27, E:/xampp/xampp/htdocs/tenpossoffical/build/blog.scss */
-  .blog-section .section-content .wrap-main-blog div.each-blog.last {
-    border: none; }
-  /* line 30, E:/xampp/xampp/htdocs/tenpossoffical/build/blog.scss */
   .blog-section .section-content .wrap-main-blog div.each-blog p.time {
     font-size: 1.2rem;
     color: #686868;
     font-family: "HiraKakuPro-W3-AlphaNum";
     margin-bottom: 30px;
     padding-left: 15px; }
-  /* line 37, E:/xampp/xampp/htdocs/tenpossoffical/build/blog.scss */
   .blog-section .section-content .wrap-main-blog div.each-blog a.name-blog {
     font-size: 1.4rem;
     font-family: "HiraKakuPro-W6-AlphaNum";
@@ -511,74 +38,46 @@ h1, h2, h3, h4, p {
     padding-left: 15px;
     margin-bottom: 15px;
     display: block; }
-  /* line 46, E:/xampp/xampp/htdocs/tenpossoffical/build/blog.scss */
   .blog-section .section-content .wrap-main-blog div.each-blog img {
     margin: 0 auto 15px; }
-  /* line 49, E:/xampp/xampp/htdocs/tenpossoffical/build/blog.scss */
   .blog-section .section-content .wrap-main-blog div.each-blog p {
     color: #686868;
     font-size: 1.4rem;
     font-family: "HiraKakuPro-W3-AlphaNum"; }
 
-/* line 56, E:/xampp/xampp/htdocs/tenpossoffical/build/blog.scss */
-.blog-section .section-content .wrap-main-blog.blog-detail h2.title {
-  color: #686868;
-  font-size: 1.6rem;
-  margin-bottom: 10px;
-  font-family: "HiraKakuPro-W6-AlphaNum"; }
-
-/* line 62, E:/xampp/xampp/htdocs/tenpossoffical/build/blog.scss */
-.blog-section .section-content .wrap-main-blog.blog-detail div.content {
-  margin-top: 10px; }
-  /* line 64, E:/xampp/xampp/htdocs/tenpossoffical/build/blog.scss */
-  .blog-section .section-content .wrap-main-blog.blog-detail div.content p {
-    color: #686868;
-    font-size: 1.4rem;
-    font-family: "HiraKakuPro-W3-AlphaNum"; }
-
-/* line 74, E:/xampp/xampp/htdocs/tenpossoffical/build/blog.scss */
 .blog-section .section-content .wrap-pagination ul.pagination li {
   display: inline-block;
   padding: 0 7px; }
-  /* line 77, E:/xampp/xampp/htdocs/tenpossoffical/build/blog.scss */
-  .blog-section .section-content .wrap-pagination ul.pagination li a, .blog-section .section-content .wrap-pagination ul.pagination li span {
+  .blog-section .section-content .wrap-pagination ul.pagination li a {
     display: block;
     width: 35px;
     height: 35px;
     border-radius: 50%;
     border: 1px solid #288CDC;
     color: #288CDC; }
-    /* line 84, E:/xampp/xampp/htdocs/tenpossoffical/build/blog.scss */
-    .blog-section .section-content .wrap-pagination ul.pagination li a:hover, .blog-section .section-content .wrap-pagination ul.pagination li a:focus, .blog-section .section-content .wrap-pagination ul.pagination li span:hover, .blog-section .section-content .wrap-pagination ul.pagination li span:focus {
+    .blog-section .section-content .wrap-pagination ul.pagination li a:hover, .blog-section .section-content .wrap-pagination ul.pagination li a:focus {
       background: #288CDC;
       color: white; }
-  /* line 90, E:/xampp/xampp/htdocs/tenpossoffical/build/blog.scss */
-  .blog-section .section-content .wrap-pagination ul.pagination li.active a, .blog-section .section-content .wrap-pagination ul.pagination li.active span {
+  .blog-section .section-content .wrap-pagination ul.pagination li.active a {
     background: #288CDC;
     color: white; }
 
-/* line 99, E:/xampp/xampp/htdocs/tenpossoffical/build/blog.scss */
 .blog-section .section-content .wrap-sidebar-blog {
   padding-left: 40px; }
-  /* line 101, E:/xampp/xampp/htdocs/tenpossoffical/build/blog.scss */
   .blog-section .section-content .wrap-sidebar-blog .box-blog {
     border-top: 2px solid #288CDC; }
-    /* line 103, E:/xampp/xampp/htdocs/tenpossoffical/build/blog.scss */
     .blog-section .section-content .wrap-sidebar-blog .box-blog h4.title-box {
       padding: 10px;
       margin-bottom: 20px;
       color: #505050;
       font-size: 1.4rem;
       font-family: "HiraKakuPro-W6-AlphaNum"; }
-    /* line 110, E:/xampp/xampp/htdocs/tenpossoffical/build/blog.scss */
     .blog-section .section-content .wrap-sidebar-blog .box-blog ul.list-box {
       list-style-type: none;
       padding-left: 15px; }
-      /* line 113, E:/xampp/xampp/htdocs/tenpossoffical/build/blog.scss */
       .blog-section .section-content .wrap-sidebar-blog .box-blog ul.list-box li {
         display: block;
         margin-bottom: 10px; }
-        /* line 116, E:/xampp/xampp/htdocs/tenpossoffical/build/blog.scss */
         .blog-section .section-content .wrap-sidebar-blog .box-blog ul.list-box li a {
           display: block;
           color: #288CDC;

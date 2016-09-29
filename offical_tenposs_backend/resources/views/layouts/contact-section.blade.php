@@ -9,6 +9,6 @@
 			</div>
 		</div>
 	</div>
-	<img src="{{env('PATH_FRONTEND')}}/img/top/btn-up.png" height="40" width="41" class="img-up" alt="">
+	<img src="{{asset(env('PATH_FRONTEND'))}}/img/top/btn-up.png" height="40" width="41" class="img-up" alt="">
 </div>
 <!-- END CONTACT -->

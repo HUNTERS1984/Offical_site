@@ -8,5 +8,5 @@ class Startguide extends Model
 {
     public $table = "start_guides";
 
-    protected $fillable =['title','content','img_url','video_url','status','order'];
+    protected $fillable =['title','content','slug','img_url','video_url','status','order'];
 }

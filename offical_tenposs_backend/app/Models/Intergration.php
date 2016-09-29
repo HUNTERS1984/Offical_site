@@ -8,5 +8,5 @@ class Intergration extends Model
 {
     public $table= 'intergrations';
 
-    protected $fillable =['title','content','img_url','status','order'];
+    protected $fillable =['title','slug','content','img_url','status','order'];
 }

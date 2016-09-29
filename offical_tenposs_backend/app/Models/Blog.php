@@ -8,5 +8,5 @@ class Blog extends Model
 {
     public $table = 'blogs';
 
-    protected $fillable =['title','content','img_url','status','order'];
+    protected $fillable =['title','slug','content','img_url','status','order'];
 }

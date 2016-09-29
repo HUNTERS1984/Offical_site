@@ -39,17 +39,15 @@
 						<div class="col-md-8">
 							<div class="wrap-main-news">
 								<h3 class="title-news">プレスリリース</h3>
-								@if(!$data->isEmpty())
-									@foreach($data as $item)
-									<div class="each-news {{$item == $data->last() ? 'last' : ''}}">
-										<p class="time">{{date_format($item->created_at,'Y.m.d')}}</p>
-										<a href="{{route('news.detail',[$item->id,$item->slug])}}" class="name-news">{{$item->title}}</a>
+								@if($data)
+									<div class="wrap-main-detail">
+										<h2 class="title">{{$data->title}}</h2>
+										<img src="{{asset($data->img_url)}}" class="img-responsive" alt="">
+										<div class="content">
+											{{$data->content}}
+										</div>
 									</div>
-									@endforeach
 								@endif
-							</div>
-							<div class="wrap-pagination text-center">
-								{{$data->links()}}
 							</div>
 						</div>
 						<div class="col-md-4">

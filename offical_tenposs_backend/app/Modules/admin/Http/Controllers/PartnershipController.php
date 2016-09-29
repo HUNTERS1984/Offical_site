@@ -57,6 +57,7 @@ class PartnershipController extends Controller
 
     	$data = [
     		'title' => $this->request->input('title'),
+            'slug' => \Unicode::make($this->request->input('title')),
     		'content' => $this->request->input('content'),
     		'order' => $current,
     		'img_url' => $img_url,
@@ -95,6 +96,7 @@ class PartnershipController extends Controller
         }
         $data = $this->entity->find($id);
         $data->title = $this->request->input('title');
+        $data->slug = \Unicode::make($this->request->input('title'));
         $data->content = $this->request->input('content');
         $data->order = $this->request->input('order');
         $data->status = $this->request->has('status') ? '1' : '0';

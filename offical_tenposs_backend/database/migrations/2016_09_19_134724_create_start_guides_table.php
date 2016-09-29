@@ -22,6 +22,7 @@ class CreateStartGuidesTable extends Migration
             $table->string('video_url');
             $table->boolean('status')->default('1');
             $table->integer('order');
+            $table->integer('view')->default('0');
             $table->timestamps();
         });
     }

@@ -42,22 +42,17 @@
 					<div class="container">
 						<p class="content-partner">私たちは、お客様に最高の体験をしていただくために、優れた技術的スキルや深い製品知識もつ 世界中のパートナーとチームを組んでいます。コンサルティング、技術的サポート、カスタム開発をはじめ、tenpossでのあらゆるサービスに関して、豊富な知識を持ったtenposs公認パートナーへご相談ください。</p>
 						<div class="row">
-							@if(!$data->isEmpty())
-								@foreach($data as $item)
-								<div class="col-md-4">
-									<div class="each-partner">
-										<a href="{{route('partnership02.detail',[$item->id, $item->slug])}}"><img src="{{$item->img_url}}" class="img-responsive" height="160" width="160" alt=""></a>
-										<a href="{{route('partnership02.detail',[$item->id, $item->slug])}}"><h3 class="title-each-partner">{{$item->title}}</h3></a>
-										<a href="{{route('partnership02.detail',[$item->id, $item->slug])}}"><p class="content">{{Str::words($item->content,20)}}</p></a>
+							@if($data)
+								<div class="col-sm-12">
+									<div class="wrap-main-detail">
+										<img src="{{$data->img_url}}" alt="">
+										<h2 class="title">{{$data->title}}</h2>	
+										<div class="content">
+											<p>{{$data->content}}</p>
+										</div>
 									</div>
 								</div>
-								@endforeach
 							@endif
-						</div>
-						<div class="row">
-							<div class="wrap-pagination text-center">
-								{{$data->links()}}
-							</div>
 						</div>
 					</div>
 				</div>

@@ -19,6 +19,7 @@ class CreateFaqsTable extends Migration
             $table->string('answer');
             $table->boolean('status')->default('1');
             $table->integer('order');
+            $table->integer('view')->default('0');
             $table->timestamps();
         });
     }

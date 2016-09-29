@@ -26,6 +26,7 @@ $factory->define(App\Models\Blog::class, function (Faker\Generator $faker){
 		'content'=>$faker->paragraph(),
 		'img_url'=>$faker->imageUrl('150','150'),
 		'status' => 1,
+		'view' => 0,
 	];
 });
 
@@ -33,7 +34,8 @@ $factory->define(App\Models\Faq::class, function(Faker\Generator $faker){
 	return [
 		'question' => $faker->sentence(),
 		'answer' => $faker->sentence(),
-		'status' => 1
+		'status' => 1,
+		'view' => 0,
 	];
 });
 
@@ -42,7 +44,8 @@ $factory->define(App\Models\Intergration::class, function(Faker\Generator $faker
 		'title' => $faker->sentence(),
 		'content' => $faker->paragraph(),
 		'img_url'=>$faker->imageUrl('150','150'),
-		'status' => 1
+		'status' => 1,
+		'view' => 0,
 	];
 });
 
@@ -50,7 +53,7 @@ $factory->define(App\Models\Introduction_type::class, function(Faker\Generator $
 	return [
 		'title' => $faker->sentence(),
 		'content' => $faker->paragraph(),
-		'status' => 1
+		'status' => 1,
 	];
 });
 
@@ -59,7 +62,8 @@ $factory->define(App\Models\Introduction_case::class, function(Faker\Generator $
 		'title' => $faker->sentence(),
 		'content' => $faker->paragraph(),
 		'img_url'=>$faker->imageUrl('150','150'),
-		'status' => 1
+		'status' => 1,
+		'view' => 0,
 	];
 });
 
@@ -68,7 +72,8 @@ $factory->define(App\Models\News::class, function(Faker\Generator $faker){
 		'title' => $faker->sentence(),
 		'content' => $faker->paragraph(),
 		'img_url'=>$faker->imageUrl('150','150'),
-		'status' => 1
+		'status' => 1,
+		'view' => 0,
 	];
 });
 
@@ -77,7 +82,8 @@ $factory->define(App\Models\Partnership::class, function(Faker\Generator $faker)
 		'title' => $faker->sentence(),
 		'content' => $faker->paragraph(),
 		'img_url'=>$faker->imageUrl('150','150'),
-		'status' => 1
+		'status' => 1,
+		'view' => 0,
 	];
 });
 
@@ -86,6 +92,7 @@ $factory->define(App\Models\Startguide::class, function(Faker\Generator $faker){
 		'title' => $faker->sentence(),
 		'content' => $faker->paragraph(),
 		'img_url'=>$faker->imageUrl('150','150'),
-		'status' => 1
+		'status' => 1,
+		'view' => 0,
 	];
 });
