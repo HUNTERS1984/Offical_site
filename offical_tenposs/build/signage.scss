@@ -1,0 +1,21 @@
+@import 'common';
+
+#signage{
+	background-image:url('../img/signage/tenposs-signage-02.png');
+}
+
+.signage-section{
+	h2.title-section{
+		color:$cl-xanhduong;
+	}
+	.section-content{
+		.row{
+			padding:20px 0;
+		}
+		p{
+			font-size:1.4rem;
+			@include fontW3;
+			color:$cl-den2;
+		}
+	}
+}

@@ -1,0 +1,32 @@
+@import 'common';
+
+#startguide{
+	background-image:url('../img/startguide/tenposs-startguide-02.png');
+}
+
+.guide-section{
+	.content-section{
+		div.each-guide{
+			text-align:center;
+			margin-bottom:40px;
+			img{
+				margin:0 auto 10px;
+			}
+			h3.title-guide{
+				font-size:1.8rem;
+				@include fontW6;
+				margin-bottom:10px;
+				a{
+					color:$cl-den;
+				}
+			}
+			p{
+				font-size:1.4rem;
+				@include fontW3;
+				a{
+					color:$cl-den2;
+				}
+			}
+		}
+	}
+}

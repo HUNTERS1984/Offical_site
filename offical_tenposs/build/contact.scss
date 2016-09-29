@@ -1,0 +1,67 @@
+@import 'common';
+
+#contact{
+	background-image:url('../img/contact/contact-banner-02.png');
+}
+
+.form-section{
+	h2.title-section{
+		font-weight:600;
+		color:$cl-xanhduong;
+	}
+	.content-section{
+		.wrap-form-contact{
+			form.formContact{
+				.form-group{
+					margin-bottom:25px;
+					&.text-note{
+						margin:20px 0 60px;
+					}
+					.left-form{
+						width:40%;
+						max-width:250px;
+						float:left;
+						padding-right:30px;
+						.require-form{
+							float:right;
+							color:red;
+							@include fontW3;
+							font-size:1.4rem;
+						}
+						@include media(767px){
+							float:none;
+							width:100%;
+						}
+					}
+					.right-form{
+						width:60%;
+						float:right;
+						@include media(767px){
+							float:none;
+							width:100%;
+						}
+					}
+					label{
+						color:$cl-den;
+						@include fontW3;
+						font-size:1.4rem;
+					}
+					p.note-form{
+						@include fontW3;
+						font-size:1.4rem;
+						text-align:center;
+						a{
+							color:$cl-xanhduong;
+						}
+					}
+					input.btn-submit{
+						background:$cl-xanhduong;
+						color:white;
+						border:none;
+						padding:10px 0;
+					}
+				}
+			}
+		}
+	}
+}

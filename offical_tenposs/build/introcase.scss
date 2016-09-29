@@ -1,0 +1,256 @@
+@import 'common';
+
+#introcase{
+	background-image:url('../img/introduction/tenposs-introductioncase-01-01.jpg');
+}
+#introcase02{
+	padding:30px 0;
+	.left-banner{
+		width:20%;
+		display:inline-block;
+		vertical-align:middle;
+		@include media(767px){
+			width:100%;
+			margin-bottom:10px;
+		}
+
+		img{
+			border-radius:50%;
+			border:1px solid white;
+			@include media(767px){
+				margin:0 auto;
+			}
+		}
+	}
+	.right-banner{
+		width:75%;
+		display:inline-block;
+		vertical-align:middle;
+		color:white;
+		padding-left:150px;
+		text-align:left;
+		@include media(767px){
+			width:100%;
+			padding-left:0;
+		}
+		.text-right-banner{
+			font-size:2rem;
+			@include fontW6;
+			position:relative;
+			margin-bottom:25px;
+			line-height:2.5rem;		}
+		p{
+			font-size:1.2rem;
+			@include fontW3;
+		}
+		p.normal-text a{
+			color:white;
+			text-decoration:underline !important;
+		}
+		.wrap-title{
+			margin-top:20px;
+			.des{
+				margin-bottom:10px;
+				color:white;
+			}
+		}
+	}
+}
+
+.introcase-section{
+	h2.title-section{
+		color:$cl-xanhduong;
+		margin-bottom:35px;
+		@include media(479px){
+			font-size:1.8rem
+		}
+			
+	}
+	.content-section{
+		select#choseCase{
+			padding:6px 12px;
+			display:block;
+			border-radius:4px;
+			max-width:320px;
+			width:100%;
+			text-align:center;
+			margin:0 auto 70px;
+		}
+		.each-introcase{
+			margin-bottom:40px;
+			text-align:center;
+			padding:0 30px;
+			img{
+				margin:0 auto 10px;
+			}
+			h3.title-each-introcase{
+				font-size:1.6rem;
+				@include fontW6;
+				color:$cl-xanhduong;
+				text-decoration:underline;
+				margin-bottom:10px;
+				a{
+					color:$cl-xanhduong;
+				}
+			}
+			p.content{
+				font-size:1.4rem;
+				@include fontW3;
+				color:$cl-den2;
+				a{
+					color:$cl-den2;
+				}
+			}
+		}
+		.wrap-pagination{
+			ul.pagination{
+				li{
+					display:inline-block;
+					padding:0 7px;
+					a{
+						display:block;
+						width:35px;
+						height:35px;
+						border-radius:50%;
+						border:1px solid $cl-xanhduong;
+						color:$cl-xanhduong;
+						&:hover, &:focus{
+							background:$cl-xanhduong;
+							color:white;
+						}
+					}
+					&.active{
+						a{
+							background:$cl-xanhduong;
+							color:white;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.introcase02-section{
+	.content-section{
+		.box-intro-big{
+			margin-bottom:65px;
+			img{
+				margin-bottom:20px;
+			}
+			p{
+				font-size:1.4rem;
+				@include fontW3;
+				color:$cl-den2;
+			}
+		}
+		.box-intro-small{
+			margin-bottom:90px;
+			@include media(767px){
+				img{
+					margin:0 auto 20px;
+				}
+			}
+				
+			.left{
+				float:left;
+				width:60%;
+				@include media(767px){
+					width:100%;
+					float:none;
+				}
+					
+			}
+			.right{
+				float:right;
+				width:35%;
+				margin-left:5%;
+				@include media(767px){
+					width:100%;
+					float:none;
+					margin-left:0;
+				}
+			}
+			&.im-left{
+				.left{
+					float:left;
+					width:35%;
+					margin-right:5%;
+					@include media(767px){
+						width:100%;
+						float:none;
+						margin-right:0;
+					}
+				}
+				.right{
+					float:right;
+					width:60%;
+					margin-left:0%;
+					@include media(767px){
+						width:100%;
+						float:none;
+					}
+				}
+			}
+			.title-intro-small{
+				font-size:1.8rem;
+				@include fontW6;
+				color:$cl-xanhduong;
+				margin-bottom:25px;
+				@include media(767px){
+					text-align:center;
+				}
+					
+			}
+			p{
+				font-size:1.4rem;
+				@include fontW3;
+				color:$cl-den2;
+			}
+			&.last{
+				margin-bottom:60px;
+			}
+		}
+
+		img.arrow{
+			margin:30px auto 60px;
+		}
+		img.ic-block{
+			margin:0 auto;
+		}
+		.wrap-img-right{
+			padding-left:30px;
+			padding-top:110px;
+			.block-img-right{
+				margin-bottom:30px;
+			}
+			p.link{
+				font-size:1.4rem;
+				@include fontW6;
+				color:$cl-xanhduong;
+			}
+		}
+		.line{
+			margin:40px 0;
+			height:1px;
+			background:$cl-xanhduong;
+		}
+		.wrap-final{
+			text-align:center;
+			h3.title-bot{
+				font-size:2rem;
+				@include fontW6;
+				color:$cl-xanhduong;
+				margin-bottom:30px
+			}
+			select{
+				padding:6px 12px;
+				height:40px;
+				border-radius:4px;
+				width:100%;
+				max-width:240px;
+				margin:0 auto;
+			}
+		}
+	}
+}

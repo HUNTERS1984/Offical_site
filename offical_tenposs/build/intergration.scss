@@ -1,0 +1,69 @@
+@import 'common';
+
+#intergration{
+	background-image:url('../img/intergration/tenposs-integrations-01-02.png');
+}
+
+.intergration-section{
+	h2.title-section{
+		margin-bottom:100px
+	}
+	.content-section{
+		text-align:center;
+		h3.title-intergra{
+			font-size:4rem;
+			@include fontCooperb;
+			color:$cl-xanhduong;
+			margin-bottom:35px;
+			text-align:center;
+			font-style:italic;
+		}
+		a.btn-me{
+			color:white;
+		}
+		p.text{
+			font-size:1.4rem;
+			color:$cl-xanhduong;
+			text-align:center;
+			@include fontW6;
+			margin-top:40px;
+		}
+	}
+}
+
+.intergration02-section{
+	h2.title-section{
+		margin-bottom:50px;
+	}
+	.content-section{
+		.each-intergration02{
+			margin-bottom:40px;
+			@include media(767px){
+				img{
+					margin:0 auto 20px;
+				}
+			}
+
+			.left{
+				padding-left:20px;
+				h3.title-inter{
+					font-size:1.6rem;
+					@include fontW6;
+					color:$cl-den;
+					margin-bottom:10px;
+					@include media(767px){
+						text-align:center;
+					}
+				}
+				p{
+					@include fontW3;
+					color:$cl-den2;
+					font-size:1.4rem;
+					@include media(767px){
+						text-align:center;
+					}
+				}
+			}
+		}
+	}
+}

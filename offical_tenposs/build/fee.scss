@@ -1,0 +1,79 @@
+@import 'common';
+
+#fee{
+	background-image:url('../img/fee/tenposs-fee-02.png');
+}
+
+.fee-section{
+	table.table-fee{
+		width:100%; 
+		@include media(767px){
+			margin-bottom:30px;
+		}
+			
+		thead {
+			th{
+				color:white;
+				text-align:center;
+				font-size:1.6rem;
+				@include fontW6;
+				padding:25px 0;
+
+			}
+		}
+		tbody{
+			padding:0 10px;
+
+			td{
+				padding:20px 0;
+				border-bottom:1px solid $cl-xanhduong;
+				p.title{
+					color:$cl-den;
+					font-size:1.2rem;
+					@include fontW3;
+				}
+				p.content{
+					font-size:1.6rem;
+					@include fontW6;
+					color:$cl-xanhduong;
+					text-align:center;
+				}
+				ul{
+					li{
+						padding-left:5px;
+						margin-bottom:5px;
+						color:$cl-xanhduong;
+						font-size:1.6rem;
+						@include fontW3;
+					}
+				}
+			}
+			td.wrap-td{
+				padding:0 5px;
+				background:rgba(40,140,220,0.2);
+			}
+			.tb-wrap{
+				tr:last-child{
+					td{
+						border-bottom:none;
+					}
+				}
+			}
+		}
+		&.fee1{
+			thead{
+				background:$cl-table1;
+			}
+		}
+		&.fee2{
+			thead{
+				background:$cl-table2;
+			}
+		}
+		&.fee3{
+			thead{
+				background:$cl-table3;
+			}
+		}
+	}
+}
