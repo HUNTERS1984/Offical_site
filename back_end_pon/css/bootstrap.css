@@ -5840,8 +5840,7 @@ button.list-group-item-danger.active:focus {
 }
 .close {
   float: right;
-  font-size: 21px;
-  font-weight: bold;
+  font-size: 30px;
   line-height: 1;
   color: #000;
   text-shadow: 0 1px 0 #fff;
@@ -5909,7 +5908,7 @@ button.close {
           background-clip: padding-box;
   border: 1px solid #999;
   border: 1px solid rgba(0, 0, 0, .2);
-  border-radius: 6px;
+  border-radius: 4px;
   outline: 0;
   -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
           box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
@@ -5936,7 +5935,7 @@ button.close {
   border-bottom: 1px solid #e5e5e5;
 }
 .modal-header .close {
-  margin-top: -2px;
+  margin-top: 0px;
 }
 .modal-title {
   margin: 0;
@@ -5945,6 +5944,7 @@ button.close {
 .modal-body {
   position: relative;
   padding: 15px;
+  overflow: hidden;
 }
 .modal-footer {
   padding: 15px;
@@ -5970,12 +5970,16 @@ button.close {
 }
 @media (min-width: 768px) {
   .modal-dialog {
-    width: 600px;
-    margin: 30px auto;
+    width: 550px;
+    margin: 100px auto;
+  }
+  .modal-dialog.photo_user{
+    width: 370px;
+    margin: 100px auto;
   }
   .modal-content {
-    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+            box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
   }
   .modal-sm {
     width: 300px;
