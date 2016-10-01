@@ -34,7 +34,7 @@ class PartnershipController extends Controller
     {
     	if($imgrequest->hasFile('img')){
             $file = $imgrequest->file('img');
-            $destinationPath = env('UPLOAD_PATH');
+            $destinationPath = "upload/original/partnership";
             $filename = time().'_'.$file->getClientOriginalName();
 
             $size = getimagesize($file);
@@ -45,10 +45,10 @@ class PartnershipController extends Controller
             }
 
             $img_url = $destinationPath.'/'.$filename;
-            // $img_alt = \GetNameImage::make('\/',$filename);
+            $img_alt = \GetNameImage::make('\/',$filename);
         }else{
             $img_url = env('PATH_BACKEND').'/images/no-user-image.gif';
-            // $img_alt = \GetNameImage::make('\/',$img_url);
+            $img_alt = \GetNameImage::make('\/',$img_url);
         }
         dd($img_alt);
 
@@ -60,7 +60,8 @@ class PartnershipController extends Controller
             'slug' => \Unicode::make($this->request->input('title')),
     		'content' => $this->request->input('content'),
     		'order' => $current,
-    		'img_url' => $img_url,
+            'img_url' => $img_url,
+    		'img_alt' => $img_url,
     	];
     	$this->entity->create($data);
     	Notification::success('Created');
@@ -78,7 +79,7 @@ class PartnershipController extends Controller
     {
     	if($imgrequest->hasFile('img')){
             $file = $imgrequest->file('img');
-            $destinationPath = env('UPLOAD_PATH');
+            $destinationPath = "upload/original/partnership";
             $filename = time().'.'.$file->getClientOriginalName();
 
             $size = getimagesize($file);
@@ -89,16 +90,18 @@ class PartnershipController extends Controller
             }
 
             $img_url = $destinationPath.'/'.$filename;
-            // $img_alt = \GetNameImage::make('\/',$filename);
+            $img_alt = \GetNameImage::make('\/',$filename);
         }else{
             $img_url = $this->request->input('img-bk');
-            // $img_alt = \GetNameImage::make('\/',$img_url);
+            $img_alt = \GetNameImage::make('\/',$img_url);
         }
         $data = $this->entity->find($id);
         $data->title = $this->request->input('title');
         $data->slug = \Unicode::make($this->request->input('title'));
         $data->content = $this->request->input('content');
         $data->order = $this->request->input('order');
+        $data->img_url = $img_url;
+        $data->img_alt = $img_alt;
         $data->status = $this->request->has('status') ? '1' : '0';
         $data->save();
 

@@ -8,7 +8,7 @@
 					<a href="#" class="btn-me btn-xanhduong">無料お試し登録</a>
 				</div>
 				<div class="right-banner animated fadeInLeft">
-					<img src="{{env('PATH_FRONTEND')}}/img/top/big-phone.png" class="img-responsive" alt="">
+					<img src="{{asset('assets/frontend')}}/img/top/big-phone.png" class="img-responsive" alt="">
 				</div>
 			</div>
 		</div>

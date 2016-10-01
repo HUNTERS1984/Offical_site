@@ -3,11 +3,11 @@
 @section('title','SUPPORT')
 
 @section('css')
-	{{Html::style(env('PATH_FRONTEND').'/css/support.css')}}
+	{{Html::style(asset('assets/frontend').'/css/support.css')}}
 @stop
 
 @section('script')
-	{{Html::script(env('PATH_FRONTEND').'/js/jquery.viewportchecker.min.js')}}
+	{{Html::script(asset('assets/frontend').'/js/jquery.viewportchecker.min.js')}}
 @stop
 
 @section('content')

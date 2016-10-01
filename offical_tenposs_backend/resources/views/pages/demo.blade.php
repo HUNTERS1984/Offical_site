@@ -3,11 +3,11 @@
 @section('title','Demo')
 
 @section('css')
-	{{Html::style(env('PATH_FRONTEND').'/css/demo.css')}}
+	{{Html::style(asset('assets/frontend').'/css/demo.css')}}
 @stop
 
 @section('script')
-	{{Html::script(env('PATH_FRONTEND').'/js/jquery.viewportchecker.min.js')}}
+	{{Html::script(asset('assets/frontend').'/js/jquery.viewportchecker.min.js')}}
 	<script>
 	$(document).ready(function(){
 
@@ -73,202 +73,208 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-4">
-							<table class="table-fee fee1" border="0" cellpadding="0" cellspacing="0">
-								<thead>
+							<div class="wrap-table">
+								<table class="table-fee fee1" border="0" cellpadding="0" cellspacing="0">
+									<thead>
+										<tr>
+											<th colspan="2">お試しプラン</th>
+										</tr>
+									</thead>
+									<tbody>
 									<tr>
-										<th colspan="2">お試しプラン</th>
+										<td class="wrap-td">
+											<table width="100%" cellpadding="0" cellspacing="0" border="0" class="tb-wrap">
+												<tr>
+													<td width="30%">
+														<p class="title">価格</p>
+													</td>
+													<td width="70%">
+														<p class="content">
+															<span class="font32">0 円</span>
+														</p>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<p class="title">月額</p>
+													</td>
+													<td>
+														<p class="content"><span class="font32">0 円</span></p>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<p class="title">納期</p>
+													</td>
+													<td>
+														<p class="content"><span class="font24">着手日より３営業日〜</span></p>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<p class="title">支給データ</p>
+													</td>
+													<td>
+														<p class="content"><span class="font24">ロゴデータ （ai形式）</span></p>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<p class="title">納品物</p>
+													</td>
+													<td>
+														<p class="content">
+															<ul>
+																<li>スマホサイト<br/>（操作方法・各機能確認用）</li>
+																<li>デモアプリ</li>
+															</ul>
+														</p>
+													</td>
+												</tr>
+											</table>
+										</td>
 									</tr>
-								</thead>
-								<tbody>
-								<tr>
-									<td class="wrap-td">
-										<table width="100%" cellpadding="0" cellspacing="0" border="0" class="tb-wrap">
-											<tr>
-												<td width="35%">
-													<p class="title">価格</p>
-												</td>
-												<td width="65%">
-													<p class="content">
-														0円
-													</p>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<p class="title">月額</p>
-												</td>
-												<td>
-													<p class="content">0円</p>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<p class="title">納期</p>
-												</td>
-												<td>
-													<p class="content">着手日より３営業日〜</p>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<p class="title">支給データ</p>
-												</td>
-												<td>
-													<p class="content">ロゴデータ （ai形式）</p>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<p class="title">納品物</p>
-												</td>
-												<td>
-													<p class="content">
-														<ul>
-															<li>スマホサイト （操作方法・各機能確認用）</li>
-															<li>デモアプリ</li>
-														</ul>
-													</p>
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-									
-								</tbody>
-							</table>
+
+									</tbody>
+								</table>
+							</div>
 						</div>
 
 						<div class="col-md-4">
-							<table class="table-fee fee2" border="0" cellpadding="0" cellspacing="0">
-								<thead>
+							<div class="wrap-table">
+								<table class="table-fee fee2" border="0" cellpadding="0" cellspacing="0">
+									<thead>
+										<tr>
+											<th colspan="2">スマホプラン</th>
+										</tr>
+									</thead>
+									<tbody>
 									<tr>
-										<th colspan="2">スマホプラン</th>
+										<td class="wrap-td">
+											<table width="100%" cellpadding="0" cellspacing="0" border="0" class="tb-wrap">
+												<tr>
+													<td width="30%">
+														<p class="title">価格</p>
+													</td>
+													<td width="70%">
+														<p class="content">
+															<span class="font32">80,000 円<small>（税別）</small></span>
+														</p>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<p class="title">月額</p>
+													</td>
+													<td>
+														<p class="content"><span class="font32">8,000 円 <small>（税別）</small></span></p>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<p class="title">納期</p>
+													</td>
+													<td>
+														<p class="content"><span class="font24">着手日より３営業日〜</span></p>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<p class="title">支給データ</p>
+													</td>
+													<td>
+														<p class="content"><span class="font24">ロゴデータ（ai形式）</span></p>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<p class="title">納品物</p>
+													</td>
+													<td>
+														<p class="content">
+															<ul>
+																<li>スマホサイト</li>
+																<li>アプリ（iOS・Android）</li>
+															</ul>
+														</p>
+													</td>
+												</tr>
+											</table>
+										</td>
 									</tr>
-								</thead>
-								<tbody>
-								<tr>
-									<td class="wrap-td">
-										<table width="100%" cellpadding="0" cellspacing="0" border="0" class="tb-wrap">
-											<tr>
-												<td width="35%">
-													<p class="title">価格</p>
-												</td>
-												<td width="65%">
-													<p class="content">
-														80,000円<mdall>（税別）</small> 
-													</p>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<p class="title">8,000円 <small>（税別）</small></p>
-												</td>
-												<td>
-													<p class="content">着手日より３営業日〜</p>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<p class="title">納期</p>
-												</td>
-												<td>
-													<p class="content">ロゴデータ（ai形式）</p>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<p class="title">支給データ</p>
-												</td>
-												<td>
-													<p class="content">ロゴデータ （ai形式）</p>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<p class="title">納品物</p>
-												</td>
-												<td>
-													<p class="content">
-														<ul>
-															<li>・スマホサイト</li>
-															<li>アプリ（iOS・Android）</li>
-														</ul>
-													</p>
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-									
-								</tbody>
-							</table>
+
+									</tbody>
+								</table>
+							</div>
 						</div>
 
 						<div class="col-md-4">
-							<table class="table-fee fee3" border="0" cellpadding="0" cellspacing="0">
-								<thead>
+							<div class="wrap-table">
+								<table class="table-fee fee3" border="0" cellpadding="0" cellspacing="0">
+									<thead>
+										<tr>
+											<th colspan="2">レスポンシブプラン</th>
+										</tr>
+									</thead>
+									<tbody>
 									<tr>
-										<th colspan="2">レスポンシブプラン</th>
+										<td class="wrap-td">
+											<table width="100%" cellpadding="0" cellspacing="0" border="0" class="tb-wrap">
+												<tr>
+													<td width="30%">
+														<p class="title">価格</p>
+													</td>
+													<td width="70%">
+														<p class="content">
+															<span class="font32">100,000 円 <small>（税別）</small></span>
+														</p>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<p class="title">月額</p>
+													</td>
+													<td>
+														<p class="content"><span class="font32">10,000 円 <small>（税別）</small></span></p>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<p class="title">納期</p>
+													</td>
+													<td>
+														<p class="content"><span class="font24">着手日より３営業日〜</span></p>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<p class="title">支給データ</p>
+													</td>
+													<td>
+														<p class="content"><span class="font24">ロゴデータ （ai形式）</span></p>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<p class="title">納品物</p>
+													</td>
+													<td>
+														<p class="content">
+															<ul>
+																<li>スマホサイト</li>
+																<li>レスポンシブサイト</li>
+																<li>アプリ（iOS・Android）</li>
+															</ul>
+														</p>
+													</td>
+												</tr>
+											</table>
+										</td>
 									</tr>
-								</thead>
-								<tbody>
-								<tr>
-									<td class="wrap-td">
-										<table width="100%" cellpadding="0" cellspacing="0" border="0" class="tb-wrap">
-											<tr>
-												<td width="35%">
-													<p class="title">価格</p>
-												</td>
-												<td width="65%">
-													<p class="content">
-														100,000円 <small>（税別）</small>
-													</p>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<p class="title">月額</p>
-												</td>
-												<td>
-													<p class="content">10,000円 <small>（税別）</small></p>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<p class="title">納期</p>
-												</td>
-												<td>
-													<p class="content">着手日より３営業日〜</p>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<p class="title">支給データ</p>
-												</td>
-												<td>
-													<p class="content">ロゴデータ （ai形式）</p>
-												</td>
-											</tr>
-											<tr>
-												<td>
-													<p class="title">納品物</p>
-												</td>
-												<td>
-													<p class="content">
-														<ul>
-															<li>スマホサイト</li>
-															<li>レスポンシブサイト</li>
-															<li>アプリ（iOS・Android）</li>
-														</ul>
-													</p>
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-									
-								</tbody>
-							</table>
+
+									</tbody>
+								</table>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -284,12 +290,12 @@
 						<div class="container">
 							<div class="row">
 								<div class="col-md-3">
-									<img src="{{env('PATH_FRONTEND')}}/img/top/small-phone.png" class="img-responsive hidden-xs hidden-sm" alt="">
+									<img src="{{asset('assets/frontend')}}/img/top/small-phone.png" class="img-responsive hidden-xs hidden-sm" alt="">
 								</div>
 								<div class="col-md-9">
 									<div class="wrap-top-testi clearfix">
 										<div class="wrap-img ">
-											<img src="{{env('PATH_FRONTEND')}}/img/top/img-top.png" class="img-responsive " alt=""/>
+											<img src="{{asset('assets/frontend')}}/img/top/img-top.png" class="img-responsive " alt=""/>
 										</div>
 										<div class="wrap-text">
 											<span class="line"></span>
@@ -299,7 +305,7 @@
 										</div>
 									</div> <!-- end wrap-top-test-->
 									<div class="wrap-img-mobile visible-xs visible-sm">
-										<img src="{{env('PATH_FRONTEND')}}/img/top/small-phone.png" class="img-responsive" alt="">
+										<img src="{{asset('assets/frontend')}}/img/top/small-phone.png" class="img-responsive" alt="">
 									</div>
 									<div class="wrap-bottom-testi">
 										<div class="row">
@@ -326,12 +332,12 @@
 						<div class="container">
 							<div class="row">
 								<div class="col-md-3">
-									<img src="{{env('PATH_FRONTEND')}}/img/top/small-phone.png" class="img-responsive hidden-xs hidden-sm" alt="">
+									<img src="{{asset('assets/frontend')}}/img/top/small-phone.png" class="img-responsive hidden-xs hidden-sm" alt="">
 								</div>
 								<div class="col-md-9">
 									<div class="wrap-top-testi clearfix">
 										<div class="wrap-img">
-											<img src="{{env('PATH_FRONTEND')}}/img/top/img-top.png" class="img-responsive" alt=""/>
+											<img src="{{asset('assets/frontend')}}/img/top/img-top.png" class="img-responsive" alt=""/>
 										</div>
 										<div class="wrap-text">
 											<span class="line"></span>
@@ -341,7 +347,7 @@
 										</div>
 									</div> <!-- end wrap-top-test-->
 									<div class="wrap-img-mobile visible-xs visible-sm">
-										<img src="{{env('PATH_FRONTEND')}}/img/top/small-phone.png" class="img-responsive" alt="">
+										<img src="{{asset('assets/frontend')}}/img/top/small-phone.png" class="img-responsive" alt="">
 									</div>
 									<div class="wrap-bottom-testi">
 										<div class="row">
@@ -366,11 +372,11 @@
 				</div>
 				<!-- Controls -->
 				<a class="left carousel-control" href="#slide-testimonial" role="button" data-slide="prev">
-					<img src="{{env('PATH_FRONTEND')}}/img/top/left-btn.png" height="40" width="41" alt="">
+					<img src="{{asset('assets/frontend')}}/img/top/left-btn.png" height="40" width="41" alt="">
 					<span class="sr-only">Previous</span>
 				</a>
 				<a class="right carousel-control" href="#slide-testimonial" role="button" data-slide="next">
-					<img src="{{env('PATH_FRONTEND')}}/img/top/right-btn.png" height="40" width="41" alt="">
+					<img src="{{asset('assets/frontend')}}/img/top/right-btn.png" height="40" width="41" alt="">
 					<span class="sr-only">Next</span>
 				</a>
 			</div>

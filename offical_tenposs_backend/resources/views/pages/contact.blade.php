@@ -3,17 +3,33 @@
 @section('title','Contact')
 
 @section('css')
-	{{Html::style(env('PATH_FRONTEND').'/css/contact.css')}}
+	{{Html::style(asset('assets/frontend').'/css/contact.css')}}
 @stop
 
 @section('script')
-	{{Html::script(env('PATH_FRONTEND').'/js/jquery.viewportchecker.min.js')}}
+	{{Html::script(asset('assets/frontend').'/js/jquery.viewportchecker.min.js')}}
+	{{Html::script(asset('assets/frontend').'/js/jquery.validate.min.js')}}
 	<script>
 	$(document).ready(function(){
 
 		$('.form-section').addClass('invisible').viewportChecker({
 			classToAdd: 'visible animated slideInLeft',
 			offset : 150,
+		})
+
+		$('.formContact').validate({
+			rules:{
+				'company' : 'required',
+				'bussiness' : 'required',
+				'fullname' : 'required',
+				'nickname' : 'required',
+				'phone' : 'required',
+				'email' : {
+					'required': true,
+					'email': true
+				},
+				'reason':'required'
+			}
 		})
 	})
 	</script>
@@ -48,41 +64,54 @@
 					<div class="row">
 						<div class="col-md-10 col-md-offset-1">
 							<div class="wrap-form-contact">
-								<form action="" class="formContact" method="">
+								@if(Session::has('mess'))
+									<h2 class="title-thanks">{{Session::get('mess')}}</h2>
+								@endif
+								@if($errors->any())
+								<div class="alert alert-danger">
+									<ul style="padding-left:15px;">
+										@foreach($errors->all() as $error)
+										<li>{!! $error!!}</li>
+										@endforeach
+									</ul>
+								</div>
+								@endif
+								<form action="{{route('postContact')}}" class="formContact" method="POST">
+									{{Form::token()}}
 									<div class="form-group clearfix">
 										<div class="left-form">
-											<label for="fullname">店名/会社名</label>
+											<label for="company">店名/会社名</label>
 											<span class="require-form">必須</span>
 										</div>
 										<div class="right-form">
-											<input type="text" name="fullname" class="form-control" placeholder="例）　株式会社HUNTERS">
+											<input type="text" name="company" class="form-control" placeholder="例）　株式会社HUNTERS">
 										</div>
 									</div>
 									<div class="form-group clearfix">
 										<div class="left-form">
-											<label for="phone">業種</label>
+											<label for="bussiness">業種</label>
 											<span class="require-form">必須</span>
 										</div>
 										<div class="right-form">
-											<input type="text" name="phone" class="form-control" placeholder="例）　アパレル">
+											<input type="text" name="bussiness" class="form-control" placeholder="例）　アパレル">
 										</div>
 									</div>
 									<div class="form-group clearfix">
 										<div class="left-form">
-											<label for="phone">名前</label>
+											<label for="fullname">名前</label>
 											<span class="require-form">必須</span>
 										</div>
 										<div class="right-form">
-											<input type="text" name="phone" class="form-control" placeholder="例）　山田 太郎">
+											<input type="text" name="fullname" class="form-control" placeholder="例）　山田 太郎">
 										</div>
 									</div>
 									<div class="form-group clearfix">
 										<div class="left-form">
-											<label for="phone">名前（フリガナ）</label>
+											<label for="nickname">名前（フリガナ）</label>
 											<span class="require-form">必須</span>
 										</div>
 										<div class="right-form">
-											<input type="text" name="phone" class="form-control" placeholder="例）　ヤマダ タロウ">
+											<input type="text" name="nickname" class="form-control" placeholder="例）　ヤマダ タロウ">
 										</div>
 									</div>
 									<div class="form-group clearfix">
@@ -96,32 +125,34 @@
 									</div>
 									<div class="form-group clearfix">
 										<div class="left-form">
-											<label for="phone">メールアドレス　</label>
+											<label for="email">メールアドレス　</label>
 											<span class="require-form">必須</span>
 										</div>
 										<div class="right-form">
-											<input type="text" name="phone" class="form-control" placeholder="例）　example@example.com">
+											<input type="text" name="email" class="form-control" placeholder="例）　example@example.com">
 										</div>
 									</div>
 									<div class="form-group clearfix">
 										<div class="left-form">
-											<label for="phone">OLOを利用したい理由</label>
+											<label for="reason">OLOを利用したい理由</label>
 											<span class="require-form">必須</span>
 										</div>
 										<div class="right-form">
-											<select name="" class="form-control">
-												<option value="">新規顧客開拓</option>
+											<select name="reason" class="form-control">
+												<option value="新規顧客開拓">新規顧客開拓 1</option>
+												<option value="新規顧客開拓">新規顧客開拓 2</option>
+												<option value="新規顧客開拓">新規顧客開拓 3</option>
 											</select>
 										</div>
 									</div>
 
 									<div class="form-group clearfix">
 										<div class="right-form">
-											<textarea name="" class="form-control" rows="5"></textarea>
+											<textarea name="message" class="form-control" rows="5"></textarea>
 										</div>
 									</div>
 									<div class="form-group text-note">
-										<p class="note-form"><a href="#">利用規約</a> の内容をご確認・ご同意された上で</p>
+										<p class="note-form"><a href="{{url('policy')}}" target="_blank">利用規約</a> の内容をご確認・ご同意された上で</p>
 									</div>
 									<div class="form-group text-center">
 										<input type="submit" value="送信する" class="btn-me btn-submit">

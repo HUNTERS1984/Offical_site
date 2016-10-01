@@ -28,7 +28,7 @@ class DatabaseSeeder extends Seeder
             $this->truncateDatabase();
         }
         $this->call(BlogTableSeeder::class);
-        $this->call(FaqTableSeeder::class);
+        $this->call(FaqTypeTableSeeder::class);
         $this->call(IntergrationTableSeeder::class);
         $this->call(NewsTableSeeder::class);
         $this->call(PartnershipTableSeeder::class);

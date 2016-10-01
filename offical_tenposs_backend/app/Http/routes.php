@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+   return view('pages.top');
 });
 
 Route::get('top',function(){
@@ -26,15 +26,15 @@ Route::get('agree',function(){
 Route::get('blog',['as'=>'blog','uses'=>'BlogController@select_all']);
 Route::get('blog/{id}/{slug?}',['as'=>'blog.detail','uses'=>'BlogController@select_detail'])->where(['id'=>'[0-9A-Za-z.\-\/]+','slug'=>'[A-Za-z0-9.\-\/]+']);
 
-Route::get('contact',function(){
-	return view('pages.contact');
-});
+Route::get('contact',['as'=>'getContact','uses'=>'ContactController@getContact']);
+Route::post('contact',['as'=>'postContact','uses'=>'ContactController@postContact']);
+
 Route::get('demo',function(){
 	return view('pages.demo');
 });
-Route::get('faq',function(){
-	return view('pages.faq');
-});
+
+Route::get('faq',['as'=>'faq','uses'=>'FaqController@select_all']);
+
 Route::get('fee',function(){
 	return view('pages.fee');
 });
@@ -52,9 +52,10 @@ Route::get('intergration01',function(){
 Route::get('intergration02',['as'=>'intergration02','uses'=>'IntergrationController@select_all']);
 Route::get('intergration02/{id}/{slug?}',['as'=>'intergration02.detail','uses'=>'IntergrationController@select_detail'])
 ->where(['id'=>'[0-9A-Za-z.\-\/]+','slug'=>'[A-Za-z0-9.\-\/]+']);
-Route::get('introduction-case01',function(){
-	return view('pages.introduction-case01');
-});
+
+Route::get('introduction-case01',['as'=>'introduction01','uses'=>'IntroductionController@select_all']);
+Route::post('introduction-case01/ajax',['as'=>'introduction01.load','uses'=>'IntroductionController@loadAjax']);
+
 Route::get('introduction-case02',function(){
 	return view('pages.introduction-case02');
 });
@@ -79,6 +80,18 @@ Route::get('startguide',function(){
 Route::get('support',function(){
 	return view('pages.support');
 });
+
+Route::get('signup',['as'=>'signup','uses'=>'Auth\AuthController@getRegister']);
+Route::post('signup',['as'=>'signup.post','uses'=>'Auth\AuthController@postRegister']);
+
+Route::get('login',['as'=>'login','uses'=>'Auth\AuthController@getLogin']);
+Route::post('login',['as'=>'login.post','uses'=>'Auth\AuthController@postLogin']);
+Route::get('logout', 'Auth\AuthController@logout');
+// Route::get('logout',['as'=>'logout','uses'=>'Auth\AuthController@getLogout']);
+
+Route::get('password/reset/{token?}',['as'=>'password.reset','uses'=>'Auth\PasswordController@showResetForm']);
+Route::post('password/email',['as'=>'password.sendEmail','uses'=>'Auth\PasswordController@sendResetLinkEmail']);
+Route::post('password/reset',['as'=>'password.reset','uses'=>'Auth\PasswordController@reset']);
 
 // Route::get('make-unicode',function(){
 // 	$blog = \App\Models\Faq::all();

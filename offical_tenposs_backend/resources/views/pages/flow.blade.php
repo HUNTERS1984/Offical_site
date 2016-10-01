@@ -3,11 +3,11 @@
 @section('title','FLOW')
 
 @section('css')
-	{{Html::style(env('PATH_FRONTEND').'/css/flow.css')}}
+	{{Html::style(asset('assets/frontend').'/css/flow.css')}}
 @stop
 
 @section('script')
-	{{Html::script(env('PATH_FRONTEND').'/js/jquery.viewportchecker.min.js')}}
+	{{Html::script(asset('assets/frontend').'/js/jquery.viewportchecker.min.js')}}
 	<script>
 	$(document).ready(function(){
 		setAnimation('.each-flow');
@@ -43,7 +43,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-3 ">
-							<img src="{{env('PATH_FRONTEND')}}/img/flow/phone-01.png" class="img-responsive pull-md-right" alt="">
+							<img src="{{asset('assets/frontend')}}/img/flow/phone-01.png" class="img-responsive pull-md-right" alt="">
 						</div>
 						<div class="col-md-8 col-md-offset-1">
 							<div class="wrap-top-section">
@@ -73,7 +73,7 @@
 								<p class="title-container">１ヶ月無料お試し登録</p>
 								<div class="row">
 									<div class="col-md-5">
-										<img src="{{env('PATH_FRONTEND')}}/img/flow/tenposs-flow-04.png" class="img-responsive" alt="">
+										<img src="{{asset('assets/frontend')}}/img/flow/tenposs-flow-04.png" class="img-responsive" alt="">
 									</div>
 									<div class="col-md-7">
 										<p class="title-top-content">アプリの機能を除くすべての機能が１ヶ月間無料で使えます。</p>
@@ -122,7 +122,7 @@
 							</div>
 
 							<div class="each-flow clearfix">
-								<div class="left-each" data-number="5"><img src="{{env('PATH_FRONTEND')}}/img/flow/small-logo-02.png" class="img-responsive" alt="">ご利用開始</div>
+								<div class="left-each" data-number="5"><img src="{{asset('assets/frontend')}}/img/flow/small-logo-02.png" class="img-responsive" alt="">ご利用開始</div>
 								<div class="right-each">
 									管理画面上からお店の店内やスタッフ写真をアップロードし、簡単な文章を入れるだけ。 あっという間にアプリとスマホサイトが完成します！<br/>
 									（※トライアル期間中は、スマホサイトのみの利用となります。本契約後にアプリ機能もご利用頂けます。）

@@ -3,11 +3,11 @@
 @section('title','FUNCTION')
 
 @section('css')
-	{{Html::style(env('PATH_FRONTEND').'/css/function.css')}}
+	{{Html::style(asset('assets/frontend').'/css/function.css')}}
 @stop
 
 @section('script')
-	{{Html::script(env('PATH_FRONTEND').'/js/jquery.viewportchecker.min.js')}}
+	{{Html::script(asset('assets/frontend').'/js/jquery.viewportchecker.min.js')}}
 	<script>
 	$(document).ready(function(){
 		setAnimation('.function-top-section');
@@ -47,7 +47,7 @@
 									アプリだけでなく、<span>スマホサイト・レスポンシブサイト </span>が出来る！<br/>
 									<span>スマホ・タブレット・PC</span>あらゆるデバイスユーザーを逃がしません。
 								</p>
-								<img src="{{env('PATH_FRONTEND')}}/img/function/tenposs-function-03.png" alt="" class="img-responsive">
+								<img src="{{asset('assets/frontend')}}/img/function/tenposs-function-03.png" alt="" class="img-responsive">
 
 								<p class="content">
 									我々の企業理念は、「有りたいを有りうるに」です。<br/>
@@ -78,44 +78,44 @@ tenposs team　メンバー一同
 				<div class="content-section">
 					<div class="container">
 						<div class="row">
-							<div class="col-md-4">
+							<div class="col-md-4 col-xs-6">
 								<div class="each-middle">
-									<a href="#"><img src="{{env('PATH_FRONTEND')}}/img/function/tenposs-function-img-02.png" class="img-responsive" alt=""></a>
+									<a href="#"><img src="{{asset('assets/frontend')}}/img/function/tenposs-function-img-02.png" class="img-responsive" alt=""></a>
 									<h3 class="title-middle"><a href="#">SNSと連携できる</a></h3>
 								</div>
 							</div>
 
-							<div class="col-md-4">
+							<div class="col-md-4 col-xs-6">
 								<div class="each-middle">
-									<a href="#"><img src="{{env('PATH_FRONTEND')}}/img/function/tenposs-function-img-03.png" class="img-responsive" alt=""></a>
+									<a href="#"><img src="{{asset('assets/frontend')}}/img/function/tenposs-function-img-03.png" class="img-responsive" alt=""></a>
 									<h3 class="title-middle"><a href="#">クーポンを発行できる</a></h3>
 								</div>
 							</div>
 
-							<div class="col-md-4">
+							<div class="col-md-4 col-xs-6">
 								<div class="each-middle">
-									<a href="#"><img src="{{env('PATH_FRONTEND')}}/img/function/tenposs-function-img-04.png" class="img-responsive" alt=""></a>
+									<a href="#"><img src="{{asset('assets/frontend')}}/img/function/tenposs-function-img-04.png" class="img-responsive" alt=""></a>
 									<h3 class="title-middle"><a href="#">ユーザーにアピールできる</a></h3>
 								</div>
 							</div>
 
-							<div class="col-md-4">
+							<div class="col-md-4 col-xs-6">
 								<div class="each-middle">
-									<a href="#"><img src="{{env('PATH_FRONTEND')}}/img/function/tenposs-function-img-05.png" class="img-responsive" alt=""></a>
+									<a href="#"><img src="{{asset('assets/frontend')}}/img/function/tenposs-function-img-05.png" class="img-responsive" alt=""></a>
 									<h3 class="title-middle"><a href="#">シンプルなホーム画面</a></h3>
 								</div>
 							</div>
 
-							<div class="col-md-4">
+							<div class="col-md-4 col-xs-6">
 								<div class="each-middle">
-									<a href="#"><img src="{{env('PATH_FRONTEND')}}/img/function/tenposs-function-img-06.png" class="img-responsive" alt=""></a>
+									<a href="#"><img src="{{asset('assets/frontend')}}/img/function/tenposs-function-img-06.png" class="img-responsive" alt=""></a>
 									<h3 class="title-middle"><a href="#">アクセスや電話もアプリから</a></h3>
 								</div>
 							</div>
 
 							<div class="col-md-4">
 								<div class="each-middle">
-									<a href="#"><img src="{{env('PATH_FRONTEND')}}/img/function/tenposs-function-img-07.png" class="img-responsive" alt=""></a>
+									<a href="#"><img src="{{asset('assets/frontend')}}/img/function/tenposs-function-img-07.png" class="img-responsive" alt=""></a>
 									<h3 class="title-middle"><a href="#">沢山の写真でお店の魅力を発信</a></h3>
 								</div>
 							</div>

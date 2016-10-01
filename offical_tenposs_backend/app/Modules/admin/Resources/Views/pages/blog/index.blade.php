@@ -16,7 +16,7 @@
 				<div class="col-xs-12">
 					<div class="box-action pull-right">
 						<a href="{!!route('admin.blog.create')!!}" class="btn btn-primary btn-sm"><i class="glyphicon glyphicon-plus"></i> Add New</a>
-						<button type="button" class="btn btn-danger btn-sm" data-method="remove" id="btn-remove"><i class="glyphicon glyphicon-remove"></i> Remove</button>
+						<!-- <button type="button" class="btn btn-danger btn-sm" data-method="remove" id="btn-remove"><i class="glyphicon glyphicon-remove"></i> Remove</button> -->
 					</div>
 				</div>
 			</div>
@@ -80,7 +80,7 @@ $(function() {
 	var table = $("#users-table").DataTable({
 		'bLengthChange':false,
 		"paging":true,
-		'pageLength':4,
+		'pageLength':15,
 		 aoColumnDefs: [
             { "aTargets": [ 0 ], "bSortable": false, "visible": false, "searchable": false},
             { "aTargets": [ 2 ], "bSortable": false },

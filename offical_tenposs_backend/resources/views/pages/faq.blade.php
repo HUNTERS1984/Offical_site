@@ -3,11 +3,11 @@
 @section('title','FAQ')
 
 @section('css')
-	{{Html::style(env('PATH_FRONTEND').'/css/faq.css')}}
+	{{Html::style(asset('assets/frontend').'/css/faq.css')}}
 @stop
 
 @section('script')
-	{{Html::script(env('PATH_FRONTEND').'/js/jquery.viewportchecker.min.js')}}
+	{{Html::script(asset('assets/frontend').'/js/jquery.viewportchecker.min.js')}}
 	<script>
 	$(document).ready(function(){
 
@@ -44,54 +44,27 @@
 			<div class="section faq-section">
 				<div class="content-section">
 					<div class="container">
-						<div class="each-faq">
-							<h3 class="title-each">“導入前”に関するご質問</h3>
-							<div class="wrap-each">
-								<div class="question">
-									<span class="left">Q.</span>
-									<span class="text">tenpossとは？</span>
+						@if(!$type->isEmpty())
+						@foreach($type as $item_faq)
+						<div class="each-faq {{$item_faq == $type->last() ? 'last' : ''}}">
+							<h3 class="title-each">{{$item_faq->title}}</h3>
+							@if($item_faq->faqs()->first())
+							@foreach($item_faq->faqs()->select('id','question','answer')->get() as $item)
+								<div class="wrap-each">
+									<div class="question">
+										<span class="left">Q.</span>
+										<span class="text">{{$item->question}}</span>
+									</div>
+									<div class="answer">
+										<span class="left">A.</span>
+										<span class="text">{{$item->answer}}</span>
+									</div>
 								</div>
-								<div class="answer">
-									<span class="left">A.</span>
-									<span class="text">お客様のオリジナルアプリを簡単に作成できます。プログラミングの知識は一切不要でリッチなアプリを簡単に作ることが 出来ます。また更新管理もPC・スマホから手軽に出来ます。詳しくは 概要 をご覧ください。</span>
-								</div>
-							</div>
-							<div class="wrap-each">
-								<div class="question">
-									<span class="left">Q.</span>
-									<span class="text">tenpossとは？</span>
-								</div>
-								<div class="answer">
-									<span class="left">A.</span>
-									<span class="text">お客様のオリジナルアプリを簡単に作成できます。プログラミングの知識は一切不要でリッチなアプリを簡単に作ることが 出来ます。また更新管理もPC・スマホから手軽に出来ます。詳しくは 概要 をご覧ください。</span>
-								</div>
-							</div>
-							<div class="wrap-each last">
-								<div class="question">
-									<span class="left">Q.</span>
-									<span class="text">tenpossとは？</span>
-								</div>
-								<div class="answer">
-									<span class="left">A.</span>
-									<span class="text">お客様のオリジナルアプリを簡単に作成できます。プログラミングの知識は一切不要でリッチなアプリを簡単に作ることが 出来ます。また更新管理もPC・スマホから手軽に出来ます。詳しくは 概要 をご覧ください。</span>
-								</div>
-							</div>
+							@endforeach
+							@endif
 						</div>
-
-						<div class="each-faq">
-							<h3 class="title-each">“導入前”に関するご質問</h3>
-							<div class="wrap-each last">
-								<div class="question">
-									<span class="left">Q.</span>
-									<span class="text">tenpossとは？</span>
-								</div>
-								<div class="answer">
-									<span class="left">A.</span>
-									<span class="text">お客様のオリジナルアプリを簡単に作成できます。プログラミングの知識は一切不要でリッチなアプリを簡単に作ることが 出来ます。また更新管理もPC・スマホから手軽に出来ます。詳しくは 概要 をご覧ください。</span>
-								</div>
-							</div>
-						</div>
-
+						@endforeach
+						@endif
 					</div>
 				</div>	<!-- end content section -->
 			</div>

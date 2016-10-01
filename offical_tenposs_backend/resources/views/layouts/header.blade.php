@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4 clearfix">
-				<a href="#" class="logo"><img src="{{asset(env('PATH_FRONTEND'))}}/img/logo.png" class="img-responsive" alt="TENPOSS"></a>
+				<a href="#" class="logo"><img src="{{asset('assets/frontend')}}/img/logo.png" class="img-responsive" alt="TENPOSS"></a>
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed collapse-me" data-toggle="collapse" data-target="#mainMenu" aria-expanded="false">Menu</button>
 				</div>

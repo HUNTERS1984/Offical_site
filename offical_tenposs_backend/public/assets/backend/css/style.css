@@ -126,3 +126,28 @@ input[type="checkbox"] {
 	background: #4cda60;
 	box-shadow: 0 0 1px #4cda60;
 }
+
+.modal .wrap-modal{
+	padding:15px 0;
+}
+.modal .wrap-modal h3.title-modal{
+	padding-bottom:10px;
+	padding-left:15px;
+	border-bottom:1px solid #7f0b0b;
+	margin-bottom:10px;
+	font-size:14px;
+	text-transform: uppercase;
+}
+.modal .wrap-modal.top-body{
+	margin-bottom:10px;
+}
+
+
+.modal .wrap-modal.bottom-body .wrap-table{
+	max-height:400px;
+	overflow-y:scroll;
+}
+.box-display .row{
+	margin-bottom:10px;
+}
+

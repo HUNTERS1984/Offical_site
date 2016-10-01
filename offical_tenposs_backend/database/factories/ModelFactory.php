@@ -30,6 +30,12 @@ $factory->define(App\Models\Blog::class, function (Faker\Generator $faker){
 	];
 });
 
+$factory->define(App\Models\FaqType::class, function(Faker\Generator $faker){
+	return [
+		'title' => $faker->sentence(),
+	];
+});
+
 $factory->define(App\Models\Faq::class, function(Faker\Generator $faker){
 	return [
 		'question' => $faker->sentence(),

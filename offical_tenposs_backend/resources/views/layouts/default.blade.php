@@ -3,9 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="csrf-token" content="{!! csrf_token() !!}">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
 
-	{{Html::style(env('PATH_FRONTEND').'/css/bootstrap.min.css')}}
-	{{Html::style(env('PATH_FRONTEND').'/css/animate.css')}}
+	{{Html::style(asset('assets/frontend').'/css/bootstrap.min.css')}}
+	{{Html::style(asset('assets/frontend').'/css/animate.css')}}
 	@yield('css')
 	
 	<title>@yield('title', 'Tenposs Offical')</title>
@@ -18,8 +21,8 @@
 		@include('layouts.footer')
 	</div>
 	
-	{{Html::script(env('PATH_FRONTEND').'/js/jquery-1.11.2.min.js')}}
-	{{Html::script(env('PATH_FRONTEND').'/js/bootstrap.min.js')}}
+	{{Html::script(asset('assets/frontend').'/js/jquery-1.11.2.min.js')}}
+	{{Html::script(asset('assets/frontend').'/js/bootstrap.min.js')}}
 	@yield('script')
-	{{Html::script(env('PATH_FRONTEND').'/js/common.js')}}
+	{{Html::script(asset('assets/frontend').'/js/common.js')}}
 </body>

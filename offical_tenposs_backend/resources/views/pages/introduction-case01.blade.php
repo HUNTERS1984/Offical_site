@@ -3,16 +3,29 @@
 @section('title','INTRODUCTION CASE')
 
 @section('css')
-	{{Html::style(env('PATH_FRONTEND').'/css/introcase.css')}}
+	{{Html::style(asset('assets/frontend').'/css/introcase.css')}}
 @stop
 
 @section('script')
-	{{Html::script(env('PATH_FRONTEND').'/js/jquery.viewportchecker.min.js')}}
-	{{Html::script(env('PATH_FRONTEND').'/js/jquery.matchHeight-min.js')}}
+	{{Html::script(asset('assets/frontend').'/js/jquery.viewportchecker.min.js')}}
+	{{Html::script(asset('assets/frontend').'/js/jquery.matchHeight-min.js')}}
 
 	<script>
 	$(document).ready(function(){
 		$('.each-introcase').matchHeight();
+
+		$("select[name='intro_type_id']").on('change',function(){
+			var id = $(this).val();
+			var token = $('meta[name="csrf-token"]').attr('content');
+			$.ajax({
+				url : '{{route("introduction01.load")}}',
+				type : 'POST',
+				data : {id: id, _token: token},
+				success:function(data){
+					$('.wrap-ajax').html(data.msg);
+				}
+ 			})
+		})
 	})
 	</script>
 @stop
@@ -44,54 +57,29 @@
 			<h2 class="title-section">あなたの会社に近い業種を選択して下さい。</h2>
 			<div class="content-section">
 				<div class="container">
-					<select name="test" id="choseCase">
-						<option value="">け・レ</option>
-						<option value="">Case 02</option>
-					</select>
-					<div class="row">
-						<div class="col-md-4">
-							<div class="each-introcase">
-								<a href="#"><img src="{{env('PATH_FRONTEND')}}/img/introduction/img-troduction.jpg" class="img-responsive"  alt=""></a>
-								<h3 class="title-each-introcase"><a href="#">店名が入ります</a></h3>
-								<p class="content"><a href="#">テキストが入りますテキストが入ります テキストが入りますテキストが入ります</a></p>
+					@if(!$data->isEmpty())
+					{{Form::select('intro_type_id',$list,'',['id'=>'choseCase'])}}
+					<div class="wrap-ajax">
+						<div class="row">
+							@foreach($data as $item)
+							<div class="col-md-4">
+								<div class="each-introcase">
+									<a href="#"><img src="{{asset($item->img_url)}}" class="img-responsive"  alt="{{$item->img_alt}}"></a>
+									<h3 class="title-each-introcase"><a href="#">{{$item->title}}</a></h3>
+									<p class="content"><a href="#">{{Str::words($item->content,20)}}</a></p>
+								</div>
 							</div>
+							@endforeach
 						</div>
-
-						<div class="col-md-4">
-							<div class="each-introcase">
-								<a href="#"><img src="{{env('PATH_FRONTEND')}}/img/introduction/img-troduction.jpg" class="img-responsive"  alt=""></a>
-								<h3 class="title-each-introcase"><a href="#">店名が入ります</a></h3>
-								<p class="content"><a href="#">テキストが入りますテキストが入ります テキストが入りますテキストが入ります</a></p>
-							</div>
-						</div>
-
-						<div class="col-md-4">
-							<div class="each-introcase">
-								<a href="#"><img src="{{env('PATH_FRONTEND')}}/img/introduction/img-troduction.jpg" class="img-responsive"  alt=""></a>
-								<h3 class="title-each-introcase"><a href="#">店名が入ります</a></h3>
-								<p class="content"><a href="#">テキストが入りますテキストが入ります テキストが入りますテキストが入ります</a></p>
-							</div>
-						</div>
-
-						<div class="col-md-4">
-							<div class="each-introcase">
-								<a href="#"><img src="{{env('PATH_FRONTEND')}}/img/introduction/img-troduction.jpg" class="img-responsive"  alt=""></a>
-								<h3 class="title-each-introcase"><a href="#">店名が入ります</a></h3>
-								<p class="content"><a href="#">テキストが入りますテキストが入ります テキストが入りますテキストが入ります</a></p>
-							</div>
-						</div>
-						
 					</div>
+					
+					
 					<div class="row">
 						<div class="wrap-pagination text-center">
-							<ul class = "pagination">
-							   <li><a href = "#">1</a></li>
-							   <li><a href = "#">2</a></li>
-							   <li><a href = "#">3</a></li>
-							   <li><a href = "#">&#62;</a></li>
-							</ul>
+							{{$data->links()}}
 						</div>
 					</div>
+					@endif
 				</div>
 			</div>
 		</div>

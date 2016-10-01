@@ -25,6 +25,12 @@ class PasswordController extends Controller
      *
      * @return void
      */
+    protected $redirectTo = '/top';
+    
+    protected $linkRequestView = 'pages.password.email_form';
+
+    protected $resetView = 'pages.password.reset_form';
+    
     public function __construct()
     {
         $this->middleware('guest');

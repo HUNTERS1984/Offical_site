@@ -25,7 +25,7 @@
               <span class="label label-warning"></span>
             </a>
             <ul class="dropdown-menu">
-              <li class="header">Bạn có  5  thông báo mới</li>
+              <li class="header">5 new messages</li>
               <li>
                 <!-- inner menu: contains the messages -->
                 <ul class="menu">
@@ -42,7 +42,7 @@
                 </ul>
                 <!-- /.menu -->
               </li>
-              <li class="footer"><a href="">Tất cả liên hệ</a></li>
+              <li class="footer"><a href="">All contact</a></li>
             </ul>
           </li>
           <!-- /.messages-menu -->
@@ -67,7 +67,7 @@
 
                 <p>
                   <b></b>
-                  <small>Member since Nov. 2012</small>
+                  <small>Welcome to Dashboard</small>
                 </p>
               </li>
               <!-- Menu Body -->
@@ -75,10 +75,10 @@
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
-                      <a href="" class="btn btn-default btn-flat">Thay đổi mật khẩu</a>
+                      <!-- <a href="" class="btn btn-default btn-flat">Profile</a> -->
                 </div>
                 <div class="pull-right">
-                  <a href="" class="btn btn-default btn-flat">Sign out</a>
+                  <a href="{{url('admin/logout')}}" class="btn btn-default btn-flat">Sign out</a>
                 </div>
               </li>
             </ul>
