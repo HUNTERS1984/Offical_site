@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UI Admin Accept Management 01</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="css/green.css" rel="stylesheet">
+    <!-- Custom Theme Style -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="index.html" class="site_title">
+                <span class="logo-m"><img src="images/logo.png" alt=""> </span>
+                <span class="logo-pc"><img src="images/pon.png" alt=""></span>
+              </a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile">
+              <div class="profile_pic">
+                <img src="images/avatar.png" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <strong>ユーザーネーム</strong>
+                <h2><i class="fa fa-circle"></i>オンライン</h2>
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <br />
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>Menu</h3>
+                <ul class="nav side-menu">
+                  <li><a href="" title="">TOP</a></li>
+                  <li><a href="" title="">クーポン一覧</a> </li>
+                  <li><a href="" title="">プッシュ通知</a></li>
+                  <li class="active"><a href="" title="">アクセス解析</a></li>
+                  <li><a href="" title="">承認管理</a></li>
+                  <li><a href="" title="">顧客管理</a></li>
+                  <li><a href="" title="">お知らせ・新着</a></li>
+                </ul>
+              </div>
+              <div class="menu_section">
+                <h3>Other</h3>
+                 <ul class="nav side-menu">
+                  <li><a href="" title="">アカウント設定</a></li>
+                  <li><a href="" title="">ヘルプ</a> </li>
+                  <li><a href="" title="">お問い合わせ</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- /sidebar menu -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          
+          <!-- nav_menu -->  
+          <div class="nav_menu">
+            <nav>
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+              <ul class="nav-top-bar">
+                <li><a href=""><i class="fa fa-plus"></i> QRコード出力</a></li>
+                <li><a href=""><i class="fa fa-plus"></i> 新規クーポン作成</a></li>
+              </ul>
+            </nav>
+          </div>
+          <!-- /nav_menu
+
+          <!-- breadcrumbs -->
+          <div class="wrapp_breadcrumbs">
+           <div class="content_breadcrumbs">
+            <div class="col-md-12">
+              <div class="col-xs-2">
+                <strong class="text_no_breadcrumbs">承認管理</strong>
+              </div>
+              <div class="col-xs-7">
+                <div class="btn-group btn-group-justified"> 
+                  <a href="#" class="btn btn-default btn_tab_breadcrumbs active" role="button">アクセス</a>
+                  <a href="#" class="btn btn-default btn_tab_breadcrumbs" role="button">クーポン</a> 
+                </div>
+              </div>
+              <div class="col-xs-3">
+                <ul class="nav_up_que">
+                  <li><a href="" class="icon_upload"></a></li>
+                  <li><a href="" class="icon_question"></a></li>
+                </ul>
+              </div>
+            </div>
+           </div>
+          </div>
+          <!-- /breadcrumbs -->
+
+        </div>
+        <!-- /top navigation -->        
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          
+          <div class="wrapp_chart">
+            <div class="demo-container" style="height:280px">
+                <div id="placeholder33x" class="demo-placeholder"></div>
+            </div>
+          </div>
+          <div class="wrapp_chart_tab">
+            <div class="row">
+              <div class="col-md-4 col-xs-6">
+                <div class="wrapp_chart_tab_content">
+                  <p>ユーザー数</p>
+                  <p><h2>29,147</h2></p>
+                </div>
+              </div>
+              <div class="col-md-4 col-xs-6">
+                <div class="wrapp_chart_tab_content">
+                  <p>セッション</p>
+                  <p><h2>247,837</h2></p>
+                </div>
+              </div>
+              <div class="col-md-4 col-xs-6">
+                <div class="wrapp_chart_tab_content">
+                  <p>スクリーンビュー</p>
+                  <p><h2>1,002,719</h2></p>
+                </div>
+              </div>
+              <div class="col-md-4 col-xs-6">
+                <div class="wrapp_chart_tab_content">
+                  <p>離脱率</p>
+                  <p><h2>64.07%</h2></p>
+                </div>
+              </div>
+              <div class="col-md-4 col-xs-6">
+                <div class="wrapp_chart_tab_content">
+                  <p>平均セッション時間</p>
+                  <p><h2>00:01:48</h2></p>
+                </div>
+              </div>
+              <div class="col-md-4 col-xs-6">
+                <div class="wrapp_chart_tab_content">
+                  <p>新規セッション率</p>
+                  <p><h2>0.29%</h2></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- /page content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- iCheck -->
+    <script src="js/icheck.min.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="js/custom.min.js"></script>
+    <!-- Chart.js -->
+    <script src="js/Chart.min.js"></script>
+    <!-- Flot -->
+    <script src="js/jquery.flot.js"></script>
+    <script src="js/jquery.flot.time.js"></script>
+    <!-- DateJS -->
+    <script src="js/date.js"></script>
+
+
+    <!-- Flot -->
+    <script>
+      $(document).ready(function() {
+        //define chart clolors ( you maybe add more colors if you want or flot will add it automatic )
+        var chartColours = ['#96CA59', '#3F97EB', '#72c380', '#6f7a8a', '#f7cb38', '#5a8022', '#2c7282'];
+
+        //generate random number for charts
+        randNum = function() {
+          return (Math.floor(Math.random() * (1 + 40 - 20))) + 20;
+        };
+
+        var d1 = [];
+        //var d2 = [];
+
+        //here we generate data for chart
+        for (var i = 0; i < 30; i++) {
+          d1.push([new Date(Date.today().add(i).days()).getTime(), randNum() + i + i + 10]);
+          //    d2.push([new Date(Date.today().add(i).days()).getTime(), randNum()]);
+        }
+
+        var chartMinDate = d1[0][0]; //first day
+        var chartMaxDate = d1[20][0]; //last day
+
+        var tickSize = [1, "day"];
+        var tformat = "%d/%m/%y";
+
+        //graph options
+        var options = {
+          grid: {
+            show: true,
+            aboveData: true,
+            color: "#3f3f3f",
+            labelMargin: 10,
+            axisMargin: 0,
+            borderWidth: 0,
+            borderColor: null,
+            minBorderMargin: 5,
+            clickable: true,
+            hoverable: true,
+            autoHighlight: true,
+            mouseActiveRadius: 100
+          },
+          series: {
+            lines: {
+              show: true,
+              fill: true,
+              lineWidth: 2,
+              steps: false
+            },
+            points: {
+              show: true,
+              radius: 4.5,
+              symbol: "circle",
+              lineWidth: 3.0
+            }
+          },
+          legend: {
+            position: "ne",
+            margin: [0, -25],
+            noColumns: 0,
+            labelBoxBorderColor: null,
+            labelFormatter: function(label, series) {
+              // just add some space to labes
+              return label + '&nbsp;&nbsp;';
+            },
+            width: 40,
+            height: 1
+          },
+          colors: chartColours,
+          shadowSize: 0,
+          tooltip: true, //activate tooltip
+          tooltipOpts: {
+            content: "%s: %y.0",
+            xDateFormat: "%d/%m",
+            shifts: {
+              x: -30,
+              y: -50
+            },
+            defaultTheme: false
+          },
+          yaxis: {
+            min: 0
+          },
+          xaxis: {
+            mode: "time",
+            minTickSize: tickSize,
+            timeformat: tformat,
+            min: chartMinDate,
+            max: chartMaxDate
+          }
+        };
+        var plot = $.plot($("#placeholder33x"), [{
+          label: "Email Sent",
+          data: d1,
+          lines: {
+            fillColor: "rgba(150, 202, 89, 0.12)"
+          }, //#96CA59 rgba(150, 202, 89, 0.42)
+          points: {
+            fillColor: "#fff"
+          }
+        }], options);
+      });
+    </script>
+    <!-- /Flot -->
+  </body>
+</html>
