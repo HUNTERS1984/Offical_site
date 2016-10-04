@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Summary</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href='css/normalize.css' rel='stylesheet'>
+  <link href='css/bootstrap.css' rel='stylesheet'>
+  <link href='css/font-awesome.css' rel='stylesheet'>
+  <link href="css/vertical-responsive-menu.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+<!-- header -->
+<header class="header clearfix">
+  <button type="button" id="toggleMenu" class="toggle_menu">
+    <i class="fa fa-bars"></i>
+  </button>
+    
+  <h1><a href=""><img src="images/pon.png" alt=""></a></h1>
+    
+  <button id="collapse_menu" class="collapse_menu">
+    <i class="collapse_menu--icon fa fa-bars"></i>
+  </button>
+
+  <ul class="btn_top_right">
+    <li>
+      <a href="">
+        <span class="fa fa-plus" aria-hidden="true"></span> 
+        <span class="text_btn_top_right">QRコード出力</span>
+      </a>
+    </li>
+    <li>
+      <a href="">
+        <span class="fa fa-plus" aria-hidden="true"></span>
+        <span class="text_btn_top_right">新規クーポン作成</span>
+      </a>
+    </li>
+  </ul>
+</header>
+<!-- //header -->
+
+<!-- menu left -->
+<nav class="vertical_nav">
+  <ul class="profile">
+    <li><img src="images/avatar.png" alt=""></li>
+    <li>
+      <strong>ユーザーネーム</strong>
+      <p><i class="fa fa-circle"></i> オンライン</p>
+    </li>
+  </ul>
+  <ul id="js-menu" class="menu">
+    <li class="menu--item">
+      <span class="menu--label--top">Menu</span>
+    </li>
+    <li class="menu--item">
+      <a href="#" class="menu--link" title="Top">
+        <i class="menu--icon  fa fa-fw fa fa-circle"></i>
+        <span class="menu--label">Top</span>
+      </a>
+    </li>
+    <li class="menu--item">
+      <a href="#" class="menu--link active" title="クーポン一覧">
+        <i class="menu--icon  fa fa-fw fa fa fa-wrench"></i>
+        <span class="menu--label">クーポン一覧</span>
+      </a>
+    </li>
+    <li class="menu--item">
+      <a href="#" class="menu--link" title="プッシュ通知">
+        <i class="menu--icon  fa fa-fw fa fa-circle"></i>
+        <span class="menu--label">プッシュ通知</span>
+      </a>
+    </li>
+    <li class="menu--item">
+      <a href="#" class="menu--link" title="アクセス解析">
+        <i class="menu--icon  fa fa-fw fa fa-circle"></i>
+        <span class="menu--label">アクセス解析</span>
+      </a>
+    </li>
+    <li class="menu--item">
+      <a href="#" class="menu--link" title="承認管理">
+        <i class="menu--icon  fa fa-fw fa fa-user-plus"></i>
+        <span class="menu--label">承認管理</span>
+      </a>
+    </li>
+    <li class="menu--item">
+      <a href="#" class="menu--link" title="顧客管理">
+        <i class="menu--icon  fa fa-fw fa fa-circle"></i>
+        <span class="menu--label">顧客管理</span>
+      </a>
+    </li>
+    <li class="menu--item">
+      <a href="#" class="menu--link" title="お知らせ・新着">
+        <i class="menu--icon  fa fa-fw fa fa-circle"></i>
+        <span class="menu--label">お知らせ・新着</span>
+      </a>
+    </li>
+    <li class="menu--item">
+      <span class="menu--label--top">Other</span>
+    </li>
+    <li class="menu--item">
+      <a href="#" class="menu--link" title="アカウント設定">
+        <i class="menu--icon  fa fa-fw fa fa-circle"></i>
+        <span class="menu--label">アカウント設定</span>
+      </a>
+    </li>
+    <li class="menu--item">
+      <a href="#" class="menu--link" title="ヘルプ">
+        <i class="menu--icon  fa fa-fw fa fa-question-circle"></i>
+        <span class="menu--label">ヘルプ</span>
+      </a>
+    </li>
+    <li class="menu--item">
+      <a href="#" class="menu--link" title="お問い合わせ">
+        <i class="menu--icon  fa fa-fw fa fa-comments"></i>
+        <span class="menu--label">お問い合わせ</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+<!-- //menu left -->
+
+<!-- wrapper -->
+<div class="wrapper">
+
+  <!-- wrapp_breadcrumbs -->
+  <div class="wrapp_breadcrumbs">
+    <div class="row">
+      <div class="col-md-3 col-xs-12">
+        <ul class="breadcrumbs_left">
+          <li><span class="text_bre">承認管理</span></li>
+          <li><span class="no_bre">12</span></li>
+        </ul>
+      </div>
+      <div class="col-md-6 col-xs-12">
+        <div class="btn-group btn-group-justified"> 
+          <a href="#" class="btn btn-default btn_tab_breadcrumbs active" role="button">全て</a> 
+          <a href="#" class="btn btn-default btn_tab_breadcrumbs" role="button">未承認</a> 
+          <a href="#" class="btn btn-default btn_tab_breadcrumbs" role="button">承認済み</a> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //wrapp_breadcrumbs -->
+
+  <!-- wrapper_content -->
+  <div class="wrapper_content">
+
+    <!-- wrapp_search_btn -->
+    <div class="wrapp_search_btn">
+      <div class="row">
+        <div class="col-md-6">
+          <form class="form-group">
+            <input type="text" class="form-control has-feedback-left" id="" placeholder="ユーザー名/ハッシュタグを入力してください">
+            <span class="fa fa-search form-control-feedback left" aria-hidden="true"></span>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- //wrapp_search_btn -->
+
+    <!-- wrapp wrapp_summary -->
+    <div class="wrapp_summary">
+      <div class="media">
+        <div class="media-left">
+          <img class="media-object" src="images/img_summary.jpg" alt="">
+        </div>
+        <div class="media-body">
+          <div class="top-media">
+            <h4 class="media-heading">クーポンタイトル</h4>
+            <a href="" class="edit-icon"><i class="fa fa-pencil"></i></a>
+          </div>
+          <div class="top-media">
+            <span class="left"><a href="" class="link-id">ユーザー投稿型</a> ID: 123456</span>
+            <span class="right"><span class="color-red">期限:2016.07.31</span></span>
+          </div>
+          <div class="top-media">
+            <span class="left">#hashtag  #hashtag  #hashtag  #hashtag</span>
+          </div>
+          <div class="top-media">
+            <span class="left">測定ON 自動承認 <a href="" class="link-id-bottom">QRコードを見る</a></span>
+          </div>
+          <div class="top-media">
+            <span>
+              説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="media">
+        <div class="media-left">
+          <img class="media-object" src="images/img_summary.jpg" alt="">
+        </div>
+        <div class="media-body">
+          <div class="top-media">
+            <h4 class="media-heading">クーポンタイトル</h4>
+            <a href="" class="edit-icon"><i class="fa fa-pencil"></i></a>
+          </div>
+          <div class="top-media">
+            <span class="left"><a href="" class="link-id">ユーザー投稿型</a> ID: 123456</span>
+            <span class="right"><span class="color-red">期限:2016.07.31</span></span>
+          </div>
+          <div class="top-media">
+            <span class="left">#hashtag  #hashtag  #hashtag  #hashtag</span>
+          </div>
+          <div class="top-media">
+            <span class="left">測定ON 自動承認 <a href="" class="link-id-bottom">QRコードを見る</a></span>
+          </div>
+          <div class="top-media">
+            <span>
+              説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="media">
+        <div class="media-left">
+          <img class="media-object" src="images/img_summary.jpg" alt="">
+        </div>
+        <div class="media-body">
+          <div class="top-media">
+            <h4 class="media-heading">クーポンタイトル</h4>
+            <a href="" class="edit-icon"><i class="fa fa-pencil"></i></a>
+          </div>
+          <div class="top-media">
+            <span class="left"><a href="" class="link-id">ユーザー投稿型</a> ID: 123456</span>
+            <span class="right"><span class="color-red">期限:2016.07.31</span></span>
+          </div>
+          <div class="top-media">
+            <span class="left">#hashtag  #hashtag  #hashtag  #hashtag</span>
+          </div>
+          <div class="top-media">
+            <span class="left">測定ON 自動承認 <a href="" class="link-id-bottom">QRコードを見る</a></span>
+          </div>
+          <div class="top-media">
+            <span>
+              説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="media">
+        <div class="media-left">
+          <img class="media-object" src="images/img_summary.jpg" alt="">
+        </div>
+        <div class="media-body">
+          <div class="top-media">
+            <h4 class="media-heading">クーポンタイトル</h4>
+            <a href="" class="edit-icon"><i class="fa fa-pencil"></i></a>
+          </div>
+          <div class="top-media">
+            <span class="left"><a href="" class="link-id">ユーザー投稿型</a> ID: 123456</span>
+            <span class="right"><span class="color-red">期限:2016.07.31</span></span>
+          </div>
+          <div class="top-media">
+            <span class="left">#hashtag  #hashtag  #hashtag  #hashtag</span>
+          </div>
+          <div class="top-media">
+            <span class="left">測定ON 自動承認 <a href="" class="link-id-bottom">QRコードを見る</a></span>
+          </div>
+          <div class="top-media">
+            <span>
+              説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="media">
+        <div class="media-left">
+          <img class="media-object" src="images/img_summary.jpg" alt="">
+        </div>
+        <div class="media-body">
+          <div class="top-media">
+            <h4 class="media-heading">クーポンタイトル</h4>
+            <a href="" class="edit-icon"><i class="fa fa-pencil"></i></a>
+          </div>
+          <div class="top-media">
+            <span class="left"><a href="" class="link-id">ユーザー投稿型</a> ID: 123456</span>
+            <span class="right"><span class="color-red">期限:2016.07.31</span></span>
+          </div>
+          <div class="top-media">
+            <span class="left">#hashtag  #hashtag  #hashtag  #hashtag</span>
+          </div>
+          <div class="top-media">
+            <span class="left">測定ON 自動承認 <a href="" class="link-id-bottom">QRコードを見る</a></span>
+          </div>
+          <div class="top-media">
+            <span>
+              説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="media">
+        <div class="media-left">
+          <img class="media-object" src="images/img_summary.jpg" alt="">
+        </div>
+        <div class="media-body">
+          <div class="top-media">
+            <h4 class="media-heading">クーポンタイトル</h4>
+            <a href="" class="edit-icon"><i class="fa fa-pencil"></i></a>
+          </div>
+          <div class="top-media">
+            <span class="left"><a href="" class="link-id">ユーザー投稿型</a> ID: 123456</span>
+            <span class="right"><span class="color-red">期限:2016.07.31</span></span>
+          </div>
+          <div class="top-media">
+            <span class="left">#hashtag  #hashtag  #hashtag  #hashtag</span>
+          </div>
+          <div class="top-media">
+            <span class="left">測定ON 自動承認 <a href="" class="link-id-bottom">QRコードを見る</a></span>
+          </div>
+          <div class="top-media">
+            <span>
+              説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります
+            </span>
+          </div>
+        </div>
+      </div>                        
+    </div>
+    <!--/ wrapp wrapp_summary -->
+
+  </div>
+  <!-- //wrapper_content -->
+
+</div>
+<!-- //wrapper -->
+  
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/vertical-responsive-menu.min.js"></script>
+
+</body>
+</html>
