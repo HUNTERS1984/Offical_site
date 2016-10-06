@@ -631,8 +631,504 @@ span.total_pa{
 .wrapp_summary .media .top-media span span.color-red{
   color: #ff0000;
 }
+.modal-content.modal_coupon .modal-header{
+  padding: 5px 15px;
+  background: #18c0d4;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-topright: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.modal-content.modal_coupon .modal-header .modal-title{
+  line-height: 2;
+}
+.modal-content.modal_coupon .modal-header h4{
+  color: #fff;
+  font-size: 15px;
+}
+.modal-content.modal_coupon .modal-header button.close {
+  float: right;
+  color: #fff;
+  opacity: 1;
+  text-shadow: none;
+}
+.modal-content.modal_coupon button.btn-default.btn-delete {
+  color: #333;
+  background-color: #ff5078;
+  border-color: #ed3962;
+  width: 180px;
+  color: #fff;
+}
+.modal-content.modal_coupon button:hover.btn-default.btn-delete {
+  background-color: #e12953;
+  border-color: #ff5078;
+}
+.modal-content.modal_coupon button.btn-primary.btn-change {
+  color: #333;
+  background-color: #18c0d4;
+  border-color: #0fb3c7;
+  width: 180px;
+  color: #fff;
+}
+.modal-content.modal_coupon button:hover.btn-primary.btn-change{
+  background-color: #10abbd;
+  border-color: #18c0d4;
+}
+.modal-content.modal_coupon .modal-footer {
+  text-align: center;
+  padding: 6em 0;
+  border-top: 0px solid transparent;
+}
+.modal-content.modal_coupon form .form-group {
+    margin-bottom: 30px;
+}
+.modal-content.modal_coupon form select.form-control{
+  width: 50%;
+}
+.modal-content.modal_coupon form .select_day{
+  clear: both;
+}
+.modal-content.modal_coupon form .select_day select.form-control.sum_year{
+  float: left;
+  width: 15%;
+}
+.modal-content.modal_coupon form .select_day select.form-control.sum_month{
+  float: left;
+  width: 10%;
+  margin-left: 1em;
+}
+.modal-content.modal_coupon form .select_day select.form-control.sum_day{
+  float: left;
+  width: 10%;
+  margin-left: 1em;
+}
+.modal-content.modal_coupon .btn_setting_avatar{
+  padding-top: 173px;
+}
+.modal-content.modal_coupon .btn_setting_avatar a{
+  border: 2px solid #18c0d4;
+  padding: 8px 30px;
+  color: #18c0d4;
+  border-radius: 3px;
+  vertical-align: bottom;
+}
+.modal-content.modal_coupon .btn_setting_avatar a:hover{
+  border: 2px solid #7a8387;
+  color: #7a8387;
+  text-decoration: none;
+}
+.modal-content.modal_coupon button.btn.btn-setting{
+  text-align: center;
+  background: #18c0d4;
+  width: 50%;
+  height: 34px;
+  color: #fff;
+  margin: 35px auto;
+}
+.modal-content.modal_coupon button:hover.btn.btn-setting{
+  background: #11a1b2;
+}
+.modal-content.modal_coupon .form-setting{
+  clear: both;
+  padding: 35px 0 0 0;
+}
+.modal-content.modal_coupon .row.wrapp_avar_btn img{
+  border: 1px solid #ced2d6;
+  border-radius: 3px;
+}
 /* //summary */
 
+/* //top */
+.wrapp_top{
+  clear: both;
+  overflow: hidden;
+}
+.wrapp_top .span_title{
+  text-align: left;
+  clear: both;
+  padding-top: 1em;
+}
+.category_top{
+  clear: both;
+  margin-top: 1em;
+}
+.category_top .content_category_top{
+  box-shadow: 1px 1px 5px 0px #888;
+  margin-bottom: 2em;
+  padding-bottom: 0.5em;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 4px;
+  border: 1px solid #d2d3d5;
+}
+.category_top .content_category_top img.img_top{
+  width: 100%;
+  border-bottom: 1px solid #d2d3d5;
+}
+.category_top .content_category_top h3.h3_title{
+  text-align: left;
+  padding: 1em 1em 1.5em 1em;
+  font-size: 1.1em;
+  color: #505a5e;
+  margin: 0;
+  font-weight: bold;
+}
+.category_top .content_category_top p a.link_blue{
+  padding: 0 1em;
+  color: #18c0d4;
+  font-weight: bold;
+}
+.category_top .content_category_top p a:hover.link_blue{
+      color: #3c90c8;
+}
+.category_top .content_category_top p span.red{
+  padding: 0 1em;
+  color: #ff0000;
+}
+.wrapp_top .tab_top{
+  clear: both;
+  margin: 1em 0 0 0;
+  padding-top: 1em;
+}
+.wrapp_top .tab_top .content_tab_top{
+  padding: 4em 2em;
+  background: #fff;
+  -moz-box-shadow: 0 0 5px #ccc;
+  -webkit-box-shadow: 0 0 5px #ccc;
+  box-shadow: 0 0 5px #ccc;
+  border: 1px solid #c8d2d6;
+  text-align: center;
+  margin: 0 0 1.6em 0;
+}
+.wrapp_top .tab_top .content_tab_top h3{
+  color: #48a2d2;
+  font-size: 2.5em;
+  margin: 0;
+  padding: 0;
+}
+.wrapp_top .wrapp_chart{
+  margin: 1em 0 0 0;
+  padding: 2em 2em;
+  background: #fff;
+  overflow: hidden;
+  -moz-box-shadow: 0 0 5px #ccc;
+  -webkit-box-shadow: 0 0 5px #ccc;
+  box-shadow: 0 0 5px #ccc;
+  border: 1px solid #c8d2d6;
+}
+.modal-content.modal_coupon_top .modal-header{
+  padding: 5px 15px;
+  background: #18c0d4;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-topright: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.modal-content.modal_coupon_top .modal-header .modal-title{
+  line-height: 2;
+}
+.modal-content.modal_coupon_top .modal-header h4{
+  color: #fff;
+  font-size: 15px;
+}
+.modal-content.modal_coupon_top .modal-header button.close {
+  float: right;
+  color: #fff;
+  opacity: 1;
+  text-shadow: none;
+}
+.modal-content.modal_coupon_top button.btn-primary.btn-change {
+  color: #333;
+  background-color: #18c0d4;
+  border-color: #0fb3c7;
+  width: 350px;
+  color: #fff;
+}
+.modal-content.modal_coupon_top button:hover.btn-primary.btn-change{
+  background-color: #10abbd;
+  border-color: #18c0d4;
+}
+.modal-content.modal_coupon_top .modal-footer {
+  text-align: center;
+  padding: 2em 0 6em 0;
+  border-top: 0px solid transparent;
+}
+.modal-content.modal_coupon_top form .form-group {
+  margin-bottom: 30px;
+  clear: both;
+}
+.modal-content.modal_coupon_top form .form-group span{
+  color: #999;
+  font-size: 12px;
+  line-height: 30px;
+}
+.modal-content.modal_coupon_top form .select_day{
+  clear: both;
+  padding-bottom: 30px;
+}
+.modal-content.modal_coupon_top form .select_day select.form-control.sum_year{
+  float: left;
+  width: 30%;
+}
+.modal-content.modal_coupon_top form .select_day select.form-control.sum_month{
+  float: left;
+  width: 20%;
+  margin-left: 1em;
+}
+.modal-content.modal_coupon_top form .select_day select.form-control.sum_day{
+  float: left;
+  width: 20%;
+  margin-left: 1em;
+}
+.modal-content.modal_coupon_top .btn_setting_avatar{
+  padding-top: 173px;
+}
+.modal-content.modal_coupon_top .btn_setting_avatar a{
+  border: 2px solid #18c0d4;
+  padding: 8px 30px;
+  color: #18c0d4;
+  border-radius: 3px;
+  vertical-align: bottom;
+}
+.modal-content.modal_coupon_top .btn_setting_avatar a:hover{
+  border: 2px solid #7a8387;
+  color: #7a8387;
+  text-decoration: none;
+}
+.modal-content.modal_coupon_top button.btn.btn-setting{
+  text-align: center;
+  background: #18c0d4;
+  width: 50%;
+  height: 34px;
+  color: #fff;
+  margin: 35px auto;
+}
+.modal-content.modal_coupon_top button:hover.btn.btn-setting{
+  background: #11a1b2;
+}
+.modal-content.modal_coupon_top .form-setting{
+  clear: both;
+  padding: 35px 0 0 0;
+}
+.modal-content.modal_coupon_top .row.wrapp_avar_btn img{
+  border: 1px solid #ced2d6;
+  border-radius: 3px;
+}
+.modal-content.modal_coupon_top .wrapp_pr{
+  background: #f8f8fa;
+  border-radius: 3px;
+  border:1px solid #e3e8ea;
+  width: 50%;
+  margin: 4.3em auto;
+  padding: 5em 0;
+  text-align: center;
+}
+/* //top */
+
+/* //analytics */
+.wrapp_analytics{
+  clear: both;
+  overflow: hidden;
+}
+.wrapp_analytics .tab_top{
+  clear: both;
+  margin: 1em 0 0 0;
+  padding-top: 1em;
+}
+.wrapp_analytics .tab_top .content_tab_top{
+  padding: 4em 2em;
+  background: #fff;
+  -moz-box-shadow: 0 0 5px #ccc;
+  -webkit-box-shadow: 0 0 5px #ccc;
+  box-shadow: 0 0 5px #ccc;
+  border: 1px solid #c8d2d6;
+  text-align: center;
+  margin: 0 0 1.6em 0;
+}
+.wrapp_analytics .tab_top .content_tab_top h3{
+  color: #48a2d2;
+  font-size: 2.5em;
+  margin: 0;
+  padding: 0;
+}
+.wrapp_analytics .wrapp_chart{
+  margin: 1em 0 0 0;
+  padding: 2em 2em;
+  background: #fff;
+  overflow: hidden;
+  -moz-box-shadow: 0 0 5px #ccc;
+  -webkit-box-shadow: 0 0 5px #ccc;
+  box-shadow: 0 0 5px #ccc;
+  border: 1px solid #c8d2d6;
+}
+/* //analytics */
+
+/* //push */
+.wrapp_push{
+  margin: 35px 0 0 0;
+  clear: both;
+}
+.wrapp_push .content_push{
+  -moz-box-shadow: 0 0 5px #ccc;
+  -webkit-box-shadow: 0 0 5px #ccc;
+  box-shadow: 0 0 5px #ccc;
+  border-left: 5px solid #18c0d4;
+  border-top: 1px solid #d9dfe2;
+  border-right: 1px solid #d9dfe2;
+  border-bottom: 1px solid #d9dfe2;
+  padding:2em;
+  background: #fff;
+  border-radius: 4px;
+  margin: 0 0 1.5em 0;
+}
+.wrapp_push .content_push .top_push{
+  padding: 1em 0;
+}
+.wrapp_push .content_push .top_push .left_push{
+  float: left;
+  padding:0 0 2em 0;
+}
+.wrapp_push .content_push .top_push .left_push h2{
+  float: left;
+  margin: 0;
+  font-size: 18px;
+  padding: 0;
+  color: #505a5e;
+  font-weight: bold;
+}
+.wrapp_push .content_push .top_push .left_push .des_deliver{
+  clear: both;
+  padding-top: 1em;
+}
+.wrapp_push .content_push .top_push .left_push .des_deliver span.des_push{
+  color: #18c0d4;
+  padding-right: 20px;
+}
+.wrapp_push .content_push .top_push .left_push .des_deliver span.deliver_push{
+  color: #7c868a;
+}
+.wrapp_push .content_push .top_push a.link_blue{
+  float: right;
+  font-size: 16px;
+  color: #18c0d4;
+}
+.wrapp_push .content_push .bottom_push{
+  clear: both;
+  text-align: justify;
+  line-height: 1.7em;
+  margin-top: 2em;
+}
+a.arrow_down.collapsed{
+  margin-top: 2em;
+  width: 100%;
+  display: block;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background: #fff url(../images/arrow_collapse.png) no-repeat 99% 8px;
+  border: 1px solid #c8d2d6;
+  border-radius: 3px;
+  text-decoration: none;
+}
+a.arrow_down{
+  margin-top: 2em;
+  width: 100%;
+  display: block;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background: #18c0d4 url(../images/arrow_collapse_hover.png) no-repeat 99% 8px;
+  border: none;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-topright: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  text-decoration: none;
+}
+a.arrow_down span{
+  text-align: left;
+  color: #fff;
+  font-weight: bold;
+}
+a.arrow_down.collapsed span{
+  text-align: left;
+  color: #18c0d4;
+  font-weight: bold;
+}
+.down_con{
+  min-height: 20px;
+  overflow: hidden;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-right: 1px solid #d9dfe2;
+  border-bottom: 1px solid #d9dfe2;
+  border-left: 1px solid #d9dfe2;
+  -webkit-border-bottom-right-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  -moz-box-shadow: 0 0 5px #ccc;
+  -webkit-box-shadow: 0 0 5px #ccc;
+  box-shadow: 0 0 5px #ccc;
+}
+.down_con a.link_create{
+  color: #18c0d4;
+  text-decoration: none;
+  padding-left: 1em;
+  font-weight: bold;
+}
+.down_con a:hover.link_create{
+  color: #7a8387;
+}
+.down_con a.link_create i{
+  padding-right: 10px;
+}
+.down_con .button_send{
+  text-align: center;
+  margin: 3em 0;
+}
+.down_con .button_send button.btn-primary.btn-send {
+  color: #333;
+  background-color: #18c0d4;
+  border-color: #0fb3c7;
+  width: 350px;
+  color: #fff;
+}
+.down_con .button_send button:hover.btn-primary.btn-send{
+  background-color: #10abbd;
+  border-color: #18c0d4;
+}
+.modal-dialog.modal_push{
+  width: 300px;
+  text-align: center;
+}
+.modal-dialog.modal_push .modal-content{
+  background: none;
+  box-shadow: none;
+  border: none;
+}
+.modal-dialog.modal_push .modal-content img{
+  padding-bottom: 2em;
+}
+.modal-dialog.modal_push .modal-content p{
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+}
+/* //push */
 
 .clearfix:after {
   content: "";
@@ -674,6 +1170,46 @@ span.total_pa{
 /* Small devices (tablets)
 ==========================*/
 @media (max-width: 640px) {
+  .btn-group.btn-group-justified a{
+    font-size: 13px;
+  }
+  ul.breadcrumbs_left li span.text_bre{
+    font-size: 10px;
+  }
+  a.arrow_down,
+  a.arrow_down.collapsed{
+    margin-top: 4em;
+    background-position: 95% 8px;
+  }
+  .drop_push form select{
+    margin-top: 0em;
+  }
+  .modal-content.modal_coupon_top .btn_setting_avatar {
+    padding-top: 40px;
+  }
+  .down_con .button_send button.btn-primary.btn-send{
+    width: 100%;
+  }
+  .modal-content.modal_coupon_top button.btn-primary.btn-change {
+    width: 80%;
+  }
+  .modal-content.modal_coupon_top .wrapp_pr{
+    width: 100%;
+  }
+  .modal-content.modal_coupon_top .content_tab_top,
+  .wrapp_analytics .tab_top .content_tab_top,
+  .tab_top .content_tab_top{
+    font-size: 10px;
+  }
+  .wrapp_analytics .tab_top .content_tab_top,
+  .tab_top .content_tab_top{
+    padding: 2em 1em;
+  }
+  .wrapp_top .tab_top .content_tab_top h3,
+  .wrapp_analytics .tab_top .content_tab_top h3,
+  .tab_top .content_tab_top h3{
+    font-size: 1.8em;
+  }
   span.total_pa{
     display: none;
   }
@@ -695,6 +1231,19 @@ span.total_pa{
   .wrapp_tab .nav > li > a {
     padding: 10px 15px;
   }
+  .modal-content.modal_coupon .btn_setting_avatar {
+      padding-top: 35px;
+  }
+  .modal-content.modal_coupon form .select_day select.form-control.sum_year,
+  .modal-content.modal_coupon form .select_day select.form-control.sum_month,
+  .modal-content.modal_coupon form .select_day select.form-control.sum_day {
+    width: 30%;
+  }
+  .modal-content.modal_coupon button.btn-default.btn-delete,
+  .modal-content.modal_coupon button.btn-primary.btn-change {
+    width: 140px;
+  }
+  .modal.fade.bs-example-modal-lg,
   #myModal2,
   #myModal{
     margin-top: 23%;

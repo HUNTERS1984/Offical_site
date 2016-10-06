@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Top</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href='css/normalize.css' rel='stylesheet'>
+  <link href='css/bootstrap.css' rel='stylesheet'>
+  <link href='css/font-awesome.css' rel='stylesheet'>
+  <link href="css/vertical-responsive-menu.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+<!-- header -->
+<header class="header clearfix">
+  <button type="button" id="toggleMenu" class="toggle_menu">
+    <i class="fa fa-bars"></i>
+  </button>
+    
+  <h1><a href=""><img src="images/pon.png" alt=""></a></h1>
+    
+  <button id="collapse_menu" class="collapse_menu">
+    <i class="collapse_menu--icon fa fa-bars"></i>
+  </button>
+
+  <ul class="btn_top_right">
+    <li>
+      <a href="">
+        <span class="fa fa-plus" aria-hidden="true"></span> 
+        <span class="text_btn_top_right">QRコード出力</span>
+      </a>
+    </li>
+    <li>
+      <a href="">
+        <span class="fa fa-plus" aria-hidden="true"></span>
+        <span class="text_btn_top_right">新規クーポン作成</span>
+      </a>
+    </li>
+  </ul>
+</header>
+<!-- //header -->
+
+<!-- menu left -->
+<nav class="vertical_nav">
+  <ul class="profile">
+    <li><img src="images/avatar.png" alt=""></li>
+    <li>
+      <strong>ユーザーネーム</strong>
+      <p><i class="fa fa-circle"></i> オンライン</p>
+    </li>
+  </ul>
+  <ul id="js-menu" class="menu">
+    <li class="menu--item">
+      <span class="menu--label--top">Menu</span>
+    </li>
+    <li class="menu--item">
+      <a href="top.html" class="menu--link active" title="Top">
+        <i class="menu--icon  fa fa-fw fa fa-star"></i>
+        <span class="menu--label">Top</span>
+      </a>
+    </li>
+    <li class="menu--item">
+      <a href="summary.html" class="menu--link" title="クーポン一覧">
+        <i class="menu--icon  fa fa-fw fa fa fa-wrench"></i>
+        <span class="menu--label">クーポン一覧</span>
+      </a>
+    </li>
+    <li class="menu--item">
+      <a href="push.html" class="menu--link" title="プッシュ通知">
+        <i class="menu--icon  fa fa-fw fa fa-external-link-square"></i>
+        <span class="menu--label">プッシュ通知</span>
+      </a>
+    </li>
+    <li class="menu--item">
+      <a href="analytics.html" class="menu--link" title="アクセス解析">
+        <i class="menu--icon  fa fa-fw fa fa-bar-chart"></i>
+        <span class="menu--label">アクセス解析</span>
+      </a>
+    </li>
+    <li class="menu--item">
+      <a href="management.html" class="menu--link" title="承認管理">
+        <i class="menu--icon  fa fa-fw fa fa-user-plus"></i>
+        <span class="menu--label">承認管理</span>
+      </a>
+    </li>
+    <li class="menu--item">
+      <a href="customer.html" class="menu--link" title="顧客管理">
+        <i class="menu--icon  fa fa-fw fa fa-user"></i>
+        <span class="menu--label">顧客管理</span>
+      </a>
+    </li>
+    <li class="menu--item">
+      <a href="news.html" class="menu--link" title="お知らせ・新着">
+        <i class="menu--icon  fa fa-fw fa fa-newspaper-o"></i>
+        <span class="menu--label">お知らせ・新着</span>
+      </a>
+    </li>
+    <li class="menu--item">
+      <span class="menu--label--top">Other</span>
+    </li>
+    <li class="menu--item">
+      <a href="setting.html" class="menu--link" title="アカウント設定">
+        <i class="menu--icon  fa fa-fw fa fa-cog"></i>
+        <span class="menu--label">アカウント設定</span>
+      </a>
+    </li>
+    <li class="menu--item">
+      <a href="help.html" class="menu--link" title="ヘルプ">
+        <i class="menu--icon  fa fa-fw fa fa-question-circle"></i>
+        <span class="menu--label">ヘルプ</span>
+      </a>
+    </li>
+    <li class="menu--item">
+      <a href="contact.html" class="menu--link" title="お問い合わせ">
+        <i class="menu--icon  fa fa-fw fa fa-comments"></i>
+        <span class="menu--label">お問い合わせ</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+<!-- //menu left -->
+
+<!-- wrapper -->
+<div class="wrapper">
+
+  <!-- wrapp_breadcrumbs -->
+  <div class="wrapp_breadcrumbs">
+    <div class="row">
+      <div class="col-md-12 col-xs-12">
+        <ul class="breadcrumbs_left">
+          <li><span class="text_bre">TOP</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- //wrapp_breadcrumbs -->
+
+  <!-- wrapper_content -->
+  <div class="wrapper_content">
+
+    <!-- wrapp_top -->
+    <div class="wrapp_top"> 
+
+      <div class="span_title">最近発行したクーポン</div>
+
+        <!-- Modal -->
+        <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content modal_coupon_top">
+              <form>
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">クーポンを編集</h4>
+              </div>
+              <div class="modal-body">
+                  <div class="">
+                    <div class="col-md-12">
+                      <div class="row wrapp_avar_btn">
+                        <div class="col-md-3"><img src="images/img_edit_coupon.jpg" alt=""></div>
+                        <div class="col-md-9">
+                          <div class="btn_setting_avatar">
+                            <a href="" class="">アカウントイメージの変更</a>
+                          </div>
+                        </div>                  
+                      </div>
+                      <div class="form-setting">
+                              <div class="form-group">
+                                <label for="クーポンタイトル">クーポンタイトル</label>
+                                <input type="text" class="form-control" id="クーポンタイトル" placeholder="クーポンタイトル">
+                              </div>
+                              <div class="form-group">
+                                <label for="クーポンタイプ">クーポンタイプ</label>
+                                <select class="form-control">
+                                  <option>ユーザー投稿型</option>
+                                  <option>Option one</option>
+                                  <option>Option two</option>
+                                  <option>Option three</option>
+                                  <option>Option four</option>
+                                </select>
+                              </div>                          
+                              <div class="form-group">
+                                <label for="ハッシュタグ">ハッシュタグ</label>
+                                <textarea class="form-control" rows="5">ハッシュタグ</textarea>
+                              </div>
+                              <div class="form-group">
+                                <label for="説明文">説明文</label>
+                                <textarea class="form-control" rows="5">説明文</textarea>
+                              </div>
+                              <div class="row">
+                              <div class="col-md-6">
+                                <div class="form-group">
+                                <label for="期限">期限</label>
+                                <div class="select_day">
+                                  <select class="form-control sum_year">
+                                    <option>2016年</option>
+                                    <option>2017年</option>
+                                    <option>2018年</option>
+                                    <option>2019年</option>
+                                    <option>2020年</option>
+                                  </select>
+                                  <select class="form-control sum_month">
+                                    <option>7月</option>
+                                    <option>8月</option>
+                                    <option>9月</option>
+                                    <option>10月</option>
+                                    <option>11月</option>
+                                  </select>
+                                  <select class="form-control sum_day">
+                                    <option>31日</option>
+                                    <option>30日</option>
+                                    <option>29日</option>
+                                    <option>28日</option>
+                                    <option>27日</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label for="クーポンの利用動向の測定">クーポンの利用動向の測定</label>
+                                <select class="form-control">
+                                  <option>測定する</option>
+                                  <option>Option one</option>
+                                  <option>Option two</option>
+                                  <option>Option three</option>
+                                  <option>Option four</option>
+                                </select>
+                                <span>発行されたQRコードデクーポンの利用動向を測定することができます。</span>
+                              </div>    
+                              <div class="form-group">
+                                <label for="クーポンの承認">クーポンの承認</label>
+                                <select class="form-control">
+                                  <option>自動承認</option>
+                                  <option>Option one</option>
+                                  <option>Option two</option>
+                                  <option>Option three</option>
+                                  <option>Option four</option>
+                                </select>
+                              </div>                                 
+                              </div> 
+                              <div class="col-md-6">
+                                <div class="wrapp_pr">
+                                  <img src="images/img_qr.jpg" alt="">
+                                </div>
+                              </div>
+                              </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary btn-change">変更</button>
+              </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- //Modal -->
+
+      <div class="category_top">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="content_category_top">
+              <img src="images/img_top.jpg" class="img_top" alt="">
+              <h3 class="h3_title">タイトルが入ります</h3>
+              <p><a href="" data-toggle="modal" data-target=".bs-example-modal-lg" class="link_blue">ユーザー投稿型</a></p>
+              <p><span class="red">期限: 2016.07.31</span></p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="content_category_top">
+              <img src="images/img_top.jpg" class="img_top" alt="">
+              <h3 class="h3_title">タイトルが入ります</h3>
+              <p><a href="" data-toggle="modal" data-target=".bs-example-modal-lg" class="link_blue">ユーザー投稿型</a></p>
+              <p><span class="red">期限: 2016.07.31</span></p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="content_category_top">
+              <img src="images/img_top.jpg" class="img_top" alt="">
+              <h3 class="h3_title">タイトルが入ります</h3>
+              <p><a href="" data-toggle="modal" data-target=".bs-example-modal-lg" class="link_blue">ユーザー投稿型</a></p>
+              <p><span class="red">期限: 2016.07.31</span></p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="content_category_top">
+              <img src="images/img_top.jpg" class="img_top" alt="">
+              <h3 class="h3_title">タイトルが入ります</h3>
+              <p><a href="" data-toggle="modal" data-target=".bs-example-modal-lg" class="link_blue">ユーザー投稿型</a></p>
+              <p><span class="red">期限: 2016.07.31</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="span_title">アクセス</div>
+      <div class="wrapp_chart">
+        <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+      </div>
+      <div class="tab_top">
+        <div class="row">
+          <div class="col-md-4 col-xs-6">
+            <div class="content_tab_top">
+              <p>ユーザー数</p>
+              <h3>29,147</h3>
+            </div>
+          </div>
+          <div class="col-md-4 col-xs-6">
+            <div class="content_tab_top">
+              <p>セッション</p>
+              <h3>247,837</h3>
+            </div>
+          </div>
+          <div class="col-md-4 col-xs-6">
+            <div class="content_tab_top">
+              <p>スクリーンビュー</p>
+              <h3>1,002,719</h3>
+            </div>
+          </div>
+          <div class="col-md-4 col-xs-6">
+            <div class="content_tab_top">
+              <p>離脱率</p>
+              <h3>64.07%</h3>
+            </div>
+          </div>
+          <div class="col-md-4 col-xs-6">
+            <div class="content_tab_top">
+              <p>平均セッション時間</p>
+              <h3>00:01:48</h3>
+            </div>
+          </div>
+          <div class="col-md-4 col-xs-6">
+            <div class="content_tab_top">
+              <p>新規セッション率</p>
+              <h3>0.29%</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //wrapp_top -->
+
+  </div>
+  <!-- //wrapper_content -->
+
+</div>
+<!-- //wrapper -->
+  
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/vertical-responsive-menu.min.js"></script>
+<script src="js/jquery.canvasjs.min.js"></script>
+
+<script type="text/javascript">
+$(function () {
+  var options = {
+    animationEnabled: true,
+    data: [
+    {
+      type: "spline",
+      dataPoints: [
+        { x: 10, y: 10 },
+        { x: 20, y: 12 },
+        { x: 30, y: 8 },
+        { x: 40, y: 14 },
+        { x: 50, y: 6 },
+        { x: 60, y: 24 },
+        { x: 70, y: -4 },
+        { x: 80, y: 10 }
+      ]
+    }
+    ]
+  };
+  $("#chartContainer").CanvasJSChart(options);
+});
+</script>
+
+</body>
+</html>

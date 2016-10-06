@@ -55,44 +55,44 @@
       <span class="menu--label--top">Menu</span>
     </li>
     <li class="menu--item">
-      <a href="#" class="menu--link" title="Top">
-        <i class="menu--icon  fa fa-fw fa fa-circle"></i>
+      <a href="top.html" class="menu--link" title="Top">
+        <i class="menu--icon  fa fa-fw fa fa-star"></i>
         <span class="menu--label">Top</span>
       </a>
     </li>
     <li class="menu--item">
-      <a href="#" class="menu--link active" title="クーポン一覧">
+      <a href="summary.html" class="menu--link active" title="クーポン一覧">
         <i class="menu--icon  fa fa-fw fa fa fa-wrench"></i>
         <span class="menu--label">クーポン一覧</span>
       </a>
     </li>
     <li class="menu--item">
-      <a href="#" class="menu--link" title="プッシュ通知">
-        <i class="menu--icon  fa fa-fw fa fa-circle"></i>
+      <a href="push.html" class="menu--link" title="プッシュ通知">
+        <i class="menu--icon  fa fa-fw fa fa-external-link-square"></i>
         <span class="menu--label">プッシュ通知</span>
       </a>
     </li>
     <li class="menu--item">
-      <a href="#" class="menu--link" title="アクセス解析">
-        <i class="menu--icon  fa fa-fw fa fa-circle"></i>
+      <a href="analytics.html" class="menu--link" title="アクセス解析">
+        <i class="menu--icon  fa fa-fw fa fa-bar-chart"></i>
         <span class="menu--label">アクセス解析</span>
       </a>
     </li>
     <li class="menu--item">
-      <a href="#" class="menu--link" title="承認管理">
+      <a href="management.html" class="menu--link" title="承認管理">
         <i class="menu--icon  fa fa-fw fa fa-user-plus"></i>
         <span class="menu--label">承認管理</span>
       </a>
     </li>
     <li class="menu--item">
-      <a href="#" class="menu--link" title="顧客管理">
-        <i class="menu--icon  fa fa-fw fa fa-circle"></i>
+      <a href="customer.html" class="menu--link" title="顧客管理">
+        <i class="menu--icon  fa fa-fw fa fa-user"></i>
         <span class="menu--label">顧客管理</span>
       </a>
     </li>
     <li class="menu--item">
-      <a href="#" class="menu--link" title="お知らせ・新着">
-        <i class="menu--icon  fa fa-fw fa fa-circle"></i>
+      <a href="news.html" class="menu--link" title="お知らせ・新着">
+        <i class="menu--icon  fa fa-fw fa fa-newspaper-o"></i>
         <span class="menu--label">お知らせ・新着</span>
       </a>
     </li>
@@ -100,19 +100,19 @@
       <span class="menu--label--top">Other</span>
     </li>
     <li class="menu--item">
-      <a href="#" class="menu--link" title="アカウント設定">
-        <i class="menu--icon  fa fa-fw fa fa-circle"></i>
+      <a href="setting.html" class="menu--link" title="アカウント設定">
+        <i class="menu--icon  fa fa-fw fa fa-cog"></i>
         <span class="menu--label">アカウント設定</span>
       </a>
     </li>
     <li class="menu--item">
-      <a href="#" class="menu--link" title="ヘルプ">
+      <a href="help.html" class="menu--link" title="ヘルプ">
         <i class="menu--icon  fa fa-fw fa fa-question-circle"></i>
         <span class="menu--label">ヘルプ</span>
       </a>
     </li>
     <li class="menu--item">
-      <a href="#" class="menu--link" title="お問い合わせ">
+      <a href="contact.html" class="menu--link" title="お問い合わせ">
         <i class="menu--icon  fa fa-fw fa fa-comments"></i>
         <span class="menu--label">お問い合わせ</span>
       </a>
@@ -160,6 +160,89 @@
     </div>
     <!-- //wrapp_search_btn -->
 
+    <!-- Modal -->
+    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content modal_coupon">
+          <form>
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">クーポンを編集</h4>
+          </div>
+          <div class="modal-body">
+              <div class="">
+                <div class="col-md-12">
+                  <div class="row wrapp_avar_btn">
+                    <div class="col-md-3"><img src="images/img_edit_coupon.jpg" alt=""></div>
+                    <div class="col-md-9">
+                      <div class="btn_setting_avatar">
+                        <a href="" class="">アカウントイメージの変更</a>
+                      </div>
+                    </div>                  
+                  </div>
+                  <div class="form-setting">
+                          <div class="form-group">
+                            <label for="クーポンタイトル">クーポンタイトル</label>
+                            <input type="text" class="form-control" id="クーポンタイトル" placeholder="クーポンタイトル">
+                          </div>
+                          <div class="form-group">
+                            <label for="クーポンタイプ">クーポンタイプ</label>
+                            <select class="form-control">
+                              <option>ユーザー投稿型</option>
+                              <option>Option one</option>
+                              <option>Option two</option>
+                              <option>Option three</option>
+                              <option>Option four</option>
+                            </select>
+                          </div>                          
+                          <div class="form-group">
+                            <label for="ハッシュタグ">ハッシュタグ</label>
+                            <textarea class="form-control" rows="5">ハッシュタグ</textarea>
+                          </div>
+                          <div class="form-group">
+                            <label for="説明文">説明文</label>
+                            <textarea class="form-control" rows="5">説明文</textarea>
+                          </div>
+                          <div class="form-group">
+                            <label for="期限">期限</label>
+                            <div class="select_day">
+                              <select class="form-control sum_year">
+                                <option>2016年</option>
+                                <option>2017年</option>
+                                <option>2018年</option>
+                                <option>2019年</option>
+                                <option>2020年</option>
+                              </select>
+                              <select class="form-control sum_month">
+                                <option>7月</option>
+                                <option>8月</option>
+                                <option>9月</option>
+                                <option>10月</option>
+                                <option>11月</option>
+                              </select>
+                              <select class="form-control sum_day">
+                                <option>31日</option>
+                                <option>30日</option>
+                                <option>29日</option>
+                                <option>28日</option>
+                                <option>27日</option>
+                              </select>
+                            </div>
+                          </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default btn-delete" data-dismiss="modal">削除</button>
+            <button type="button" class="btn btn-primary btn-change">変更</button>
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- //Modal -->
+
     <!-- wrapp wrapp_summary -->
     <div class="wrapp_summary">
       <div class="media">
@@ -169,7 +252,7 @@
         <div class="media-body">
           <div class="top-media">
             <h4 class="media-heading">クーポンタイトル</h4>
-            <a href="" class="edit-icon"><i class="fa fa-pencil"></i></a>
+            <a href="" data-toggle="modal" data-target=".bs-example-modal-lg" class="edit-icon"><i class="fa fa-pencil"></i></a>
           </div>
           <div class="top-media">
             <span class="left"><a href="" class="link-id">ユーザー投稿型</a> ID: 123456</span>
@@ -195,7 +278,7 @@
         <div class="media-body">
           <div class="top-media">
             <h4 class="media-heading">クーポンタイトル</h4>
-            <a href="" class="edit-icon"><i class="fa fa-pencil"></i></a>
+            <a href="" data-toggle="modal" data-target=".bs-example-modal-lg" class="edit-icon"><i class="fa fa-pencil"></i></a>
           </div>
           <div class="top-media">
             <span class="left"><a href="" class="link-id">ユーザー投稿型</a> ID: 123456</span>
@@ -221,7 +304,7 @@
         <div class="media-body">
           <div class="top-media">
             <h4 class="media-heading">クーポンタイトル</h4>
-            <a href="" class="edit-icon"><i class="fa fa-pencil"></i></a>
+            <a href="" data-toggle="modal" data-target=".bs-example-modal-lg" class="edit-icon"><i class="fa fa-pencil"></i></a>
           </div>
           <div class="top-media">
             <span class="left"><a href="" class="link-id">ユーザー投稿型</a> ID: 123456</span>
@@ -247,7 +330,7 @@
         <div class="media-body">
           <div class="top-media">
             <h4 class="media-heading">クーポンタイトル</h4>
-            <a href="" class="edit-icon"><i class="fa fa-pencil"></i></a>
+            <a href="" data-toggle="modal" data-target=".bs-example-modal-lg" class="edit-icon"><i class="fa fa-pencil"></i></a>
           </div>
           <div class="top-media">
             <span class="left"><a href="" class="link-id">ユーザー投稿型</a> ID: 123456</span>
@@ -273,7 +356,7 @@
         <div class="media-body">
           <div class="top-media">
             <h4 class="media-heading">クーポンタイトル</h4>
-            <a href="" class="edit-icon"><i class="fa fa-pencil"></i></a>
+            <a href="" data-toggle="modal" data-target=".bs-example-modal-lg" class="edit-icon"><i class="fa fa-pencil"></i></a>
           </div>
           <div class="top-media">
             <span class="left"><a href="" class="link-id">ユーザー投稿型</a> ID: 123456</span>
@@ -299,7 +382,7 @@
         <div class="media-body">
           <div class="top-media">
             <h4 class="media-heading">クーポンタイトル</h4>
-            <a href="" class="edit-icon"><i class="fa fa-pencil"></i></a>
+            <a href="" data-toggle="modal" data-target=".bs-example-modal-lg" class="edit-icon"><i class="fa fa-pencil"></i></a>
           </div>
           <div class="top-media">
             <span class="left"><a href="" class="link-id">ユーザー投稿型</a> ID: 123456</span>
