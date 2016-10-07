@@ -253,8 +253,58 @@ a.blue{
 a:hover.blue{
   color: #ff5078;
 }
+a.blue_cus{
+  color: #18c0d4;
+  text-decoration: none;
+}
+a:hover.blue_cus{
+  color: #ff5078;
+} 
 a.red{
   color: #ff5078;
+}
+.modal-content.modal_pon{
+  overflow: hidden;
+}
+.modal-content.modal_pon .modal-header{
+  background: none;
+  border-bottom: none;
+}
+.modal-content.modal_pon .modal-header ul.nav.nav-tabs > li{
+  width: 150px;
+  text-align: center;
+}
+.modal-content.modal_pon .modal-header ul.nav.nav-tabs > li:first-child > a{
+  color: #7a8387;
+  margin-right: -1px;
+  border: 1px solid #ddd;
+  border-radius: 3px 0 0 3px;
+  background: #f8f8fa;
+}
+.modal-content.modal_pon .modal-header ul.nav.nav-tabs > li:last-child > a{
+  color: #7a8387;
+  margin-right: -1px;
+  border: 1px solid #ddd;
+  border-radius: 0 3px 3px 0;
+  background: #f8f8fa;
+}
+.modal-content.modal_pon .modal-header ul.nav.nav-tabs > li.active > a{
+  color: #18c0d4;
+  background: #fff;
+}
+.modal-content.modal_pon .modal-header ul.nav.nav-tabs > li > a:hover{
+  color: #18c0d4;
+}
+.modal-content.modal_pon .tab-content{
+  padding: 1em 1em 2em 1em;
+  overflow: hidden;
+}
+.modal-content.modal_pon .tab-content .us_poup_left p{
+  padding: 1em 0;
+}
+.modal-content.modal_pon .tab-content .us_poup_right p{
+  padding: 1em 0;
+  font-weight: bold;
 }
 /*-- //wrapp_table */
 
@@ -322,8 +372,8 @@ ul.img_poup_us{
 ul.img_poup_us li{
   float: left;
   list-style: none;
-  padding-right: 17px;
-  padding-bottom: 17px;
+  padding-right: 21px;
+  padding-bottom: 21px;
 }
 ul.img_poup_us li.none{
   padding-right: 0;
@@ -339,6 +389,21 @@ ul.img_poup_us li.none{
 .content_us_poup .more_us a{
   color: #18c0d4;
   font-weight: bold;
+}
+.content_us_poup table.table.table-condensed.tb_ul > tbody > tr > td{
+  border: none;
+  text-align: left;
+  padding: 1em 0;
+}
+ul.nav_radio li{
+  float: left;
+  list-style: none;
+}
+ul.nav_radio li.line_radio{
+  background: url(../images/line_radio.png) repeat-x 0px 5px;
+  overflow: hidden;
+  width: 49px;
+  height: 13px;
 }
 /* //popup user */
 
@@ -842,7 +907,6 @@ span.total_pa{
   text-shadow: none;
 }
 .modal-content.modal_coupon_top button.btn-primary.btn-change {
-  color: #333;
   background-color: #18c0d4;
   border-color: #0fb3c7;
   width: 350px;
@@ -854,7 +918,7 @@ span.total_pa{
 }
 .modal-content.modal_coupon_top .modal-footer {
   text-align: center;
-  padding: 2em 0 6em 0;
+  padding: 4em 0 6em 0;
   border-top: 0px solid transparent;
 }
 .modal-content.modal_coupon_top form .form-group {
@@ -922,10 +986,59 @@ span.total_pa{
   background: #f8f8fa;
   border-radius: 3px;
   border:1px solid #e3e8ea;
-  width: 50%;
-  margin: 4.3em auto;
-  padding: 5em 0;
+  padding: 4em 0;
   text-align: center;
+}
+.modal-content.modal_coupon_top .wrapp_pr img{
+  width: 64px;
+  height: 64px;
+}
+input.form-control.link_web{
+  width: 70%;
+  float: left;
+  border-radius: 0px;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+button.btn.btn-default.btn_link_web{
+  background: #18c0d4;
+  border-color: #0fb3c7;
+  color: #fff;
+  border-radius: 0px;
+  height: 34px;
+  line-height: 23px;
+  text-align: center;
+  width: 30%;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border: none;
+}
+button:hover.btn.btn-default.btn_link_web{
+  background-color: #10abbd;
+  border-color: #18c0d4;
+}
+.well_qr strong{
+  color: #505a5e;
+  font-size: 16px;
+  line-height: 50px;
+}
+a.btn.btn-primary.change_qr{
+  color: #fff;
+  background-color: #18c0d4;
+  border-color: #0fb3c7;
+  margin-top: 135px;
+}
+a:hover.btn.btn-primary.change_qr{
+  background-color: #10abbd;
+  border-color: #18c0d4;
 }
 /* //top */
 
@@ -1170,6 +1283,25 @@ a.arrow_down.collapsed span{
 /* Small devices (tablets)
 ==========================*/
 @media (max-width: 640px) {
+  .modal-content.modal_coupon form .select_day select.form-control.sum_day,
+  .modal-content.modal_coupon form .select_day select.form-control.sum_month{
+    margin-left: 0.5em;
+  }
+  .wrapp_summary .media .media-left{
+    text-align: center;
+    padding-right: 0;
+  }
+  .wrapp_summary .media .media-body{
+    clear: both;
+    width: 100%;
+    display: inline;
+  }
+  .col-md-6.btn_change_qr{
+    text-align: center;
+  }
+  a.btn.btn-primary.change_qr{
+    margin-top: 10px;
+  }
   .btn-group.btn-group-justified a{
     font-size: 13px;
   }
@@ -1241,7 +1373,7 @@ a.arrow_down.collapsed span{
   }
   .modal-content.modal_coupon button.btn-default.btn-delete,
   .modal-content.modal_coupon button.btn-primary.btn-change {
-    width: 140px;
+    width: 115px;
   }
   .modal.fade.bs-example-modal-lg,
   #myModal2,

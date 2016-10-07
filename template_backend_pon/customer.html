@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Management</title>
+  <title>Customer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link href='css/normalize.css' rel='stylesheet'>
   <link href='css/bootstrap.css' rel='stylesheet'>
@@ -79,13 +79,13 @@
       </a>
     </li>
     <li class="menu--item">
-      <a href="management.html" class="menu--link active" title="承認管理">
+      <a href="management.html" class="menu--link" title="承認管理">
         <i class="menu--icon  fa fa-fw fa fa-user-plus"></i>
         <span class="menu--label">承認管理</span>
       </a>
     </li>
     <li class="menu--item">
-      <a href="customer.html" class="menu--link" title="顧客管理">
+      <a href="customer.html" class="menu--link active" title="顧客管理">
         <i class="menu--icon  fa fa-fw fa fa-user"></i>
         <span class="menu--label">顧客管理</span>
       </a>
@@ -126,18 +126,11 @@
   <!-- wrapp_breadcrumbs -->
   <div class="wrapp_breadcrumbs">
     <div class="row">
-      <div class="col-md-3 col-xs-6">
+      <div class="col-md-9 col-xs-6">
         <ul class="breadcrumbs_left">
-          <li><span class="text_bre">承認管理</span></li>
+          <li><span class="text_bre">顧客管理</span></li>
           <li><span class="no_bre">12</span></li>
         </ul>
-      </div>
-      <div class="col-md-6 col-xs-12">
-        <div class="btn-group btn-group-justified"> 
-          <a href="#" class="btn btn-default btn_tab_breadcrumbs active" role="button">全て</a> 
-          <a href="#" class="btn btn-default btn_tab_breadcrumbs" role="button">未承認</a> 
-          <a href="#" class="btn btn-default btn_tab_breadcrumbs" role="button">承認済み</a> 
-        </div>
       </div>
       <div class="col-md-3">
         <div class="btn_bread_right">
@@ -155,17 +148,11 @@
     <!-- wrapp_search_btn -->
     <div class="wrapp_search_btn">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 col-xs-12">
           <form class="form-group">
             <input type="text" class="form-control has-feedback-left" id="" placeholder="ユーザー名/ハッシュタグを入力してください">
             <span class="fa fa-search form-control-feedback left" aria-hidden="true"></span>
           </form>
-        </div>
-        <div class="col-md-6">
-          <ul class="btn_search_right">
-            <li><a href="">選択したユーザーを承認</a></li>
-            <li><a href="">すべてのユーザーを承認</a></li>
-          </ul>
         </div>
       </div>
     </div>
@@ -205,139 +192,35 @@
       <!--/ poup user 2 -->
       <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
-          <div class="modal-content modal_pon">
+          <div class="modal-content">
                     <div class="modal-header">
-                      <div class="row">
-                        <div class="col-xs-9">
-                          <ul class="nav nav-tabs" role="tablist">
-                            <li role="presentation" class="active"><a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">基本情報</a></li>
-                            <li role="presentation"><a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">PON利用情報</a></li>
-                          </ul>
+                      <div class="col-xs-9">
+                        <div class="btn-group btn-group-justified"> 
+                          <a href="#" class="btn btn-default btn_tab_breadcrumbs active" role="button">基本情報</a>
+                          <a href="#" class="btn btn-default btn_tab_breadcrumbs" role="button">PON利用情報</a> 
                         </div>
-                        <div class="col-xs-3">
-                           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        </div>
+                      </div>
+                      <div class="col-xs-3">
+                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                       </div>
                     </div>
-                    <!-- Tab panes -->
-                    <div class="tab-content">
-                      <div role="tabpanel" class="tab-pane active" id="tab1">
-                        <div class="col-xs-3">
-                          <img src="images/img_table_poup.jpg" class="img-responsive" alt="">
-                        </div>
-                        <div class="col-xs-3 us_poup_left">
-                          <p>ユーザーID</p>
-                          <p>ユーザーネーム</p>
-                          <p>性別</p>
-                          <p>年代</p>
-                          <p>地域</p>
-                        </div>
-                        <div class="col-xs-6 us_poup_right">
-                          <p>12345678</p>
-                          <p>ハルク</p>
-                          <p>男性</p>
-                          <p>30代</p>
-                          <p>東京都</p>
-                        </div>
+                    <div class="modal-body us_poup">
+                      <div class="col-xs-3">
+                        <img src="images/img_table_poup.jpg" class="img-responsive" alt="">
                       </div>
-                      <div role="tabpanel" class="tab-pane" id="tab2">
-                          <div class="content_us_poup">
-                          <div class="col-md-12">
-                            <div class="row">
-                              <div class="table-responsive">
-                                <table  class="table table-condensed tb_ul">
-                                  <tbody>
-                                    <tr>
-                                      <td width="25%">ユーザー属性</td>
-                                      <td width="15%"><strong>テキスト</strong></td>
-                                      <td width="60%">
-                                        <ul class="nav_radio">
-                                          <li><span><img src="images/radio_disable.png" alt=""></span></li>
-                                          <li class="line_radio"><span></span></li>
-                                          <li><span><img src="images/radio_disable.png" alt=""></span></li>
-                                          <li class="line_radio"><span></span></li>
-                                          <li><span><img src="images/radio_enable.png" alt=""></span></li>
-                                          <li class="line_radio"><span></span></li>
-                                          <li><span><img src="images/radio_disable.png" alt=""></span></li>
-                                          <li class="line_radio"><span></span></li>
-                                          <li><span><img src="images/radio_disable.png" alt=""></span></li>
-                                        </ul>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td>趣味趣向</td>
-                                      <td><strong>テキスト</strong></td>
-                                      <td>
-                                        <ul class="nav_radio">
-                                          <li><span><img src="images/radio_disable.png" alt=""></span></li>
-                                          <li class="line_radio"><span></span></li>
-                                          <li><span><img src="images/radio_enable.png" alt=""></span></li>
-                                          <li class="line_radio"><span></span></li>
-                                          <li><span><img src="images/radio_disable.png" alt=""></span></li>
-                                          <li class="line_radio"><span></span></li>
-                                          <li><span><img src="images/radio_disable.png" alt=""></span></li>
-                                          <li class="line_radio"><span></span></li>
-                                          <li><span><img src="images/radio_disable.png" alt=""></span></li>
-                                        </ul>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td>クーポン利用回数</td>
-                                      <td><strong>12回</strong></td>
-                                      <td>
-                                        <ul class="nav_radio">
-                                          <li><span><img src="images/radio_disable.png" alt=""></span></li>
-                                          <li class="line_radio"><span></span></li>
-                                          <li><span><img src="images/radio_enable.png" alt=""></span></li>
-                                          <li class="line_radio"><span></span></li>
-                                          <li><span><img src="images/radio_disable.png" alt=""></span></li>
-                                          <li class="line_radio"><span></span></li>
-                                          <li><span><img src="images/radio_disable.png" alt=""></span></li>
-                                          <li class="line_radio"><span></span></li>
-                                          <li><span><img src="images/radio_disable.png" alt=""></span></li>
-                                        </ul>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td>口コミ力</td>
-                                      <td><strong>テキスト</strong></td>
-                                      <td>
-                                        <ul class="nav_radio">
-                                          <li><span><img src="images/radio_disable.png" alt=""></span></li>
-                                          <li class="line_radio"><span></span></li>
-                                          <li><span><img src="images/radio_disable.png" alt=""></span></li>
-                                          <li class="line_radio"><span></span></li>
-                                          <li><span><img src="images/radio_disable.png" alt=""></span></li>
-                                          <li class="line_radio"><span></span></li>
-                                          <li><span><img src="images/radio_enable.png" alt=""></span></li>
-                                          <li class="line_radio"><span></span></li>
-                                          <li><span><img src="images/radio_disable.png" alt=""></span></li>
-                                        </ul>
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-12">
-                            <div class="row">
-                              <h2>投稿画像</h2>
-                              <ul class="img_poup_us">
-                                <li><span><img src="images/img_table_poup_2.jpg" alt=""></span></li>
-                                <li><span><img src="images/img_table_poup_2.jpg" alt=""></span></li>
-                                <li><span><img src="images/img_table_poup_2.jpg" alt=""></span></li>
-                                <li><span><img src="images/img_table_poup_2.jpg" alt=""></span></li>
-                                <li class="none"><span><img src="images/img_table_poup_2.jpg" alt=""></span></li>
-                                <li><span><img src="images/img_table_poup_2.jpg" alt=""></span></li>
-                                <li><span><img src="images/img_table_poup_2.jpg" alt=""></span></li>
-                                <li><span><img src="images/img_table_poup_2.jpg" alt=""></span></li>
-                                <li><span><img src="images/img_table_poup_2.jpg" alt=""></span></li>
-                                <li class="none"><span><img src="images/img_table_poup_2.jpg" alt=""></span></li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
+                      <div class="col-xs-3 us_poup_left">
+                        <p>ユーザーID</p>
+                        <p>ユーザーネーム</p>
+                        <p>性別</p>
+                        <p>年代</p>
+                        <p>地域</p>
+                      </div>
+                      <div class="col-xs-6 us_poup_right">
+                        <p>12345678</p>
+                        <p>ハルク</p>
+                        <p>男性</p>
+                        <p>30代</p>
+                        <p>東京都</p>
                       </div>
                     </div>
             </div>
@@ -353,9 +236,11 @@
               <th>選択</th> 
               <th></th> 
               <th>ユーザーネーム</th> 
-              <th>投稿写真</th> 
-              <th>ハッシュタグ</th>
-              <th>ステータス</th>
+              <th>ユーザーID</th> 
+              <th>性別</th>
+              <th>年代</th>
+              <th>地域</th>
+              <th>最終ログイン</th>
             </tr> 
           </thead> 
           <tbody> 
@@ -372,13 +257,15 @@
                 </a>
               </td> 
               <td>ユーザーネーム</td> 
+              <td>12345678</td>
+              <td>男性</td>
+              <td>20代</td>
+              <td>東京都</td>
               <td>
-                <a href="" title="" class="blue" data-toggle="modal" data-target="#myModal">
-                  写真を確認する
+                <a href="" title="" class="blue_cus" data-toggle="modal" data-target="#myModal">
+                  2016.07.31.12:31
                 </a>
               </td> 
-              <td>#hashtag #hashtag #hashtag</td> 
-              <td><a href="" title="" class="red">未承認</a></td> 
             </tr>
             <tr> 
               <th scope="row">
@@ -386,41 +273,45 @@
                   <input id="checkbox-2" class="checkbox-custom" name="checkbox-2" type="checkbox">
                   <label for="checkbox-2" class="checkbox-custom-label"></label>
                 </div>
-              </th>
+              </th> 
               <td>
                 <a href="" data-toggle="modal" data-target="#myModal2">
                   <img src="images/img_table.png" alt="">
                 </a>
               </td> 
               <td>ユーザーネーム</td> 
+              <td>12345678</td>
+              <td>男性</td>
+              <td>20代</td>
+              <td>東京都</td>
               <td>
-                <a href="" title="" class="blue" data-toggle="modal" data-target="#myModal">
-                  写真を確認する
+                <a href="" title="" class="blue_cus" data-toggle="modal" data-target="#myModal">
+                  2016.07.31.12:31
                 </a>
               </td> 
-              <td>#hashtag #hashtag #hashtag</td> 
-              <td><span>未承認</span></td> 
-            </tr>
+            </tr> 
             <tr> 
               <th scope="row">
                 <div>
                   <input id="checkbox-3" class="checkbox-custom" name="checkbox-3" type="checkbox">
                   <label for="checkbox-3" class="checkbox-custom-label"></label>
                 </div>
-              </th>
+              </th> 
               <td>
                 <a href="" data-toggle="modal" data-target="#myModal2">
                   <img src="images/img_table.png" alt="">
                 </a>
-              </td>
+              </td> 
               <td>ユーザーネーム</td> 
+              <td>12345678</td>
+              <td>男性</td>
+              <td>20代</td>
+              <td>東京都</td>
               <td>
-                <a href="" title="" class="blue" data-toggle="modal" data-target="#myModal">
-                  写真を確認する
+                <a href="" title="" class="blue_cus" data-toggle="modal" data-target="#myModal">
+                  2016.07.31.12:31
                 </a>
               </td> 
-              <td>#hashtag #hashtag #hashtag</td> 
-              <td><a href="" title="" class="red">未承認</a></td> 
             </tr>
             <tr> 
               <th scope="row">
@@ -428,20 +319,22 @@
                   <input id="checkbox-4" class="checkbox-custom" name="checkbox-4" type="checkbox">
                   <label for="checkbox-4" class="checkbox-custom-label"></label>
                 </div>
-              </th>
+              </th> 
               <td>
                 <a href="" data-toggle="modal" data-target="#myModal2">
                   <img src="images/img_table.png" alt="">
                 </a>
               </td> 
               <td>ユーザーネーム</td> 
+              <td>12345678</td>
+              <td>男性</td>
+              <td>20代</td>
+              <td>東京都</td>
               <td>
-                <a href="" title="" class="blue" data-toggle="modal" data-target="#myModal">
-                  写真を確認する
+                <a href="" title="" class="blue_cus" data-toggle="modal" data-target="#myModal">
+                  2016.07.31.12:31
                 </a>
               </td> 
-              <td>#hashtag #hashtag #hashtag</td> 
-              <td><a href="" title="" class="red">未承認</a></td> 
             </tr>
             <tr> 
               <th scope="row">
@@ -456,35 +349,39 @@
                 </a>
               </td> 
               <td>ユーザーネーム</td> 
+              <td>12345678</td>
+              <td>男性</td>
+              <td>20代</td>
+              <td>東京都</td>
               <td>
-                <a href="" title="" class="blue" data-toggle="modal" data-target="#myModal">
-                  写真を確認する
+                <a href="" title="" class="blue_cus" data-toggle="modal" data-target="#myModal">
+                  2016.07.31.12:31
                 </a>
               </td> 
-              <td>#hashtag #hashtag #hashtag</td> 
-              <td><a href="" title="" class="red">未承認</a></td> 
-            </tr>
+            </tr> 
             <tr> 
               <th scope="row">
                 <div>
                   <input id="checkbox-6" class="checkbox-custom" name="checkbox-6" type="checkbox">
                   <label for="checkbox-6" class="checkbox-custom-label"></label>
                 </div>
-              </th>
+              </th> 
               <td>
                 <a href="" data-toggle="modal" data-target="#myModal2">
                   <img src="images/img_table.png" alt="">
                 </a>
               </td> 
               <td>ユーザーネーム</td> 
+              <td>12345678</td>
+              <td>男性</td>
+              <td>20代</td>
+              <td>東京都</td>
               <td>
-                <a href="" title="" class="blue" data-toggle="modal" data-target="#myModal">
-                  写真を確認する
+                <a href="" title="" class="blue_cus" data-toggle="modal" data-target="#myModal">
+                  2016.07.31.12:31
                 </a>
               </td> 
-              <td>#hashtag #hashtag #hashtag</td> 
-              <td><a href="" title="" class="red">未承認</a></td> 
-            </tr>
+            </tr> 
             <tr> 
               <th scope="row">
                 <div>
@@ -498,14 +395,16 @@
                 </a>
               </td> 
               <td>ユーザーネーム</td> 
+              <td>12345678</td>
+              <td>男性</td>
+              <td>20代</td>
+              <td>東京都</td>
               <td>
-                <a href="" title="" class="blue" data-toggle="modal" data-target="#myModal">
-                  写真を確認する
+                <a href="" title="" class="blue_cus" data-toggle="modal" data-target="#myModal">
+                  2016.07.31.12:31
                 </a>
               </td> 
-              <td>#hashtag #hashtag #hashtag</td> 
-              <td><a href="" title="" class="red">未承認</a></td> 
-            </tr>
+            </tr> 
             <tr> 
               <th scope="row">
                 <div>
@@ -519,14 +418,16 @@
                 </a>
               </td> 
               <td>ユーザーネーム</td> 
+              <td>12345678</td>
+              <td>男性</td>
+              <td>20代</td>
+              <td>東京都</td>
               <td>
-                <a href="" title="" class="blue" data-toggle="modal" data-target="#myModal">
-                  写真を確認する
+                <a href="" title="" class="blue_cus" data-toggle="modal" data-target="#myModal">
+                  2016.07.31.12:31
                 </a>
               </td> 
-              <td>#hashtag #hashtag #hashtag</td> 
-              <td><a href="" title="" class="red">未承認</a></td> 
-            </tr>
+            </tr>  
             <tr> 
               <th scope="row">
                 <div>
@@ -540,13 +441,15 @@
                 </a>
               </td> 
               <td>ユーザーネーム</td> 
+              <td>12345678</td>
+              <td>男性</td>
+              <td>20代</td>
+              <td>東京都</td>
               <td>
-                <a href="" title="" class="blue" data-toggle="modal" data-target="#myModal">
-                  写真を確認する
+                <a href="" title="" class="blue_cus" data-toggle="modal" data-target="#myModal">
+                  2016.07.31.12:31
                 </a>
               </td> 
-              <td>#hashtag #hashtag #hashtag</td> 
-              <td><a href="" title="" class="red">未承認</a></td> 
             </tr>
             <tr> 
               <th scope="row">
@@ -554,20 +457,22 @@
                   <input id="checkbox-10" class="checkbox-custom" name="checkbox-10" type="checkbox">
                   <label for="checkbox-10" class="checkbox-custom-label"></label>
                 </div>
-              </th>              
+              </th> 
               <td>
                 <a href="" data-toggle="modal" data-target="#myModal2">
                   <img src="images/img_table.png" alt="">
                 </a>
-              </td>
+              </td> 
               <td>ユーザーネーム</td> 
+              <td>12345678</td>
+              <td>男性</td>
+              <td>20代</td>
+              <td>東京都</td>
               <td>
-                <a href="" title="" class="blue" data-toggle="modal" data-target="#myModal">
-                  写真を確認する
+                <a href="" title="" class="blue_cus" data-toggle="modal" data-target="#myModal">
+                  2016.07.31.12:31
                 </a>
               </td> 
-              <td>#hashtag #hashtag #hashtag</td> 
-              <td><a href="" title="" class="red">未承認</a></td> 
             </tr>
             <tr> 
               <th scope="row">
@@ -575,20 +480,22 @@
                   <input id="checkbox-11" class="checkbox-custom" name="checkbox-11" type="checkbox">
                   <label for="checkbox-11" class="checkbox-custom-label"></label>
                 </div>
-              </th>
+              </th> 
               <td>
                 <a href="" data-toggle="modal" data-target="#myModal2">
                   <img src="images/img_table.png" alt="">
                 </a>
               </td> 
               <td>ユーザーネーム</td> 
+              <td>12345678</td>
+              <td>男性</td>
+              <td>20代</td>
+              <td>東京都</td>
               <td>
-                <a href="" title="" class="blue" data-toggle="modal" data-target="#myModal">
-                  写真を確認する
+                <a href="" title="" class="blue_cus" data-toggle="modal" data-target="#myModal">
+                  2016.07.31.12:31
                 </a>
               </td> 
-              <td>#hashtag #hashtag #hashtag</td> 
-              <td><a href="" title="" class="red">未承認</a></td> 
             </tr>
             <tr> 
               <th scope="row">
@@ -596,21 +503,23 @@
                   <input id="checkbox-12" class="checkbox-custom" name="checkbox-12" type="checkbox">
                   <label for="checkbox-12" class="checkbox-custom-label"></label>
                 </div>
-              </th>
+              </th> 
               <td>
                 <a href="" data-toggle="modal" data-target="#myModal2">
                   <img src="images/img_table.png" alt="">
                 </a>
               </td> 
               <td>ユーザーネーム</td> 
+              <td>12345678</td>
+              <td>男性</td>
+              <td>20代</td>
+              <td>東京都</td>
               <td>
-                <a href="" title="" class="blue" data-toggle="modal" data-target="#myModal">
-                  写真を確認する
+                <a href="" title="" class="blue_cus" data-toggle="modal" data-target="#myModal">
+                  2016.07.31.12:31
                 </a>
               </td> 
-              <td>#hashtag #hashtag #hashtag</td> 
-              <td><a href="" title="" class="red">未承認</a></td> 
-            </tr>
+            </tr>                                                                                                    
           </tbody> 
         </table>
       </div>
