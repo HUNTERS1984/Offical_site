@@ -3919,18 +3919,13 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a > img {
   max-width: none;
 }
-.nav-tabs {
-  border-bottom: 1px solid #ddd;
-}
 .nav-tabs > li {
   float: left;
-  margin-bottom: -1px;
 }
 .nav-tabs > li > a {
   margin-right: 2px;
   line-height: 1.42857143;
-  border: 1px solid transparent;
-  border-radius: 4px 4px 0 0;
+  border-radius: 4px
 }
 .nav-tabs > li > a:hover {
   border-color: #eee #eee #ddd;
@@ -5749,7 +5744,7 @@ button.close {
 }
 .modal-open .modal {
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 .modal-dialog {
   position: relative;
@@ -5825,8 +5820,8 @@ button.close {
 }
 @media (min-width: 768px) {
   .modal-dialog {
-    width: 600px;
-    margin: 30px auto;
+    width: 370px;
+    margin: 100px auto;
   }
   .modal-content {
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
