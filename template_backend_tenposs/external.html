@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
-	<title>トップ</title>
+	<title>プッシュ通知</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/font-awesome.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -33,7 +33,7 @@
 							<a href="global.html">グローバル</a>
 						</li>
 						<li>
-							<a href="top.html" class="active">トップ</a>
+							<a href="top.html">トップ</a>
 						</li>
 						<li>
 							<a href="menu.html">メニュー</a>
@@ -61,7 +61,7 @@
 							<div class="text-nav-top">Other</div>
 						</li>
 						<li>
-							<a href="push.html">プッシュ通知</a>
+							<a href="push.html" class="active">プッシュ通知</a>
 						</li>
 						<li>
 							<a href="analytic.html">アクセス解析</a>
@@ -119,64 +119,41 @@
 		<!-- main content-->
 		<div id="page-wrapper">
 			<div class="wrapp-breadcrumds">
-				<div class="left"><span>トップ</span></div>
-				<div class="right"><a href="" class="btn-2">ポ覧</a></div>
+				<div class="left">
+					<span>プッシュ通知</span>
+				</div>
 			</div>
 			<div class="main-center">
-				<div class="col-md-4">
-					<div class="wrapp-phone">
-						<center>
-							<img src="images/phone.jpg" class="img-responsive" alt="">
-						</center>
+				<div class="col-md-12">
+					<div class="main-search-btn">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="wrapp_search_btn">
+									<form class="form-inline">
+									  <div class="form-group">
+									    <input type="text" class="form-control" id="" placeholder="ユーザー名/ハッシュタグを入力してください">
+									  </div>  
+									  <button type="submit" class="btn btn-primary">URLプッシュ</button>
+									</form>
+				                </div>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="col-md-8">
-					<form class="form-top">
-						<div class="form-group">
-						    <label>オンライン</label>
-						    <select name="" id="" class="form-control short">
-						    	<option value="">オンライン</option>
-						    	<option value="">オンライン</option>
-						    	<option value="">オンライン</option>
-						    	<option value="">オンライン</option>
-						    	<option value="">オンライン</option>
-						    </select>
-						    <a href="" class="link-top-1" title="">+ ユーザーネーム</a>
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-8">
+							<div class="content-external">
+								<a href="" class="link-external">ユーザー名/ハッシュタグを入力してください</a>
+								<p class="meta-external">
+									https://drive.google.com/drive/folders/0B8-g8D-Iq0KcQmNPaW52Wmh4X1U
+								</p>
+								<p class="des-external">
+									説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります説明が入ります
+								</p>
+							</div>
 						</div>
-					  	<div class="form-group arrow-select">
-					    	<label>トップページ表示項目</label>
-					    	<div class="wrapp-arrow-select">
-					    		<div class="wrap-table-top">
-					    			<div class="wrap-transfer col">
-					    				<p class="title-form">表示</p>
-					    				<ul class="link-top-2">
-					    					<li><a href="" class="active">Home</a></li>
-					    					<li><a href="">Home</a></li>
-					    					<li><a href="">Home</a></li>
-					    					<li><a href="">Home</a></li>
-					    				</ul>
-					    			</div>
-					    			<div class="wrap-btn-control col">
-					    				<a href="">
-					    					<span class="glyphicon glyphicon-triangle-right"></span>
-					    				</a>
-					    				<a href="">
-					    					<span class="glyphicon glyphicon-triangle-left"></span>
-					    				</a>
-					    			</div>
-					    			<div class="wrap-transfer col">
-					    				<p class="title-form">非表示</p>
-					    				<ul class="link-top-2">
-					    					<li><a href="">Home</a></li>
-					    					<li><a href="">Home</a></li>
-					    					<li><a href="">Home</a></li>
-					    					<li><a href="">Home</a></li>
-					    				</ul>
-					    			</div>
-					    		</div>
-					    	</div>
-						</div>
-					</form>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -184,7 +161,6 @@
 
 
 	</div>
-
 	<!-- Classie -->
 	<script src="js/classie.js"></script>
 	<script>
