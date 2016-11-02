@@ -696,6 +696,29 @@ span.total_pa{
 .wrapp_summary .media .top-media span span.color-red{
   color: #ff0000;
 }
+.wrapp_summary .media-left{
+  position: relative;
+}
+span.text-slogan-top {
+  text-align: center;
+  display: block;
+  position: absolute;
+  padding: 4px 16px;
+  color: #fff;
+  background: rgba(40,60,80,0.75);
+  font-size: 12px;
+  left: 1px;
+  bottom: 45px;
+  text-transform: uppercase;
+  border-radius: 0 4px 4px 0;
+}
+span.text-slogan-top a{
+  color: #fff;
+  text-decoration: none;
+}
+span.text-slogan-top a img{
+  padding-right: 5px;
+}
 .modal-content.modal_coupon .modal-header{
   padding: 5px 15px;
   background: #18c0d4;
