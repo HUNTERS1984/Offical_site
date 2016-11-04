@@ -25,7 +25,7 @@
                 <span class="icon-bar"></span>
             </a>
             <div class="navbar-right">
-                <a href="" class="btn-1">クポン覧クポン</a>
+                <a href="" class="btn-1">ァブリ申請依頼</a>
             </div>
         </nav>
     </header>
@@ -71,7 +71,7 @@
                         <a href="staff.html"><span>スタッフ</span></a>
                     </li>
                     <li>
-                        <a href="staff.html"><span>スタッフ</span></a>
+                        <a href="mypage.html"><span>マイページ</span></a>
                     </li>
                     <li>
                         <a href="setting.html"><span>設定</span></a>
@@ -308,7 +308,36 @@
                             <div class="title-thumb-user-chat">
                                 <span>ユーザーネーム</span>
                             </div>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="log-user" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                              <div class="modal-dialog user-poup-log" role="document">
+                                <div class="modal-content">
+                                    <h4>アカウント設定?</h4>
+                                    <div class="col-md-6 col-xs-6">
+                                        <a href="" class="btn-user-poup-log-poup-left">表示項</a>
+                                    </div>
+                                    <div class="col-md-6 col-xs-6">
+                                        <a href="" class="btn-user-poup-log-poup-right">表示項</a>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="dropdown drop-user-top">
+                                <a href="" id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="glyphicon glyphicon-cog"></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                                    <li>
+                                        <a href="" data-toggle="modal" data-target="#log-user">
+                                            ムまでお問何かお困りです
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
+
                         <div class="form-middle-user">
                             <div class="con-scroll-right" data-ss-container>
                                 <div class="chat-body">
