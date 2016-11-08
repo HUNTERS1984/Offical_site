@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>プッシュ通知</title>
+    <title>アクセス解析</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" >
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -80,10 +80,10 @@
                     <li class="none">
                         <span>Other</span>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="push.html"><span>プッシュ通知</span></a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="analytic.html"><span>アクセス解析</span></a>
                     </li>
                     <li>
@@ -113,26 +113,91 @@
 
         <aside class="right-side">
             <div class="wrapp-breadcrumds">
+                <div class="left"><span>アクセス解析</span></div>
                 <div class="left">
-                    <span>お問い合わせ</span>
-                    <strong>ポイントやコストの管理が可能</strong>
-                </div>
-                <div class="right">
-                    <a href="" class="btn-cost-bre">収益の支払い申請</a>
+                    <div class="tab-header-analytic">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active">
+                                <a href="#tab-analytic-1" aria-controls="tab-analytic-1" role="tab" data-toggle="tab">全て</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#tab-analytic-2" aria-controls="tab-analytic-1" role="tab" data-toggle="tab">予約中</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#tab-analytic-3" aria-controls="tab-analytic-3" role="tab" data-toggle="tab">定期配信</a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#tab-analytic-4" aria-controls="tab-analytic-4" role="tab" data-toggle="tab">配信済み</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <section class="content">
-                <div class="content-cost">
-                    <img src="images/logo-cost.png" alt="">
-                    <p>
-                        tenpossでポイント管理やコスト管理を行う場合は、<br>
-                        クーポン ポイントシステムPOMの登録が必須となります。
-                    </p>
-                    <ul class="btn-cost-bottom">
-                        <li><a href="cost-2.html">PONにログインする</a></li>
-                        <li><a href="cost-2.html">PONにログインする</a></li>
-                    </ul>
+        <div class="col-md-12">
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="tab-analytic-1">
+                <!-- wrapp_analytics -->
+                <div class="wrapp_analytics"> 
+                  
+                  <div class="wrapp_chart">
+                    <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+                  </div>
+                  
+                  <div class="tab_top">
+                    <div class="row">
+                      <div class="col-md-4 col-xs-6">
+                        <div class="content_tab_top">
+                          <p>ユーザー数</p>
+                          <h3>29,147</h3>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-xs-6">
+                        <div class="content_tab_top">
+                          <p>セッション</p>
+                          <h3>247,837</h3>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-xs-6">
+                        <div class="content_tab_top">
+                          <p>スクリーンビュー</p>
+                          <h3>1,002,719</h3>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-xs-6">
+                        <div class="content_tab_top">
+                          <p>離脱率</p>
+                          <h3>64.07%</h3>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-xs-6">
+                        <div class="content_tab_top">
+                          <p>平均セッション時間</p>
+                          <h3>00:01:48</h3>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-xs-6">
+                        <div class="content_tab_top">
+                          <p>新規セッション率</p>
+                          <h3>0.29%</h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+                <!-- //wrapp_analytics -->
+            </div>
+            <div role="tabpanel" class="tab-pane" id="tab-analytic-2">
+        
+            </div>
+            <div role="tabpanel" class="tab-pane" id="tab-analytic-3">
+      
+            </div>
+            <div role="tabpanel" class="tab-pane" id="tab-analytic-4">
+                      
+            </div>
+          </div>
+        </div>
             </section>
         </aside>
         <!-- /.right-side -->
@@ -142,5 +207,29 @@
     <script src="js/jquery.min.js" type="text/javascript"></script>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
     <script src="js/app.js" type="text/javascript"></script>
+    <script src="js/jquery.canvasjs.min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        var options = {
+          animationEnabled: true,
+          data: [
+          {
+            type: "spline",
+            dataPoints: [
+              { x: 10, y: 10 },
+              { x: 20, y: 12 },
+              { x: 30, y: 8 },
+              { x: 40, y: 14 },
+              { x: 50, y: 6 },
+              { x: 60, y: 24 },
+              { x: 70, y: -4 },
+              { x: 80, y: 10 }
+            ]
+          }
+          ]
+        };
+        $("#chartContainer").CanvasJSChart(options);
+      });
+    </script>
 </body>
 </html>

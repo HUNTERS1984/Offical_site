@@ -113,91 +113,242 @@
 
         <aside class="right-side">
             <div class="wrapp-breadcrumds">
-                <div class="left"><span>アクセス解析</span></div>
+                <div class="left">
+                  <span>アクセス解析</span>
+                  <strong>各種データの確認が可能</strong>
+                </div>
                 <div class="left">
                     <div class="tab-header-analytic">
                         <ul class="nav nav-tabs" role="tablist">
                             <li role="presentation" class="active">
-                                <a href="#tab-analytic-1" aria-controls="tab-analytic-1" role="tab" data-toggle="tab">全て</a>
+                                <a href="#tab-analytic-1" aria-controls="tab-analytic-1" role="tab" data-toggle="tab">アクセス解析</a>
                             </li>
                             <li role="presentation">
-                                <a href="#tab-analytic-2" aria-controls="tab-analytic-1" role="tab" data-toggle="tab">予約中</a>
+                                <a href="#tab-analytic-2" aria-controls="tab-analytic-2" role="tab" data-toggle="tab">クーポン動向</a>
                             </li>
                             <li role="presentation">
-                                <a href="#tab-analytic-3" aria-controls="tab-analytic-3" role="tab" data-toggle="tab">定期配信</a>
-                            </li>
-                            <li role="presentation">
-                                <a href="#tab-analytic-4" aria-controls="tab-analytic-4" role="tab" data-toggle="tab">配信済み</a>
+                                <a href="#tab-analytic-3" aria-controls="tab-analytic-3" role="tab" data-toggle="tab">来店状况</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
             <section class="content">
-        <div class="col-md-12">
-          <div class="tab-content">
-            <div role="tabpanel" class="tab-pane active" id="tab-analytic-1">
-                <!-- wrapp_analytics -->
-                <div class="wrapp_analytics"> 
-                  
-                  <div class="wrapp_chart">
-                    <div id="chartContainer" style="height: 300px; width: 100%;"></div>
-                  </div>
-                  
-                  <div class="tab_top">
-                    <div class="row">
-                      <div class="col-md-4 col-xs-6">
-                        <div class="content_tab_top">
-                          <p>ユーザー数</p>
-                          <h3>29,147</h3>
+
+                <div class="col-md-12">
+
+                    <!-- wrapp_tab -->
+                    <div class="wrapp_tab">
+
+                      <div class="tab-content analytic">
+                        
+                        <div role="tabpanel" class="tab-pane active" id="tab-analytic-1">
+                          <!-- Nav tabs -->
+                          <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active">
+                              <a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">全て</a>
+                            </li>
+                            <li role="presentation">
+                              <a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">予約中</a>
+                            </li>   
+                            <li role="presentation">
+                              <a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">定期配信</a>
+                            </li> 
+                            <li role="presentation">
+                              <a href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab">配信済み</a>
+                            </li> 
+                          </ul>
+                          <!-- //Nav tabs -->
+                          <!-- Tab panes -->
+                          <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="tab1">
+                              <div class="wrapp_chart">
+                                <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+                              </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="tab2">
+                              2
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="tab3">
+                              3
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="tab4">
+                              4
+                            </div>
+                          </div>
+                          <!-- //Tab panes -->
+                          <!-- wrapp_analytics -->
+                          <div class="wrapp_analytics">
+                            <div class="tab_top">
+                              <div class="row">
+                                <div class="col-md-4 col-xs-6">
+                                  <div class="content_tab_top">
+                                    <p>ユーザー数</p>
+                                    <h3>29,147</h3>
+                                  </div>
+                                </div>
+                                <div class="col-md-4 col-xs-6">
+                                  <div class="content_tab_top">
+                                    <p>セッション</p>
+                                    <h3>247,837</h3>
+                                  </div>
+                                </div>
+                                <div class="col-md-4 col-xs-6">
+                                  <div class="content_tab_top">
+                                    <p>スクリーンビュー</p>
+                                    <h3>1,002,719</h3>
+                                  </div>
+                                </div>
+                                <div class="col-md-4 col-xs-6">
+                                  <div class="content_tab_top">
+                                    <p>離脱率</p>
+                                    <h3>64.07%</h3>
+                                  </div>
+                                </div>
+                                <div class="col-md-4 col-xs-6">
+                                  <div class="content_tab_top">
+                                    <p>平均セッション時間</p>
+                                    <h3>00:01:48</h3>
+                                  </div>
+                                </div>
+                                <div class="col-md-4 col-xs-6">
+                                  <div class="content_tab_top">
+                                    <p>新規セッション率</p>
+                                    <h3>0.29%</h3>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- //wrapp_analytics -->
                         </div>
-                      </div>
-                      <div class="col-md-4 col-xs-6">
-                        <div class="content_tab_top">
-                          <p>セッション</p>
-                          <h3>247,837</h3>
+
+                        <div role="tabpanel" class="tab-pane" id="tab-analytic-2">
+                          <!-- Nav tabs -->
+                          <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active">
+                              <a href="#tab5" aria-controls="tab1" role="tab" data-toggle="tab">全て</a>
+                            </li>
+                            <li role="presentation">
+                              <a href="#tab6" aria-controls="tab2" role="tab" data-toggle="tab">予約中</a>
+                            </li>   
+                            <li role="presentation">
+                              <a href="#tab7" aria-controls="tab3" role="tab" data-toggle="tab">定期配信</a>
+                            </li> 
+                            <li role="presentation">
+                              <a href="#tab8" aria-controls="tab4" role="tab" data-toggle="tab">配信済み</a>
+                            </li> 
+                          </ul>
+                          <!-- //Nav tabs -->
+                          <!-- Tab panes -->
+                          <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="tab5">
+                              <div class="wrapp_chart">
+                                <div id="chartContainer2" style="height: 300px; width: 100%;"></div>
+                              </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="tab6">
+                              6
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="tab7">
+                              7
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="tab8">
+                              8
+                            </div>
+                          </div>
+                          <!-- //Tab panes -->
+                          <!-- wrapp_analytics -->
+                          <div class="wrapp_analytics">
+                            <div class="tab_top">
+                              <div class="row">
+                                <div class="col-md-4 col-xs-6">
+                                  <div class="content_tab_top">
+                                    <p>クーポン利用者数</p>
+                                    <h3>362人</h3>
+                                  </div>
+                                </div>
+                                <div class="col-md-4 col-xs-6">
+                                  <div class="content_tab_top">
+                                    <p>投稿享真教(PON)</p>
+                                    <h3>451枚</h3>
+                                  </div>
+                                </div>
+                                <div class="col-md-4 col-xs-6">
+                                  <div class="content_tab_top">
+                                    <p>クーポン作成数</p>
+                                    <h3>542枚</h3>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- //wrapp_analytics -->
                         </div>
-                      </div>
-                      <div class="col-md-4 col-xs-6">
-                        <div class="content_tab_top">
-                          <p>スクリーンビュー</p>
-                          <h3>1,002,719</h3>
+
+                        <div role="tabpanel" class="tab-pane" id="tab-analytic-3">
+                          <div class="drop-analytic">
+                            <select name="" id="" class="form-control">
+                              <option value="">全店舖</option>
+                              <option value="">オンライン</option>
+                              <option value="">オンライン</option>
+                              <option value="">オンライン</option>
+                              <option value="">オンライン</option>
+                            </select>
+                          </div>
+                          <!-- wrapp_analytics -->
+                          <div class="wrapp_analytics">
+                            <div class="tab_top">
+                              <div class="row">
+                                <div class="col-md-4 col-xs-6">
+                                  <div class="content_tab_top">
+                                    <p>舖合店</p>
+                                    <h3>362人</h3>
+                                  </div>
+                                </div>
+                                <div class="col-md-4 col-xs-6">
+                                  <div class="content_tab_top">
+                                    <p>新宿店</p>
+                                    <h3>451人</h3>
+                                  </div>
+                                </div>
+                                <div class="col-md-4 col-xs-6">
+                                  <div class="content_tab_top">
+                                    <p>池袋サンシャイン店</p>
+                                    <h3>542人</h3>
+                                  </div>
+                                </div>
+                                <div class="col-md-4 col-xs-6">
+                                  <div class="content_tab_top">
+                                    <p>六本木店</p>
+                                    <h3>102人</h3>
+                                  </div>
+                                </div>
+                                <div class="col-md-4 col-xs-6">
+                                  <div class="content_tab_top">
+                                    <p>麻布十番店</p>
+                                    <h3>1,023人</h3>
+                                  </div>
+                                </div>
+                                <div class="col-md-4 col-xs-6">
+                                  <div class="content_tab_top">
+                                    <p>日暮里店</p>
+                                    <h3>712人</h3>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- //wrapp_analytics -->
                         </div>
+
                       </div>
-                      <div class="col-md-4 col-xs-6">
-                        <div class="content_tab_top">
-                          <p>離脱率</p>
-                          <h3>64.07%</h3>
-                        </div>
-                      </div>
-                      <div class="col-md-4 col-xs-6">
-                        <div class="content_tab_top">
-                          <p>平均セッション時間</p>
-                          <h3>00:01:48</h3>
-                        </div>
-                      </div>
-                      <div class="col-md-4 col-xs-6">
-                        <div class="content_tab_top">
-                          <p>新規セッション率</p>
-                          <h3>0.29%</h3>
-                        </div>
-                      </div>
+
                     </div>
-                  </div>
+                    <!-- //wrapp_tab -->
+
                 </div>
-                <!-- //wrapp_analytics -->
-            </div>
-            <div role="tabpanel" class="tab-pane" id="tab-analytic-2">
-        
-            </div>
-            <div role="tabpanel" class="tab-pane" id="tab-analytic-3">
-      
-            </div>
-            <div role="tabpanel" class="tab-pane" id="tab-analytic-4">
-                      
-            </div>
-          </div>
-        </div>
+
             </section>
         </aside>
         <!-- /.right-side -->
@@ -229,6 +380,7 @@
           ]
         };
         $("#chartContainer").CanvasJSChart(options);
+        $("#chartContainer2").CanvasJSChart(options);
       });
     </script>
 </body>
