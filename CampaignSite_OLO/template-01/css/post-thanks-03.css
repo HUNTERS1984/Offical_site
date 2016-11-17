@@ -1,0 +1,38 @@
+/* CSS Document */
+
+/*Import Global Compulsory CSS Files*/
+@import url(reset.css);
+@import url(common.css);
+
+
+#main .thanks h4 { color:#e68ca0; margin-top:60px;}
+#main .thanks .social{ margin-bottom:100px;}
+#main .thanks .social a{    padding: 0px 26px; }
+	
+#main .thanks .formthanks .textbox{
+	padding:9px 10px;
+	border:1px solid #d9dee0;
+	border-radius:6px;
+	width:55%;
+	
+}
+#main .thanks .formthanks .btnsubmit{
+	background-color:#dc8296;
+	border-radius:6px;
+	border: 0px solid #FFFFFF;
+	padding:10px 49px;
+	font-weight:bold;
+	color:#FFFFFF;
+	margin-left:-10px;
+}
+
+#thanks-03 #footer{
+	margin-top:48px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px){
+	#main .thanks .social a{ padding: 0px 3px;}
+	#main .thanks .formthanks .btnsubmit{
+		padding:10px 20px;
+		}
+}
