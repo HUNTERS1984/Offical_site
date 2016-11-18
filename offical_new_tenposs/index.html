@@ -15,6 +15,7 @@ and open the template in the editor.
     </head>
     <body>
         <div class="wrapper">
+            <div class="bg-fog"></div>
             <header>
                 <div class="header clearfix">
                     <div class="logo">
@@ -23,14 +24,14 @@ and open the template in the editor.
                     <a class="btn-navmobile visible-xs-block" href="javascript:void(0)"><i class="fa fa-bars" aria-hidden="true"></i></a>
                     <nav>
                         <ul>
-                            <li><a href="javascript:void(0)">Top</a></li>
-                            <li><a href="javascript:void(0)">機能</a></li>
-                            <li><a href="javascript:void(0)">価格</a></li>
-                            <li><a href="javascript:void(0)">FAQ</a></li>
+                            <li><a class="active" href="index.html">Top</a></li>
+                            <li><a href="function.html">機能</a></li>
+                            <li><a href="price.html">価格</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
                         </ul>
                         <ul>
-                            <li><a href="javascript:void(0)">ログイン</a></li>
-                            <li><a href="javascript:void(0)">お問い合わせ</a></li>
+                            <li><a href="signin.html">ログイン</a></li>
+                            <li><a href="contact.html">お問い合わせ</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -60,7 +61,7 @@ and open the template in the editor.
                 <!-- Branch -->
                 <div id="about" class="bg_28a0e0">
                     <div class="container">
-                        <div class="box col-md-6">
+                        <div class="box col-sm-6">
                             <div class="image">
                                 <img src="images/index01.jpg" alt=""/>
                             </div>
@@ -77,12 +78,12 @@ and open the template in the editor.
                 <!-- Contain-box -->
                 <div id="function">
                     <div class="rowitem bg_28a0e0 clearfix">
-                        <div class="col-md-6 ">
+                        <div class="col-sm-6 ">
                             <div class="text-center">
-                                <img src="images/function_iphone_01.png" alt=""/>
+                                <img class="img-responsive center-block" src="images/function_iphone_01.png" alt=""/>
                             </div>
                         </div>
-                        <div class="col-md-6 bg_white">
+                        <div class="col-sm-6 bg_white">
                             <div class="box-info">
                                 <h3 class="title-box">スマホサイトが1日も掛からずに作れる。</h3>
                                 <p>
@@ -94,12 +95,12 @@ and open the template in the editor.
                     </div>
                     <!--Row-->
                     <div class="rowitem bg_0990d8 clearfix">
-                        <div class="col-md-6 pull-right">
+                        <div class="col-sm-6 pull-right">
                             <div class="text-center">
-                                <img src="images/function_iphone_02.png" alt=""/>
+                                <img class="img-responsive center-block" src="images/function_iphone_02.png" alt=""/>
                             </div>
                         </div>
-                        <div class="col-md-6 bg_white pull-left">
+                        <div class="col-sm-6 bg_white pull-left">
                             <div class="box-info">
                                 <dl class="box-text">
                                     <dt><span>Instagram</span> を用いたクーポンを発行</dt>  
@@ -115,12 +116,12 @@ and open the template in the editor.
                     </div>
                     <!--Row-->
                     <div class="rowitem bg_04689e clearfix">
-                        <div class="col-md-6">
+                        <div class="col-sm-6">
                             <div class=" text-center">
-                                <img src="images/function_iphone_03.png" alt=""/>
+                                <img class="img-responsive center-block" src="images/function_iphone_03.png" alt=""/>
                             </div>
                         </div>
-                        <div class="col-md-6 bg_white">
+                        <div class="col-sm-6 bg_white">
                             <div class="box-info">
                                 <h3 class="title-box">WEBもアプリもプッシュ通知でユーザーをリマインド</h3>
                                 <p>あなたの潜在的な顧客やファンであるユーザーを、「プッシュ通知」で効率的に再帰させることができます。</p>
@@ -234,7 +235,19 @@ and open the template in the editor.
         <script src="js/jquery-1.11.3.min.js"></script>
         <script type="text/javascript">
             jQuery(".btn-navmobile").click(function () {
-                jQuery("header nav").slideToggle("fast");
+                jQuery("body").addClass("sidebar-open");
+            });
+            jQuery(".bg-fog").click(function () {
+                jQuery("body").removeClass("sidebar-open");
+            });
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                if (scroll > 0) {
+                    jQuery("body").addClass("scroll-act");
+                }
+                else {
+                    jQuery("body").removeClass("scroll-act");
+                }
             });
         </script>
     </body>

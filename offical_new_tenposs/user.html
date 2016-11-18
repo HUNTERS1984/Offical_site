@@ -13,6 +13,7 @@
     </head>
     <body>
         <div class="wrapper">
+            <div class="bg-fog"></div>
             <header>
                 <div class="header header-scroll clearfix">
                     <div class="logo">
@@ -119,7 +120,19 @@
         <script src="js/jquery-1.11.3.min.js"></script>
         <script type="text/javascript">
             jQuery(".btn-navmobile").click(function () {
-                jQuery("header nav").slideToggle("fast");
+                jQuery("body").addClass("sidebar-open");
+            });
+            jQuery(".bg-fog").click(function () {
+                jQuery("body").removeClass("sidebar-open");
+            });
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                if (scroll > 0) {
+                    jQuery("body").addClass("scroll-act");
+                }
+                else {
+                    jQuery("body").removeClass("scroll-act");
+                }
             });
         </script>
     </body>
