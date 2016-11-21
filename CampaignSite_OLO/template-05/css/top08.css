@@ -1,0 +1,16 @@
+/* CSS Document */
+
+/*Import Global Compulsory CSS Files*/
+@import url(reset.css);
+@import url(common.css);
+
+#join .step{
+	width:210px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px){
+	#join .step{ width:100%;}
+}
+

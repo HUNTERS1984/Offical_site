@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+    font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","Osaka","ＭＳ Ｐゴシック","MS P Gothic",Arial,Helvetica,sans-serif;
+	overflow-x: hidden;
+}
+dd, dt{
+    line-height: 28px;
+}
+a{
+    color: #3cb4c8;
+    
+}
+a:hover,a:focus{
+    color: #3cb4c8;
+	text-decoration: none;
+}
+
