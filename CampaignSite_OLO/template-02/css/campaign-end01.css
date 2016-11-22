@@ -1,0 +1,70 @@
+/* CSS Document */
+
+/*Import Global Compulsory CSS Files*/
+@import url(reset.css);
+@import url(common.css);
+
+.nav-tabs {
+    border-bottom: 0px solid #ddd;
+	margin-bottom:70px;
+}
+
+.nav-tabs > li, .nav-pills > li {
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+     zoom:1; /* hasLayout ie7 trigger */
+}
+
+.nav-tabs, .nav-pills {
+    text-align:center;
+}
+#tabs .nav-tabs > li{ width:239px; margin:0px -4px;}
+#tabs .nav-tabs > li > a{
+	background-color:#fafafa;
+	
+	border:1px solid #b4bec2;
+	border-radius:0px;
+}
+
+#tabs .nav-tabs > li.active > a{
+	border: 0px solid #ddd;
+    border: 1px solid #c47f88;
+	background-image:none!important;
+	background-color:#c1715c;
+	color:#FFFFFF;
+}
+
+#tabs .nav-tabs > li:hover > a{
+	border: 0px solid #ddd;
+	background-image:none!important;
+	border: 1px solid #c47f88;
+	background-color:e68ca0;
+}
+
+#tabs .nav-tabs > li.first a{
+	border-radius: 0em;
+}
+
+#tabs .nav-tabs > li.last a{
+	border-radius: 0em;
+}
+
+.thanks .tab-content{
+	padding:40px;
+	background-color:#fafafa;
+	border:1px solid #b4bec2;
+	border-radius:7px;
+}
+
+#tabs .tab-pane {
+    margin-top: 0px;
+}
+
+.thanks .tab-content .item{
+	margin-bottom:30px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px){
+	#tabs .nav-tabs > li{ width:125px; margin:0px -4px;}
+}
