@@ -1,0 +1,30 @@
+/* CSS Document */
+
+#user{
+    padding: 100px 0;
+}
+#user h3{
+    text-align: center;
+    font-weight: bold;
+    color: #283C50;
+    margin-bottom: 60px;
+}
+#user .content{
+    background: #FAFAFA;
+    width: 880px;
+    margin: 0 auto;
+    border: 1px solid #C8D2D6;
+    padding: 60px 30px 40px;
+    border-radius: 4px;
+}
+#user .content p{
+    margin-top: 24px;
+}
+
+@media (max-width: 1024px){
+	    #user{
+    padding: 35px 0;
+}
+	#user h3{margin-bottom: 30px;}
+	#user .content{ width:100%}
+}

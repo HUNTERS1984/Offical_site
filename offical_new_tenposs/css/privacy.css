@@ -1,0 +1,29 @@
+/* CSS Document */
+
+#privacy{
+    padding: 100px 0;
+}
+#privacy h3{
+    text-align: center;
+    font-weight: bold;
+    color: #283C50;
+    margin-bottom: 60px;
+}
+#privacy .content{
+    background: #FAFAFA;
+    width: 880px;
+    margin: 0 auto;
+    border: 1px solid #C8D2D6;
+    padding: 60px 30px 40px;
+    border-radius: 4px;
+}
+#privacy .content p{
+    margin-top: 24px;
+}
+@media (max-width: 1024px){
+    #privacy{
+    padding: 35px 0;
+}
+	#privacy h3{margin-bottom: 30px;}
+	#privacy .content{ width:100%}
+}

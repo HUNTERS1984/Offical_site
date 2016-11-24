@@ -1,0 +1,117 @@
+/* CSS Document */
+
+
+#price{
+    background: #F8F8FA;
+    padding: 100px 0;
+}
+#price h3{
+    text-align: center;
+    font-weight: bold;
+    color: #283C50;
+    margin-bottom: 70px;
+}
+#price .content{
+    max-width: 1070px;
+    margin: 0 auto;
+}
+#price .box{
+    width: 33.33333333%;
+    padding: 0 10px;
+    float: left;
+    text-align: center;
+}
+#price .box .price_top{
+    color: #fff;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    font-weight: bold;
+    padding: 20px;
+}
+#price .box .price_top h5{
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+#price .box .price{
+    font-size:3.57em;
+    padding-bottom: 20px;
+}
+#price .box .price sub{
+    font-size: 0.28em;
+    padding-left: 5px;
+}
+#price .box .price sup{
+    top: -1.6em;
+    font-size: 0.28em;
+    padding-right: 5px;
+}
+#price .box dl{
+    padding: 30px;
+}
+#price .box dl dt{
+    color: #788286;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+#price .box dl dd{
+    color: #505A5E;
+    font-weight: bold;
+    font-size: 1.285em;
+    margin-bottom: 20px;
+}
+#price .box dl dd:last-child{
+    margin-bottom: 0;
+}
+#price .cl_28A0E0 .price_top{
+    background: #28A0E0;
+}
+#price .cl_0990D8 .price_top{
+    background: #0990D8;
+}
+#price .cl_04689E .price_top{
+    background: #04689E;
+}
+
+#price .cl_28A0E0 dl{
+    border:2px solid #28A0E0;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+
+}
+#price .cl_0990D8 dl{
+    border:2px solid #0990D8;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+
+}
+#price .cl_04689E dl{
+    border:2px solid #04689E;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+@media (max-width: 1200px){
+    #price .container{
+        width: 100%;
+    }
+    #price .box{
+        font-size: 13px;
+    }
+}
+@media (max-width: 768px){
+    #price{
+    padding: 35px 0;
+}
+	#price h3{margin-bottom: 30px;}
+	#price .content{
+        display: block;
+    }
+    #price .box{
+        width: 100%;
+        max-width: 340px;
+        margin: 0 auto;
+        float: none;
+    }
+    .fnav{
+        width: 100%;
+    }
+}

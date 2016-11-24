@@ -1,0 +1,73 @@
+/* CSS Document */
+
+
+#signup{
+    padding: 100px 0;
+    background: #2890E0;
+}
+#signup h2{
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 60px;
+}
+#signup .content{
+    width: 720px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #CED2D6; 
+}
+#signup .content h3{
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #CED2D6; 
+    margin-bottom: 70px;
+}
+
+#signup .form-group{
+    width: 500px;
+    margin: 0 auto 30px;
+}
+#signup .form-control{
+    height: 50px;
+}
+#signup .checkbox{
+    text-align: center;
+    margin-bottom: 40px;
+}
+#signup .checkbox label{
+    display: inline-flex;
+}
+#signup .checkbox label span{
+    color: #2DA2E1;
+}
+#signup .checkbox input[type=checkbox]{
+    margin-top: 8px;
+}
+#signup .btn{
+    width: 240px;
+    padding: 10px 0;
+    color: #fff;
+    margin-bottom: 40px;
+}
+#signup .help{
+    text-align: center;
+    margin-bottom: 70px;
+}
+#signup .help a{
+    color: #33A5E2;
+}
+
+
+
+
+@media (max-width: 768px){
+    #signup .form-group{
+        width: 100%;
+    }
+	#signup .content{
+    width: 100%;}
+    #signup form{
+        margin: 0 20px;
+    }
+}
