@@ -1,0 +1,50 @@
+/* ==========================signup=============================== */
+#signup{
+	background: #f5f6fa;
+}
+#signup  .signup{
+	background: #fff;
+	padding: 40px 50px 30px;
+    border-radius: 2px;
+    width: 420px;
+    margin: 0 auto 66px;
+    font-size: 12px;
+    border: 1px solid #e6f0f4;
+    -webkit-box-shadow: 0px 0px 8px 0px #ddd;
+	-moz-box-shadow: 0px 0px 8px 0px r#ddd;
+	box-shadow: 0px 0px 8px 0px r#ddd;
+}
+#signup  .signup .form-group {
+	margin-bottom: 28px;
+}
+#signup  .signup .form-group label{
+	margin-bottom: 11px;
+}
+#signup  .signup .checkbox{
+	margin-bottom: 28px;
+}
+#signup  .signup .checkbox input[type=checkbox]{
+	margin: 2px -20px  0;
+}
+#signup  .signup .btn{
+	background: #14b4c8;
+	height: 36px;
+	width: 100%;
+	border: none;
+	color: #fff;
+	margin-bottom: 30px;
+}
+#signup  .signup .btn:hover{
+	opacity: 0.7;
+	color: #fff;
+}
+#signup  .signup p{
+	font-size: 10px;
+	margin-bottom: 13px;
+}
+#signup  .signup p:last-child{
+	margin-bottom: 0;
+}
+#signup  .signup a{
+	color: #14b4c8;
+}

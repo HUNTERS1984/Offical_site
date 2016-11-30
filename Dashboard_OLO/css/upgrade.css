@@ -1,0 +1,207 @@
+/* CSS Document */
+.active{
+	display: block !important;
+}
+.upgrade_top{
+	border-top: 1px solid #dce6ea;
+	background: #f4f6f8;
+	padding: 46px 0 0;
+}
+.upgrade_top .top{
+	text-align: center;
+	margin-bottom: 50px;
+}
+.upgrade_top .top .image img{
+	width: 380px;
+}
+.upgrade_top .top li{
+	display: inline-block;
+	padding: 0 50px;
+	font-size: 12px;
+}
+
+.upgrade_top .top li.cl_14b4c8{
+	color: #14b4c8;
+}
+a.btn{
+	width: 120px;
+	height: 32px;
+	color: #fff;
+	margin: 0 20px 0;
+}
+a.btn:hover{
+	opacity: 0.7;
+	color: #fff;
+}
+.cancel{
+	background: #b4bec2;
+}
+.next{
+	background: #14b4c8;
+	border: 1px solid #0aaabe;
+}
+.closes{
+	background: #14b4c8;
+	border: 1px solid #0aaabe;
+}
+#basic{
+	display: none;
+	font-size: 12px;
+	padding-bottom: 150px;
+}
+#basic .box{
+	padding: 30px 0px 0 50px;
+	margin:0 auto 80px;
+	width: 720px;
+}
+#basic .box form{
+	width: 660px;
+	margin: 0 auto;
+}
+#basic .input-group{
+	margin-bottom: 28px;
+}
+#basic .btn-group .btn .caret{
+	margin-left: 10px;
+}
+#basic .box .btn-group .btn{
+	width: 160px;
+	height: 32px;
+}
+#basic .input-group:first-child .form-control{
+	border: 1px solid #bce6ed;
+	background: #beebf1;
+	height: 40px;
+}
+#basic .input-group:first-child .form-control::-webkit-input-placeholder{
+   color: #646e72;
+}
+
+#basic .box .input-group-addon{
+	width: 220px;
+	text-align: left;
+	background: none;
+	border: none;
+	font-size: 12px;
+}
+#basic .box .must{
+	color: #dc7878;
+	float: right;
+	padding-right: 40px;
+}
+#basic .box .form-control{
+	width: 440px;
+	height: 32px;
+	box-shadow: none;
+	font-size: 12px;
+}
+
+#basic .input-group .form-control:last-child{
+	border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+/* =====================confirmation====================== */
+#confirmation{
+	display: none;
+	font-size: 12px;
+	padding-bottom: 150px;
+}
+#confirmation .box{
+	padding: 20px 20px 0 50px;
+	margin:0 auto 80px;
+	width: 720px;
+	background: #fff;
+	border: 1px solid #c8d2d6;
+	border-radius: 4px;
+}
+#confirmation .box .panel{
+	box-shadow: none;
+}
+#confirmation .box table th,
+#confirmation .box table td{
+	border: none;
+	padding: 17px 0;
+	font-weight: normal;
+}
+#confirmation .box table th{
+	width: 220px;
+}
+#confirmation .box table td{
+	padding-left: 20px;
+	width: 440px;
+}
+#confirmation .box table tr:first-child td{
+	padding: 0;
+
+
+}
+#confirmation .box table tr .border{
+	background: #beebf1;
+	border: 1px solid #bce6ed;
+	border-radius: 6px;
+	padding: 11px 0px 11px 20px;
+}
+#confirmation .box .must{
+	color: #dc7878;
+	float: right;
+	padding-right: 50px;
+}
+
+/* ====================complete================== */
+#complete{
+	display: none;
+	font-size: 12px;
+	padding-bottom: 150px;
+}
+#complete .box-top{
+	background: #fff;
+	border: 1px solid #c8d2d6;
+	padding: 27px 0 50px;
+	border-radius: 4px;
+	width: 720px;
+	margin: 0 auto 40px;
+}
+#complete .box-top p.img{
+	margin-bottom: 40px;
+}
+#complete .box-top p{
+	line-height: 2.4;
+	margin-bottom: 0;
+}
+#complete .box-top p span{
+	color: #14b4c8;
+}
+#complete .box{
+	background: #fff;
+	border: 1px solid #c8d2d6;
+	padding: 40px 40px 20px;
+	border-radius: 4px;
+	width: 720px;
+	margin: 0 auto 40px;
+}
+#complete .box h3{
+	font-size: 14px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+#complete .box .panel{
+	box-shadow: none;
+}
+#complete .box table th,
+#complete .box table td{
+	border: none;
+	padding: 25px 0;
+	font-weight: normal;
+}
+#complete .box table th{
+	padding-left: 10px;
+	width: 220px;
+}
+#complete .box .caution{
+	background: #f4f6f8;
+	border: 1px solid #c8d2d6;
+	padding: 40px 40px 20px;
+	border-radius: 4px;
+	font-size: 10px;
+}

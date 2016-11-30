@@ -1,0 +1,14 @@
+/* CSS Document */
+
+
+#contents .nav-tabs{
+	margin-top:-38px;
+}
+.right-name ul{
+	position:relative;
+	z-index:1;
+}
+
+#contents .m_tooltip{
+	margin-left:20px;
+}

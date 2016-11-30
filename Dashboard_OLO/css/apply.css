@@ -1,0 +1,58 @@
+/* CSS Document */
+
+.itemp{
+	background-color:#FFFFFF;
+	border:2px solid #e9f1f5;
+	padding:3px 3px 3px 3px;
+	float:left;
+	width:100%;
+	margin-top:20px;
+}
+
+
+.itemp span{
+	line-height:30px;
+	padding:0px 20px; 
+}
+
+.itemp .icon_user{
+	float:left;
+	width:40px;
+	margin:25px;
+}
+.itemp dl{
+	float:left;
+	margin-top:30px;
+}
+.itemp dl dt, .itemp dl dd{
+	line-height:30px;
+}
+.itemp dl dt{
+	width:30%;
+	float:left;
+}
+
+.itemp dl dd{
+	width:50%;
+	float:left;
+}
+
+.itemp .icon_edit{
+	margin-top:30px;
+}
+
+.itemp .icon_edit a{
+	margin-left:20px;
+}
+
+#contents .app-box .item{
+	border:2px solid #edf3f7;
+	padding:1px;
+}
+
+#contents .app-box .item .user-it{
+	padding:7px 7px;
+}
+#contents .app-box .item .user-it span{
+	margin:0px 15px;
+}

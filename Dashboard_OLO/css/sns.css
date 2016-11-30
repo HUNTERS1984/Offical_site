@@ -1,0 +1,25 @@
+/* CSS Document */
+
+table td{
+	padding:16px 10px;
+}
+.tableoff, .tableon{
+	margin:20px 0px;
+}
+.tableoff .btn, .tableon .btn{
+	border:1px solid #82969a;
+	background-color:#8ca0a4;
+	border-radius:5px;
+	width:150px;
+	color:#FFFFFF;
+}
+
+.tableon .btn{
+	border:1px solid #0aaabe;
+	background-color:#14b4c8;
+}
+
+.tableon img {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}

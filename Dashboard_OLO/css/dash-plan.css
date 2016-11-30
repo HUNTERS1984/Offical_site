@@ -1,0 +1,149 @@
+/* Logout */
+#dialog-contain{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1031;
+    display: none;
+}
+#dialog-contain .fog{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+}
+#dialog-upgrade{
+    position: absolute;
+    top: 160px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 425px;
+    height: 330px;
+    padding: 50px 0 0;
+    background: #fff;
+    text-align: center;
+    z-index: 11;
+}
+#dialog-upgrade .btn-closedialog-logout{
+    position: absolute;
+    left: -17px;
+    top: -17px;
+    z-index: 12;
+}
+#dialog-upgrade .btn-closedialog-logout img{
+    width: 34px;
+}
+#dialog-upgrade img{
+    width: 140px;
+    margin-bottom: 35px;
+}
+#dialog-upgrade p{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    font-size: 16px;
+    color: #646e72;
+}
+#dialog-upgrade .checkbox{
+    margin: 20px 0;
+    font-size: 12px;
+}
+#dialog-upgrade .checkbox input[type="checkbox"]{
+    margin: 1px 0 0 -20px;
+}
+#dialog-upgrade .checkbox a{
+    color: #14b4c8;
+}
+#dialog-upgrade a.btn{
+    width: 320px;
+    background: #14b4c8;
+    border-radius: 4px;
+    color: #fff;
+}
+/**/
+.box-plan{
+    margin: 0 10px 35px;
+}
+.box-plan .plan{
+    width: 33.33333333%;
+    float: left;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    line-height: 1.8;
+}
+.box-plan .plan .plan-header{
+    padding: 10px 0;
+    border-bottom: 1px solid #49c3d3;
+}
+.box-plan .plan .plan-body .plan-price{
+    margin: 60px 0 50px;
+    text-align: center;
+    font-size: 56px;
+    padding-bottom: 30px;
+    position: relative;
+}
+.box-plan .plan .plan-body .plan-price small{
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.box-plan .plan .plan-body .plan-desc{
+    height: 100px;
+}
+.box-plan .plan .btn-upgrade-plan{
+    background: #e0f050;
+    color: #2896c8;
+    width: 200px;
+    line-height: 30px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+.box-plan .plan span.current-plan{
+    line-height: 30px;
+    text-align: center;
+    display: inline-block;
+    margin: 20px 0;
+}
+
+.box-plan table{
+    background: #fff;
+}
+.box-plan table.borderless thead tr th,.box-plan table.borderless tbody tr td{
+    border: none;
+}
+.box-plan table thead tr th,.box-plan table tbody tr td{
+    text-align: center;
+    width: 200px;
+    padding: 10px;
+}
+.box-plan table thead tr th:first-child,.box-plan table tbody tr td:first-child{
+    width: auto;
+    text-align: right;
+}
+
+.box-plan table th{
+    background: #14bed2;
+    color: #fff;
+}
+
+.box-plan table .btn-chosen{
+    background: #e0f050;
+    color: #2896c8;
+    width: 120px;
+    line-height: 30px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+.box-plan .bg_14b4c8{background: #14b4c8;}
+.box-plan .bg_2896c8{background: #2896c8;}
+.box-plan .bg_2878b4{background: #2878b4;}

@@ -1,0 +1,84 @@
+.cl_dc7878{
+    color: #dc7878;
+}
+/*--------------*/
+#contents .box{
+    margin: 0 10px 30px;
+    background: #fff;
+    border: 1px solid #e6f0f4;
+}
+
+#contents .box .box-header{
+    padding: 10px 15px;
+    border-bottom: 1px solid #d2dce0;
+}
+#contents .box .box-header .box-title{
+    color: #646e72;
+    font-size: 12px;
+    margin: 0;
+    display: inline-block;
+}
+#contents .box .box-body{
+    padding: 30px 15px;
+}
+
+#contents ul.list-message{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#contents ul.list-message li{
+    overflow: hidden;
+    margin-bottom: 30px;
+    padding: 0 15px 30px;
+    border-bottom: 1px solid #e0ecf2;
+}
+#contents ul.list-message li:last-child{
+    border-bottom: none;
+    margin-bottom: 0;
+}
+#contents ul.list-message li a{
+    text-decoration: none;
+}
+#contents ul.list-message li a img{
+    width: 65px;
+    margin-right: 15px;
+    border: 1px solid #d0dce2;
+}
+#contents ul.list-message li a:hover img{
+    border: 1px solid #de8080;
+}
+#contents ul.list-message li h4{
+    color: #646e72;
+    font-size: 12px;
+    position: relative;
+}
+#contents ul.list-message li h4 small{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #b4bec2;
+}
+#contents ul.list-message li p{
+    color: #646e72;
+    font-size: 10px;
+}
+
+#contents ul.pagination li+li{
+    margin-left: 15px;
+}
+#contents ul.pagination li a{
+    float: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    display: inline-block;
+    padding: 0;
+    border: 1px solid #14b4c8;
+    font-size: 10px;
+    margin: 0;
+}
+#contents ul.pagination li.active a{
+    background: #14b4c8;
+}
