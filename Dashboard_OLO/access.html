@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        
+    <title>アクセス解析</title>
+    
+        <!-- CSS Global Compulsory -->	  
+        <link href="css/bootstrap.css" rel="stylesheet"> 
+        <!-- CSS Customization -->	
+        <link rel="stylesheet" href="css/fonts.css" type="text/css" />	
+        <link rel="stylesheet" href="css/common3.css" type="text/css" />	
+
+        <!--Style page-->
+        
+		<link rel="stylesheet" href="css/access.css" type="text/css" />	
+	
+
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+
+        <div class="wrapper">
+            <div id="logout">
+                <div class="fog"></div>
+                <div id="dialog-logout">
+                    <a href="javascript:void(0)" class="btn-closedialog-logout"><img src="img/btn-closedialog.png" alt=""/></a>
+                    <img src="img/dialog-img-02.png" alt=""/>
+                    <p>ログアウトします。よろしいですか？</p>
+                    <a class="btn btn-logout">ログアウト</a>                </div>
+            </div>
+            <!--#header-->
+            <div id="header">
+                <div class="header_top">
+                    <div class="contain-box">
+                        <div class="logo"><a href=""><img src="img/olo-logo.png" alt=""/></a></div>
+                        <div class="navbar-custom-menu">
+                            <ul class="clearfix">
+                                <li><a class="toggle-search" href="javascript:void(0)"><img src="img/btn-search.png" alt=""/></a></li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <img src="img/btn-message.png" alt=""/>
+                                        <span class="label label-danger">4</span>                                    </a>
+                                    <ul>
+                                        <li>
+                                            <div class="scrollDiv">
+                                                <ul>
+                                                    <li class="imgleft"><!-- start message -->
+                                                        <a href="#">
+                                                            <div class="pull-left">
+                                                                <img src="img/user-128x128.jpg" class="img-circle" alt="User Image">                                                            </div>
+                                                            <h4>
+                                                                User Name                                                            </h4>
+                                                            <p>テキストが入りますテキストが入りますテキストが入り ますテキストが入りますテキストが入ります...</p>
+                                                            <small>Today 12:50pm - 18/05/2015</small>                                                        </a>                                                    </li>
+                                                    <li class="imgleft"><!-- start message -->
+                                                        <a href="#">
+                                                            <div class="pull-left">
+                                                                <img src="img/user-128x128.jpg" class="img-circle" alt="User Image">                                                            </div>
+                                                            <h4>
+                                                                User Name                                                            </h4>
+                                                            <p>テキストが入りますテキストが入りますテキストが入り ますテキストが入りますテキストが入ります...</p>
+                                                            <small>Today 12:50pm - 18/05/2015</small>                                                        </a>                                                    </li>
+                                                    <li class="imgleft"><!-- start message -->
+                                                        <a href="#">
+                                                            <div class="pull-left">
+                                                                <img src="img/user-128x128.jpg" class="img-circle" alt="User Image">                                                            </div>
+                                                            <h4>
+                                                                User Name                                                            </h4>
+                                                            <p>テキストが入りますテキストが入りますテキストが入り ますテキストが入りますテキストが入ります...</p>
+                                                            <small>Today 12:50pm - 18/05/2015</small>                                                        </a>                                                    </li>
+                                                    <li class="imgleft"><!-- start message -->
+                                                        <a href="#">
+                                                            <div class="pull-left">
+                                                                <img src="img/user-128x128.jpg" class="img-circle" alt="User Image">                                                            </div>
+                                                            <h4>
+                                                                User Name                                                            </h4>
+                                                            <p>テキストが入りますテキストが入りますテキストが入り ますテキストが入りますテキストが入ります...</p>
+                                                            <small>Today 12:50pm - 18/05/2015</small>                                                        </a>                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="footer"><a href="#">すべてのメッセージを見る</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <img src="img/btn-notification.png" alt=""/>
+                                        <span class="label label-danger">4</span>                                    </a>
+                                    <ul>
+                                        <li>
+                                            <div class="scrollDiv">
+                                                <ul>
+                                                    <li><!-- start message -->
+                                                        <a href="#">
+                                                            <h4>
+                                                                Title                                                            </h4>
+                                                            <p>テキストが入りますテキストが入りますテキストが入り ますテキストが入りますテキストが入ります...</p>
+                                                            <small>Today 12:50pm - 18/05/2015</small>                                                        </a>                                                    </li>
+                                                    <li><!-- start message -->
+                                                        <a href="#">
+                                                            <h4>
+                                                                Title                                                            </h4>
+                                                            <p>テキストが入りますテキストが入りますテキストが入り ますテキストが入りますテキストが入ります...</p>
+                                                            <small>Today 12:50pm - 18/05/2015</small>                                                        </a>                                                    </li>
+                                                    <li><!-- start message -->
+                                                        <a href="#">
+                                                            <h4>
+                                                                Title                                                            </h4>
+                                                            <p>テキストが入りますテキストが入りますテキストが入り ますテキストが入りますテキストが入ります...</p>
+                                                            <small>Today 12:50pm - 18/05/2015</small>                                                        </a>                                                    </li>
+                                                    <li><!-- start message -->
+                                                        <a href="#">
+                                                            <h4>
+                                                                Title                                                            </h4>
+                                                            <p>テキストが入りますテキストが入りますテキストが入り ますテキストが入りますテキストが入ります...</p>
+                                                            <small>Today 12:50pm - 18/05/2015</small>                                                        </a>                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="footer"><a href="#">すべてのメッセージを見る</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="logout" href="javascript:void(0)"><img src="img/btn-logout.png" alt=""/></a></li>
+                            </ul>
+                            <div class="header-search">
+                                <form role="form">
+                                    <input type="text" name="q" class="search-text" placeholder="検索するキーワードを入力して下さい">
+                                    <span class="btn-close">
+                                        <a href="javascript:void(0)"><img src="img/btn-close.png" alt=""/></a>                                    </span>
+                                </form>
+                            </div>
+                        </div>
+                        <!--Right header-->
+                    </div>
+                </div>
+                <!--Top header-->
+                <div class="header_bot">
+                    <div class="pull-left">
+                        <p class="campaign-name">
+                            <span class="c-pagination-selected"></span>
+                            Campaign Name                        </p>
+                    </div>
+                    <div class="pull-right">
+                        <a href="javascript:void(0)" class="member-a"></a>
+                        <a href="javascript:void(0)" class="member-add"></a>                    </div>
+                </div>
+            </div>	
+
+            <!--#main-->
+            <div id="main" class="sidebar-open">
+                <!--content-->
+                <div id="contents">
+				  				  	  
+					  <h3 class="line">アクセス解析</h3>
+					  <div class="formdate">
+					  		<form action="" method="get">
+								<table width="100%" border="0">
+								  <tr>
+									<th scope="row" width="15%">期間を選択する</th>
+									<td><select name="" class="sort"><option>過去７日間</option></select></td>
+								  </tr>
+								  <tr>
+									<th scope="row">期間を選択する</th>
+									<td class="date"><label>開始</label><select name=""></select>  <label>年</label><select name=""></select>  <label>月</label><select name=""></select> <label>日</label>							 </td>
+								  </tr>
+								  <tr>
+									<th scope="row"></th>
+									<td class="date"><label>終了</label><select name=""></select> <label>年</label><select name=""></select> <label>月</label><select name=""></select><label>日</label>	</td>
+								  </tr>
+								</table>
+							</form>
+					  </div>
+					  <!--chart-->
+					  <div class="chart">
+					  		  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  								<div id="chart_div"></div>
+					  </div>
+					  <!--table-->
+					  <div class="row">
+					  <div class="col-md-12">
+					  <div class="bg_white table-ac cleafix">
+					  		<h4>期間　　<span>14/05/2015 〜 20/05/2015</span></h4>
+							<table width="100%" border="0" cellspacing="2" cellpadding="5" class="table table-bordered">
+							  <tr>
+								<th scope="col" width="10%">配信日</th>
+								<th scope="col" width="15%">セッション</th>
+								<th scope="col" width="10%">PV</th>
+								<th scope="col" width="15%">平均PV</th>
+								<th scope="col" width="15%">直帰率</th>
+								<th scope="col" width="15%">平均滞在時間</th>
+								<th scope="col" width="14%">新規セッション率</th>
+							  </tr>
+							  <tr>
+								<td>本日</td>
+								<td>2,555</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>1.5％</td>
+							  </tr>
+							  <tr>
+								<td>23/05/2015</td>
+								<td>2,555</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>1.5％</td>
+							  </tr>
+							  <tr>
+								<td>23/05/2015</td>
+								<td>2,555</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>1.5％</td>
+							  </tr>
+							  <tr>
+								<td>23/05/2015</td>
+								<td>2,555</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>1.5％</td>
+							  </tr>
+							  <tr>
+								<td>23/05/2015</td>
+								<td>2,555</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>1.5％</td>
+							  </tr>
+							  <tr>
+								<td>23/05/2015</td>
+								<td>2,555</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>1.5％</td>
+							  </tr>
+							  <tr>
+								<td>23/05/2015</td>
+								<td>2,555</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>1.5％</td>
+							  </tr>
+							  <tr>
+								<td>23/05/2015</td>
+								<td>2,555</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>1.5％</td>
+							  </tr>
+							  <tr>
+								<td>23/05/2015</td>
+								<td>2,555</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>1.5％</td>
+							  </tr>
+							  <tr>
+								<td>23/05/2015</td>
+								<td>2,555</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>1.5％</td>
+							  </tr>
+							  <tr>
+								<td>23/05/2015</td>
+								<td>2,555</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>1.5％</td>
+							  </tr>
+							  <tr>
+								<td>23/05/2015</td>
+								<td>2,555</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>1.5％</td>
+							  </tr>
+							  <tr>
+								<td>23/05/2015</td>
+								<td>2,555</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>1.5％</td>
+							  </tr><tr>
+								<td>23/05/2015</td>
+								<td>2,555</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>1.5％</td>
+							  </tr>
+							  <tr>
+								<td>23/05/2015</td>
+								<td>2,555</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>1.5％</td>
+							  </tr>
+							  <tr>
+								<td>23/05/2015</td>
+								<td>2,555</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>1.5％</td>
+							  </tr>
+							  <tr>
+								<td>23/05/2015</td>
+								<td>2,555</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>1.5％</td>
+							  </tr><tr>
+								<td>23/05/2015</td>
+								<td>2,555</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>1.5％</td>
+							  </tr>
+							  <tr>
+								<td>23/05/2015</td>
+								<td>2,555</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>1.5％</td>
+							  </tr>
+							  <tr>
+								<td>23/05/2015</td>
+								<td>2,555</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>1.5％</td>
+							  </tr>
+							  <tr>
+								<td>23/05/2015</td>
+								<td>2,555</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>1.5％</td>
+							  </tr>
+							  <tr>
+								<td>23/05/2015</td>
+								<td>2,555</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>1.5％</td>
+							  </tr>
+							  <tr>
+								<td>23/05/2015</td>
+								<td>2,555</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>12</td>
+								<td>1.5％</td>
+							  </tr>
+							</table>
+								
+							<div class="text-center">
+								<ul class="pagination ">
+								  <li><a href="#">1</a></li>
+								  <li class="active"><a href="#">2</a></li>
+								  <li><a href="#">3</a></li>
+								  <li><a href="#">4</a></li>
+								  <li><a href="#">5</a></li>
+								</ul>
+							</div>
+					  </div>
+					  </div>
+					  </div>                
+			    </div>
+                <!--content-->
+                <div id="side">
+                    <ul>
+                        <li><a href="accountsetting.html">キャンペーン情報</a></li>
+                        <li><a href="hashtag.html">ハッシュタグ設定</a></li>
+                        <li><a href="sns.html">各種SNS連携</a></li>
+                        <li><a href="design.html">デザイン・レイアウト</a></li>
+                        <li><a href="post.html">投稿管理</a></li>
+                        <li><a href="apply.html">応募状況管理</a></li>
+                        <li><a href="access.html">アクセス解析</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--#Footer-->
+            <div id="footer">
+                <div class="container-fluid">
+                    <p>Copyright　HUNTERS.Co.Ltd © 2014-2015</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <!--Custom Css-->
+        <script src="js/site.js"></script>
+	
+		<script src="js/chart.js"></script>
+    </body>
+</html>
