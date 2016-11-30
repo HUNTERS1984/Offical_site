@@ -13,6 +13,7 @@ body {
     /* make sure we use the full width but allow for more height */
     width: 100%;
 	font-size:120%;
+	color: #788286;
     min-height: 100vh; /* this helps with the sticky footer */
 }
 a{
