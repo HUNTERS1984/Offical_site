@@ -1,36 +1,31 @@
-// JavaScript Document
-
-google.charts.load('current', {packages: ['corechart', 'line']});
-google.charts.setOnLoadCallback(drawBackgroundColor);
-
-function drawBackgroundColor() {
-      var data = new google.visualization.DataTable();
-      data.addColumn('number', 'X');
-      data.addColumn('number', 'Dogs');
-
-      data.addRows([
-        [13, 100],  
-       
-        [14, 70], 
-       
-        [15, 110], 
-       [16, 70], 
-        [17, 430], 
-       
-        [18, 200],  [19, 300],
-        [20, 410]
-      ]);
-
-      var options = {
-        hAxis: {
-          title: ''
-        },
-        vAxis: {
-          title: ''
-        },
-        backgroundColor: '#fff'
-      };
-
-      var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
-      chart.draw(data, options);
-    }
+window.onload = function() {
+		var chart = new CanvasJS.Chart("chartContainer", {
+			title: {
+				text: "Line Chart"
+			},
+			axisX: {
+				interval: 10
+			},
+			data: [{
+				type: "line",
+				dataPoints: [
+				  { x: 10, y: 45 },
+				  { x: 20, y: 14 },
+				  { x: 30, y: 20 },
+				  { x: 40, y: 60 },
+				  { x: 50, y: 50 },
+				  { x: 60, y: 80 },
+				  { x: 70, y: 40 },
+				  { x: 80, y: 60 },
+				  { x: 90, y: 10 },
+				  { x: 100, y: 50 },
+				  { x: 110, y: 40 },
+				  { x: 120, y: 14 },
+				  { x: 130, y: 70 },
+				  { x: 140, y: 40 },
+				  { x: 150, y: 90 },
+				]
+			}]
+		});
+		chart.render();
+	}
