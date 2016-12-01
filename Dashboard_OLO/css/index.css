@@ -32,25 +32,36 @@
 #contents .right-name{ float:right;}
 #contents .right-name ul, #contents .right-name li{
 	display:inline;
-	padding:5px 12px;
+	padding:5px 9px 5px 16px;
+}
+#contents .right-name ul{
+	padding:5px 0px;
 }
 
 #contents .right-name .btn{
 	background-color:#14b4c8;
-	width:145px;
+	width:162px;
 	border-radius:6px;
+	padding:4px;
 	color:#fff;
 	font-size:12px;
+	font-family: 'HiraKakuPro-W6-AlphaNum';
+}
+
+#contents .right-name .btn i{
+	font-size:20px;
+	margin-right:16px;
 }
 
 /*tabs*/
 
 #contents .nav-tabs {
-	margin-bottom:30px;
+	margin-bottom:32px;
 }
 
 .nav-tabs > li > a{
 	font-size:12px;
+	padding:18px 18px;
 	color:#666666;
 }
 .nav-tabs > li > a:hover{
@@ -64,7 +75,7 @@
 }
 
 #contents .nav-tabs{
-	margin-top:-38px;
+	margin-top:-55px;
 }
 
 #contents .tab-content .item{
@@ -77,13 +88,15 @@
 }
 
 #contents .tab-content .item h5{
-	padding:5px 10px 0px 10px;
+	padding:7px 10px 0px 24px;
 	color:#788c90;
-	font-weight:bold;
+	font-weight:bold!important;
+	font-family: 'HiraKakuPro-W6-AlphaNum';
 }
 
 #contents .tab-content .item .date{
-	padding:0px 10px 10px 10px;
+	padding:0px 10px 16px 24px;
 	color:#a0b4b8;
 	font-size:10px;
+	
 }

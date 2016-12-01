@@ -6,7 +6,7 @@
 	padding:3px 3px 3px 3px;
 	float:left;
 	width:100%;
-	margin-top:20px;
+	margin-top:11px;
 }
 
 
@@ -26,14 +26,15 @@
 }
 .itemp dl dt, .itemp dl dd{
 	line-height:30px;
+	font-weight:500;
 }
 .itemp dl dt{
-	width:30%;
+	width:25%;
 	float:left;
 }
 
 .itemp dl dd{
-	width:50%;
+	width:55%;
 	float:left;
 }
 
@@ -48,10 +49,16 @@
 #contents .app-box .item{
 	border:2px solid #edf3f7;
 	padding:1px;
+	margin-top:12px;
 }
 
 #contents .app-box .item .user-it{
-	padding:7px 7px;
+	padding:4px 9px 9px 9px;
+	line-height:2.0;
+	
+}
+#contents .app-box .item .user-it img{
+	width:18px;
 }
 #contents .app-box .item .user-it span{
 	margin:0px 15px;

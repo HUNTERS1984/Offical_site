@@ -1,4 +1,20 @@
 /* CSS Document */
+@font-face {
+  font-family: 'HiraKakuPro-W3-AlphaNum';
+  src: url('fonts/HiraKakuPro-W3-AlphaNum.eot?#iefix') format('embedded-opentype'),  url('fonts/HiraKakuPro-W3-AlphaNum.otf')  format('opentype'),
+	     url('fonts/HiraKakuPro-W3-AlphaNum.woff') format('woff'), url('fonts/HiraKakuPro-W3-AlphaNum.ttf')  format('truetype'), url('fonts/HiraKakuPro-W3-AlphaNum.svg#HiraKakuPro-W3-AlphaNum') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HiraKakuPro-W6-AlphaNum';
+  src: url('fonts/HiraKakuPro-W6-AlphaNum.eot?#iefix') format('embedded-opentype'),  url('fonts/HiraKakuPro-W6-AlphaNum.otf')  format('opentype'),
+	     url('fonts/HiraKakuPro-W6-AlphaNum.woff') format('woff'), url('fonts/HiraKakuPro-W6-AlphaNum.ttf')  format('truetype'), url('fonts/HiraKakuPro-W6-AlphaNum.svg#HiraKakuPro-W6-AlphaNum') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
     /* personal preference */
     margin: 0;
@@ -11,7 +27,8 @@ html {
 }
 body {
     /* make sure we use the full width but allow for more height */
-    width: 100%;
+    font-family: 'HiraKakuPro-W3-AlphaNum';
+	width: 100%;
     min-height: 100vh; /* this helps with the sticky footer */
 }
 .wrapper{
@@ -27,6 +44,26 @@ body {
 .margin-bottom-60{
 	margin-bottom:60px;
 }
+.margin-top-10{
+	margin-top:10px;
+}
+.margin-top-15{
+	margin-top:15px;
+}
+
+.margin-top-20{
+	margin-top:20px;
+}
+
+.margin-top-30{
+	margin-top:30px;
+}
+.margin-top-40{
+	margin-top:40px;
+}
+
+.margin-right-30{ margin-right:30px;}
+.margin-right-60{ margin-right:60px;}
 
 /*header*/
 #header{
@@ -285,6 +322,8 @@ body {
 #dialog-logout p{
     font-size: 16px;
     margin-bottom: 40px;
+	font-family: 'HiraKakuPro-W6-AlphaNum';
+	font-weight:bold;
 }
 #dialog-logout a.btn{
     width: 320px;
@@ -301,6 +340,7 @@ body {
 }
 
 .header_bot .campaign-name{
+	font-family: 'HiraKakuPro-W6-AlphaNum';
     color: #788c90;
     font-size: 12px;
     margin: 0;
@@ -363,6 +403,7 @@ body {
     display: block;
     color: #fff;
     padding-left: 30px;
+	font-size:12px;
 }
 .header_bot ul li a:hover{
     text-decoration: none;
@@ -418,3 +459,61 @@ body {
 	color:#14b4c8;
 }
 
+
+/*modal*/
+
+.btnclose { float: left;
+    font-size: 21px;
+    font-weight: bold;
+    color: #000;
+	margin:-13px 0 0 -13px;
+	z-index:1;
+	position:relative;
+    }
+
+.modal-dialog {
+    width: 424px;
+    margin: 60px auto;
+}
+
+.modal-body {
+    padding: 40px 30px 40px;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 0;
+    outline: 0;
+    -webkit-box-shadow: 0 0px 09px rgba(0, 0, 0, .5);
+    box-shadow: 0 0px 0px rgba(0, 0, 0, .5);
+}
+
+.modal-content .content_des{
+	text-align:center;
+	font-size:12px;
+	line-height:1.6;
+	color:#788286;
+}
+
+
+.modal-content .content_des .btn-pink, .modal-content .content_des .btn-blue{
+	width:320px;
+	background-color:#dc7878;
+	margin-top:30px;
+	color:#FFFFFF;
+}
+.modal-content h4{
+	text-align:center;
+	font-weight:bold!important;
+	font-family: 'HiraKakuPro-W6-AlphaNum';
+}
+.modal-content .content_des .btn-blue
+{
+	
+	background-color:#14b4c8;
+}

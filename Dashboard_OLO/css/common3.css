@@ -1,9 +1,27 @@
 /* CSS Document */
+@font-face {
+  font-family: 'HiraKakuPro-W3-AlphaNum';
+  src: url('fonts/HiraKakuPro-W3-AlphaNum.eot?#iefix') format('embedded-opentype'),  url('fonts/HiraKakuPro-W3-AlphaNum.otf')  format('opentype'),
+	     url('fonts/HiraKakuPro-W3-AlphaNum.woff') format('woff'), url('fonts/HiraKakuPro-W3-AlphaNum.ttf')  format('truetype'), url('fonts/HiraKakuPro-W3-AlphaNum.svg#HiraKakuPro-W3-AlphaNum') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HiraKakuPro-W6-AlphaNum';
+  src: url('fonts/HiraKakuPro-W6-AlphaNum.eot?#iefix') format('embedded-opentype'),  url('fonts/HiraKakuPro-W6-AlphaNum.otf')  format('opentype'),
+	     url('fonts/HiraKakuPro-W6-AlphaNum.woff') format('woff'), url('fonts/HiraKakuPro-W6-AlphaNum.ttf')  format('truetype'), url('fonts/HiraKakuPro-W6-AlphaNum.svg#HiraKakuPro-W6-AlphaNum') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
     /* personal preference */
     margin: 0;
     padding: 0;
 }
+
+
 html {
     /* make sure we use up the whole viewport */
     width: 100%;
@@ -11,8 +29,9 @@ html {
 }
 body {
     /* make sure we use the full width but allow for more height */
-    width: 100%;
-	font-size:120%;
+    font-family: 'HiraKakuPro-W3-AlphaNum';
+	width: 100%;
+	font-size: 12px;
 	color: #788286;
     min-height: 100vh; /* this helps with the sticky footer */
 }
@@ -47,7 +66,8 @@ table td{
 input[type=text], select, textarea{
 	border:1px solid #c8d2d6;	
 	border-radius:5px;
-	padding:7px 10px;
+	padding:3px 10px;
+	line-height:1.8;
 }
 
 select{
@@ -65,22 +85,38 @@ input.long{
 }
 input.long80{width:80%;}
 
-.margin-top-10{
-	margin-top:10px;
-}
-.margin-top-15{
-	margin-top:15px;
-}
 
-.margin-top-20{
-	margin-top:20px;
-}
+.padding-32{ padding:30px;}
+.margin-top-10{	margin-top:10px;}
+.margin-top-15{	margin-top:15px;}
 
-.margin-top-30{
-	margin-top:30px;
-}
+.margin-top-20{	margin-top:20px;}
+.margin-top-25{	margin-top:25px;}
+.margin-top-30{	margin-top:30px;}
+.margin-top-35{	margin-top:35px;}
+.margin-top-40{	margin-top:40px;}
+.margin-top-45{	margin-top:45px;}
+.margin-top-50{	margin-top:50px;}
+.margin-top-47{	margin-top:47px;}
+.margin-top-60{	margin-top:60px;}
+.margin-top-80{	margin-top:80px;}
+.margin-bottom-10{	margin-bottom:10px;}
+.margin-bottom-20{	margin-bottom:20px;}
+.margin-bottom-25{	margin-bottom:25px;}
+.margin-bottom-30{	margin-bottom:30px;}
+.margin-bottom-40{	margin-bottom:40px;}
+.margin-bottom-45{	margin-bottom:45px;}
+.margin-bottom-50{	margin-bottom:50px;}
+.margin-bottom-60{	margin-bottom:60px;}
+.margin-bottom-70{	margin-bottom:70px;}
 
+.margin-bottom-80{	margin-bottom:80px;}
+
+.margin-right-10{ margin-right:10px;}
+.margin-right-15{ margin-right:15px;}
+.margin-right-20{ margin-right:20px;}
 .margin-right-30{ margin-right:30px;}
+.margin-right-45{ margin-right:45px;}
 .margin-right-60{ margin-right:60px;}
 
 /*header*/
@@ -340,6 +376,8 @@ input.long80{width:80%;}
 #dialog-logout p{
     font-size: 16px;
     margin-bottom: 40px;
+	font-family: 'HiraKakuPro-W6-AlphaNum';
+	font-weight:bold;
 }
 #dialog-logout a.btn{
     width: 320px;
@@ -390,8 +428,8 @@ input.long80{width:80%;}
 }
 /* Sidebar open */
 #main.sidebar-open #contents{
-    margin-left: 250px;
-	margin-right: 20px;
+    margin-left: 263px;
+	margin-right: 23px;
 	padding-bottom: 70px;
 }
 /*side*/
@@ -431,15 +469,17 @@ input.long80{width:80%;}
 	border-bottom: 1px solid #d0dce2;
 	float:left;
 	width:100%;
-	padding:20px 0px 15px 0px;
+	padding:15px 15px 15px 15px;
+	display:table;
 }
 
 #contents h3{
 	font-size: 14px;
     font-weight: bold;
     color: #64787c;
-	padding:10px 10px;
+	line-height:2.3;
 	margin:0px;
+	font-family: 'HiraKakuPro-W6-AlphaNum';
 	
 }
 
@@ -453,7 +493,10 @@ input.long80{width:80%;}
 #contents .right-name{ float:right;}
 #contents .right-name ul, #contents .right-name li{
 	display:inline;
-	padding:5px 12px;
+	padding:5px 9px 5px 5px;
+}
+#contents .right-name ul{
+	padding:0px!important;
 }
 
 #contents .right-name .btn{
@@ -462,6 +505,7 @@ input.long80{width:80%;}
 	border-radius:6px;
 	color:#fff;
 	font-size:12px;
+	border:1px solid #0aaabe;
 }
 
 
@@ -470,6 +514,7 @@ input.long80{width:80%;}
 	border:1px solid #14b4c8;
 	border-radius:50%;
 	color:#14b4c8;
+	padding: 4px 9px
 }
 
 .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus{
@@ -492,10 +537,14 @@ input.long80{width:80%;}
 }
 
 #contents .text_note{
-	margin:30px 0px;
-	padding:72px;
+	margin:20px 0px;
+	padding:72px 40px;
 	text-align:center;
 	border:1px dashed #CCCCCC;
+}
+
+#contents .text_note a{
+	text-decoration:underline;
 }
 
 
@@ -504,7 +553,7 @@ input.long80{width:80%;}
 	width:100%;
 	background-color:#FFFFFF;
 	border:1px solid #e8eef2;
-	padding:30px;
+	padding:10px 30px;
 	margin-bottom:20px;
 }
 
@@ -516,13 +565,15 @@ color:#FF0000;
 /*tabs*/
 
 #contents .nav-tabs {
-	margin-top:30px;
-	margin-bottom:30px;
+	margin-top:20px;
+	margin-bottom:23px;
+	padding-left:6px;
 }
 
 .nav-tabs > li > a{
 	font-size:12px;
 	color:#666666;
+	padding:18px;
 }
 .nav-tabs > li > a:hover{
 	background-color:transparent;
@@ -532,6 +583,7 @@ color:#FF0000;
 	background-color:transparent;
 	border: 0px solid #FFFFFF;
 	border-bottom:2px solid #14b4c8;
+	padding:18px;
 }
 
 
@@ -572,7 +624,7 @@ color:#FF0000;
 }
 
 .modal-body {
-    padding: 24px;
+    padding: 30px 24px 40px;
 }
 
 .modal-content {
@@ -590,6 +642,7 @@ color:#FF0000;
 
 .modal-content .content_des{
 	text-align:center;
+	line-height:2.0;
 }
 
 .modal-content .content_des .btn-pink, .modal-content .content_des .btn-blue{
@@ -597,12 +650,18 @@ color:#FF0000;
 	background-color:#dc7878;
 	margin-top:30px;
 	color:#FFFFFF;
+	font-size:12px;
+	font-family: 'HiraKakuPro-W6-AlphaNum';
 }
 .modal-content h4{
 	text-align:center;
+	font-size:16px;
+	font-weight:bold!important;
+	font-family: 'HiraKakuPro-W6-AlphaNum';
 }
 .modal-content .content_des .btn-blue
 {
+	font-family: 'HiraKakuPro-W6-AlphaNum';
 	
 	background-color:#14b4c8;
 }
@@ -612,7 +671,9 @@ color:#FF0000;
 	padding:5px;
 }
 .modal-content .content_des table td{
+	padding:7px 0px 8px 0;
 	text-align:left;
+	vertical-align:middle;
 }
 
 /*radio css*/

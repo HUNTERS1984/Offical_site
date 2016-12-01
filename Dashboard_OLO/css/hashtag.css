@@ -1,14 +1,23 @@
 /* CSS Document */
 
+table td{ 
+	line-height:2.6;
+}
 
 #contents .nav-tabs{
-	margin-top:-38px;
+	margin-top:-55px;
 }
 .right-name ul{
 	position:relative;
 	z-index:1;
 }
 
-#contents .m_tooltip{
-	margin-left:20px;
+
+.width-114{ width:114px!important;}
+.width-64{ width:64px!important;}
+
+.btn i{
+	font-size:20px;
+	margin-right:10px;
+	font-weight:bold!important;
 }

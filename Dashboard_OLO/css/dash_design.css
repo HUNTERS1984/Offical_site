@@ -7,7 +7,9 @@
 	
 }
 #contents .ditem h4{
-	font-size:14px;
+	font-size:12px;
+	padding:14px 5px;
+	margin:0px;
 }
 #contents .ditem figure{
 	height:300px;
@@ -19,12 +21,27 @@
 	width:100%;
 	margin-bottom:10px;
 	background-color:#14b4c8;
+	border:1px solid #0aaabe;
+	padding:4px 0px;
+	color:#FFFFFF;
+	font-family: 'HiraKakuPro-W6-AlphaNum';
+}
+#contents .ditem .btn:hover{
+	width:100%;
+	margin-bottom:10px;
+	background-color:#8ca0a4;
+	border:1px solid #82969a;
+	padding:4px 0px;
 	color:#FFFFFF;
 }
 
 #contents .bg_white h4{
 	font-size:14px;
-	margin-bottom:30px;
+	margin-bottom:28px;
+	margin-top:20px;
+}
+.content_des p{
+	font-size:10px;
 }
 
 #contents .desc { display: none; }
@@ -78,7 +95,7 @@ ul.color li{
   position: relative;
   float: left;
   width:320px;
-  margin:5px auto;
+  margin:6px auto;
   border-radius:5px;
 }
 
@@ -92,7 +109,7 @@ ul.color li label{
   position: relative;
   font-weight: 300;
   font-size: 14px;
-  padding: 0px 25px 25px 30px;
+  padding: 3px 25px 25px 30px;
   margin: 0px auto;
   height: 18px;
   z-index: 9;

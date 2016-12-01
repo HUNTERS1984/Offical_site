@@ -1,17 +1,27 @@
 /* CSS Document */
 .formdate {
-	margin-bottom:30px;
-	margin-top:20px;
+	margin-bottom:37px;
+	margin-top:22px;
 	float:left;
 	width:100%;
 }
+
+.formdate th, .formdate td{
+	padding:5px 0px;
+}
+
 .date label{
-	width:50px;
+	width:38px;
+}
+.datelong select{
+	width:144px;
+	padding:3px 10px;
 }
 
 .date select{
-	width:100px;
+	width:89px;
 	margin-right:10px;
+	padding:3px 10px;
 }
 
 
