@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <!-- TemplateBeginEditable name="doctitle" -->
+        <title>Photo Campaign</title>
+        <!-- TemplateEndEditable -->
+        <!-- CSS Global Compulsory -->	  
+        <link href="../css/bootstrap.css" rel="stylesheet"> 
+        <!-- CSS Customization -->	
+        <link rel="stylesheet" href="../css/fonts.css" type="text/css" />	
+        <link rel="stylesheet" href="../css/common5.css" type="text/css" />	
+
+        <!--Style page-->
+       <!-- TemplateBeginEditable name="head" -->
+			<!--Vi tri them css page-->
+		<!-- TemplateEndEditable -->	
+
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+    <body>
+
+        <div class="wrapper">
+            <div id="header">
+                <div class="logo-2"><a href="../index.html"><img src="../img/olo-logo-2.png" alt=""/></a></div>
+            </div>	
+
+            <!--#main-->
+            <div id="main">
+                <!--content-->
+                <div id="contents">
+                <!-- TemplateBeginEditable name="EditRegion1" -->
+					Vitri content
+				<!-- TemplateEndEditable -->                
+				
+				</div>
+                <!--content-->
+            </div>
+            <!--#Footer-->
+            <div id="footer">
+                <div class="container-fluid">
+                    <p>Copyright　HUNTERS.Co.Ltd © 2014-2015</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="../js/bootstrap.min.js"></script>
+        <!--Custom Css-->
+        <script src="../js/site.js"></script>
+	<!-- TemplateBeginEditable name="EditRegion4" -->
+			<!--Vi tri them js page-->
+	<!-- TemplateEndEditable -->
+    </body>
+</html>

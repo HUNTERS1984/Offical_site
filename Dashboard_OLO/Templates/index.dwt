@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <!-- TemplateBeginEditable name="doctitle" -->
+        <title>Photo Campaign</title>
+        <!-- TemplateEndEditable -->
+        <!-- CSS Global Compulsory -->	  
+        <link href="../css/bootstrap.css" rel="stylesheet"> 
+        <!-- CSS Customization -->	
+        <link rel="stylesheet" href="../css/fonts.css" type="text/css" />	
+        <link rel="stylesheet" href="../css/common1.css" type="text/css" />	
+
+        <!--Style page-->
+        <!-- TemplateBeginEditable name="head" -->
+			<!--Vi tri them css pag-->
+		<!-- TemplateEndEditable -->
+
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+    <body>
+
+        <div class="wrapper">
+            <div id="logout">
+                <div class="fog"></div>
+                <div id="dialog-logout">
+                    <a href="javascript:void(0)" class="btn-closedialog-logout"><img src="../img/btn-closedialog.png" alt=""/></a>
+                    <img src="../img/dialog-img-02.png" alt=""/>
+                    <p>ログアウトします。よろしいですか？</p>
+                    <a class="btn btn-logout">ログアウト</a>
+                </div>
+            </div>
+            <!--#header-->
+            <div id="header">
+                <div class="header_top">
+                    <div class="contain-box">
+                        <div class="logo"><a href="../index.html"><img src="../img/olo-logo.png" alt=""/></a></div>
+                        <div class="navbar-custom-menu">
+                            <ul class="clearfix">
+                                <li><a class="toggle-search" href="javascript:void(0)"><img src="../img/btn-search.png" alt=""/></a></li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <img src="../img/btn-message.png" alt=""/>
+                                        <span class="label label-danger">4</span>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <div class="scrollDiv">
+                                                <ul>
+                                                    <li class="imgleft"><!-- start message -->
+                                                        <a href="#">
+                                                            <div class="pull-left">
+                                                                <img src="../img/user-128x128.jpg" class="img-circle" alt="User Image">
+                                                            </div>
+                                                            <h4>
+                                                                User Name
+                                                            </h4>
+                                                            <p>テキストが入りますテキストが入りますテキストが入り ますテキストが入りますテキストが入ります...</p>
+                                                            <small>Today 12:50pm - 18/05/2015</small>
+                                                        </a>
+                                                    </li>
+                                                    <li class="imgleft"><!-- start message -->
+                                                        <a href="#">
+                                                            <div class="pull-left">
+                                                                <img src="../img/user-128x128.jpg" class="img-circle" alt="User Image">
+                                                            </div>
+                                                            <h4>
+                                                                User Name
+                                                            </h4>
+                                                            <p>テキストが入りますテキストが入りますテキストが入り ますテキストが入りますテキストが入ります...</p>
+                                                            <small>Today 12:50pm - 18/05/2015</small>
+                                                        </a>
+                                                    </li>
+                                                    <li class="imgleft"><!-- start message -->
+                                                        <a href="#">
+                                                            <div class="pull-left">
+                                                                <img src="../img/user-128x128.jpg" class="img-circle" alt="User Image">
+                                                            </div>
+                                                            <h4>
+                                                                User Name
+                                                            </h4>
+                                                            <p>テキストが入りますテキストが入りますテキストが入り ますテキストが入りますテキストが入ります...</p>
+                                                            <small>Today 12:50pm - 18/05/2015</small>
+                                                        </a>
+                                                    </li>
+                                                    <li class="imgleft"><!-- start message -->
+                                                        <a href="#">
+                                                            <div class="pull-left">
+                                                                <img src="../img/user-128x128.jpg" class="img-circle" alt="User Image">
+                                                            </div>
+                                                            <h4>
+                                                                User Name
+                                                            </h4>
+                                                            <p>テキストが入りますテキストが入りますテキストが入り ますテキストが入りますテキストが入ります...</p>
+                                                            <small>Today 12:50pm - 18/05/2015</small>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="footer"><a href="#">すべてのメッセージを見る</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <img src="../img/btn-notification.png" alt=""/>
+                                        <span class="label label-danger">4</span>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <div class="scrollDiv">
+                                                <ul>
+                                                    <li><!-- start message -->
+                                                        <a href="#">
+                                                            <h4>
+                                                                Title
+                                                            </h4>
+                                                            <p>テキストが入りますテキストが入りますテキストが入り ますテキストが入りますテキストが入ります...</p>
+                                                            <small>Today 12:50pm - 18/05/2015</small>
+                                                        </a>
+                                                    </li>
+                                                    <li><!-- start message -->
+                                                        <a href="#">
+                                                            <h4>
+                                                                Title
+                                                            </h4>
+                                                            <p>テキストが入りますテキストが入りますテキストが入り ますテキストが入りますテキストが入ります...</p>
+                                                            <small>Today 12:50pm - 18/05/2015</small>
+                                                        </a>
+                                                    </li>
+                                                    <li><!-- start message -->
+                                                        <a href="#">
+                                                            <h4>
+                                                                Title
+                                                            </h4>
+                                                            <p>テキストが入りますテキストが入りますテキストが入り ますテキストが入りますテキストが入ります...</p>
+                                                            <small>Today 12:50pm - 18/05/2015</small>
+                                                        </a>
+                                                    </li>
+                                                    <li><!-- start message -->
+                                                        <a href="#">
+                                                            <h4>
+                                                                Title
+                                                            </h4>
+                                                            <p>テキストが入りますテキストが入りますテキストが入り ますテキストが入りますテキストが入ります...</p>
+                                                            <small>Today 12:50pm - 18/05/2015</small>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="footer"><a href="#">すべてのメッセージを見る</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="logout" href="javascript:void(0)"><img src="../img/btn-logout.png" alt=""/></a></li>
+                            </ul>
+                            <div class="header-search">
+                                <form role="form">
+                                    <input type="text" name="q" class="search-text" placeholder="検索するキーワードを入力して下さい">
+                                    <span class="btn-close">
+                                        <a href="javascript:void(0)"><img src="../img/btn-close.png" alt=""/></a>
+                                    </span>
+                                </form>
+                            </div>
+                        </div>
+                        <!--Right header-->
+                    </div>
+                </div>
+                <div class="header_bot">
+                    <div class="pull-right">
+                        <a href="../access.html" class="backtohome">ダッシュボードに移動</a>
+                    </div>
+                </div>
+            </div>	
+
+            <!--#main-->
+            <div id="main">
+                <!--content-->
+                <div id="contents">
+			    <!-- TemplateBeginEditable name="EditRegion3" -->
+					Vitri content
+				<!-- TemplateEndEditable -->                
+				</div>
+                <!--content-->
+            </div>
+            <!--#Footer-->
+            <div id="footer">
+                <div class="container-fluid">
+                    <p>Copyright　HUNTERS.Co.Ltd © 2014-2015</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="../js/bootstrap.min.js"></script>
+        <!--Custom Css-->
+        <script src="../js/site.js"></script>
+	<!-- TemplateBeginEditable name="EditRegion4" -->
+		<!--Vi tri them js page-->
+	<!-- TemplateEndEditable -->
+    </body>
+</html>
