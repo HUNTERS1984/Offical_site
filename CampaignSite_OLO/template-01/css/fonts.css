@@ -14,3 +14,19 @@
 	font-weight: normal;
 	font-style: normal;
 }
+
+@font-face {
+	font-family: 'HiraginoSans-W6';
+	src: url('../fonts/HiraKakuPro-W6-AlphaNum.eot');
+	src: local('☺'), url('../fonts/HiraKakuPro-W6-AlphaNum.woff') format('woff'), url('../fonts/HiraKakuPro-W6-AlphaNum.ttf') format('truetype'), url('../fonts/HiraKakuPro-W6-AlphaNum.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'HiraKakuPro-W3';
+	src: url('../fonts/HiraKakuPro-W3-AlphaNum.eot');
+	src: local('☺'), url('../fonts/HiraKakuPro-W3-AlphaNum.woff') format('woff'), url('../fonts/HiraKakuPro-W3-AlphaNum.ttf') format('truetype'), url('../fonts/HiraKakuPro-W3-AlphaNum.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

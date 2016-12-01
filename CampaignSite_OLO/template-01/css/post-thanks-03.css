@@ -5,7 +5,7 @@
 @import url(common.css);
 
 
-#main .thanks h4 { color:#e68ca0; margin-top:60px;}
+#main .thanks h4 { color:#e68ca0; margin-top:60px; font-family: 'HiraginoSans-W6'; font-weight:bold; font-size:16px}
 #main .thanks .social{ margin-bottom:100px;}
 #main .thanks .social a{    padding: 0px 26px; }
 	
@@ -24,6 +24,7 @@
 	font-weight:bold;
 	color:#FFFFFF;
 	margin-left:-10px;
+	 font-family: 'HiraginoSans-W6';
 }
 
 #thanks-03 #footer{

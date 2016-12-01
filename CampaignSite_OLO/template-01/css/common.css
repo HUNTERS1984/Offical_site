@@ -7,7 +7,7 @@ body{
 
 h1{ color:#FFFFFF; font-family:'Conv_NuevaStd-Bold',Sans-Serif;}
 h3{font-family:'Conv_NuevaStd-Bold',Sans-Serif; font-size:42px; margin-bottom:40px; }
-h3 span{ font-size:14px; padding-left:40px;}
+h3 span{ font-size:14px; padding-left:40px; font-family: 'HiraginoSans-W6'; font-weight:bold; vertical-align:middle;}
 
 
 * {
@@ -15,9 +15,10 @@ h3 span{ font-size:14px; padding-left:40px;}
 }
 
 body {
- color: #333;
- font-size: 13px;
- line-height: 1.6;
+ color: #505a5e;
+ font-size: 14px;
+ line-height: 1.8;
+ font-family: 'HiraKakuPro-W3';
 }
 
 .margin-top-60{ margin-top: 60px;}
@@ -27,7 +28,7 @@ body {
 .margin-top-30{ margin-top: 30px;}
 
 .margin-bottom-60{ margin-bottom: 60px;}
-
+.margin-bottom-50{ margin-bottom: 50px;}
 .margin-bottom-40{ margin-bottom: 40px;}
 
 .margin-bottom-30{ margin-bottom: 30px;}
@@ -87,14 +88,15 @@ a:hover {
 
 
 
-.btn-full{ width:100%; background-color:#3cb4c8; border:0px solid #FFFFFF; font-size:18px; border-radius:20px; padding:12px 0px;}
+.btn-full{ width:100%; background-color:#3cb4c8; font-family: 'HiraginoSans-W6'; border:0px solid #FFFFFF; font-size:18px; border-radius:20px; padding:12px 0px;}
 .btn-full:hover,.btn-small:hover{ background-color:#e68ca0;}
-.btn-small{ width:100%; background-color:#3cb4c8; border:0px solid #FFFFFF; font-size:14px; border-radius:20px; padding:5px 0px;}
+.btn-small{ width:100%; background-color:#3cb4c8; font-family: 'HiraginoSans-W6'; border:0px solid #FFFFFF; font-size:14px; border-radius:20px; padding:5px 0px;}
 
 #header{
 	box-shadow: 0px 2px 5px #ccc;
 	padding:16px 0px;
 }
+#header .logo_thanks{ font-family: 'Conv_NuevaStd-Bold'; font-size:28px; line-height:28px; color:#505a5e;}
 #header .btn-pink{ background-color:#fcf3f5; color:#e68ca0; padding:5px 30px;}
 
 
@@ -128,21 +130,25 @@ a:hover {
 	margin-top:25%;
 }
 
+#mainimg .margin-icon{ margin-left:28px;}
 
-#mainimg p{ color:#FFFFFF; font-size:15px;}	
+#mainimg p{ color:#FFFFFF; font-size:17px; font-family: 'HiraginoSans-W6';}	
 	
 #mainimg .icon-down{
 	bottom:0;
 	position:relative;
 	margin-top:15%;
-	padding-bottom:30px;
+	padding-bottom:48px;
 }
 /* Campaign  name */
 #campaign{
 	margin-bottom:128px;
-	margin-top:80px;
+	margin-top:63px;
 }
 #campaign h3{ margin-bottom:20px;}
+#campaign p{
+	font-family: 'HiraKakuPro-W3';
+}
 #campaign .date{
 	margin-top:55px;
 }
@@ -187,6 +193,9 @@ a:hover {
 	font-size:16px;
 	text-align:center;
 }
+#campaign .text-day{
+	font-size:20px;
+}
 
 
 /* Present */
@@ -202,6 +211,8 @@ a:hover {
 
 #present .col-left{
 	float:left;
+	line-height:2.3;
+	font-size:13px;
 }
 
 #present .col-left h4{
@@ -225,16 +236,26 @@ a:hover {
 	border:1px solid #b4bec2;
 	border-radius:4px;
 	margin:47px 0px;
+	font-size:12px;
 }
 #join .text-step{
 	font-family: 'Conv_NuevaStd-CondItalic';
 	font-size:24px;
 	font-style:italic;
+	font-weight:bold;
 }
 #join .step{ margin-top:30px;}
 
 #join img{ margin:30px auto 47px auto; }
-#join .des{ text-align:center; margin-bottom:30px;}
+#join .des{ text-align:center; margin-bottom:30px;
+	
+}
+#join .des a{
+	font-weight:bold;
+	text-decoration:underline;
+	color:#3cb4c8;
+}
+
 /* Posting */
 #tabs{
 	padding:15px;
@@ -264,9 +285,23 @@ a:hover {
 	text-align:center;
 	padding:7px;
 	margin: 20px 0px 23px 0px;
+	font-family: 'HiraginoSans-W6';
 }
+
+
 .tab-content .item h4:hover{background-color:#3cb4c8; }
 .tab-content .item h4 a{ color:#FFFFFF; font-weight:normal; font-size:14px;}
+
+.tab-content .row{
+	margin-right: -7px;
+    margin-left: -7px;
+}
+
+.tab-content .row .col-md-3,
+.tab-content .row .col-xs-6{
+	    padding-right: 7px;
+    padding-left: 7px;
+}
 
 #tabs .pagination{
 	margin-top:44px;
@@ -303,7 +338,10 @@ a:hover {
 }
 
 
-#main .thanks{ text-align:center; font-size:16px; line-height:30px; margin-top:50px;}
+#main .thanks{ text-align:center; font-size:14px; line-height:30px; margin-top:50px; }
+#main .thanks .text16{
+	font-size:16px;
+}
 #main .thanks h2{
 	font-family:'Conv_NuevaStd-Bold',Sans-Serif;
 	font-size:48px;
@@ -410,6 +448,24 @@ a:hover {
 
 .modal-content .content_des .text-small{
 	font-size:8px;
+}
+
+.modal-content .formmodal .textbox{
+	padding:4px 6px;
+	border:1px solid #d9dee0;
+	border-radius:6px;
+	width:55%;
+	
+}
+.modal-content .formmodal .btnsubmit{
+	background-color:#14B5C9;
+	border-radius:6px;
+	border: 0px solid #FFFFFF;
+	padding:5px 6px;
+	font-weight:bold;
+	width:45%;
+	color:#FFFFFF;
+	margin-left:-10px;
 }
 
 .modal-content .btn-button{ width:100%; border-radius:4px; background-color:#14b4c8; padding:8px 0px; color:#FFFFFF; }

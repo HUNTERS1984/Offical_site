@@ -56,6 +56,12 @@
 	border-radius:7px;
 }
 
+.thanks .tab-content h4{
+	font-weight:bold;
+	font-size:20px;
+	 font-family: 'HiraginoSans-W6';
+}
+
 #tabs .tab-pane {
     margin-top: 0px;
 }
