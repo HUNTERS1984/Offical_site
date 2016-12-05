@@ -5,9 +5,11 @@
 @import url(common.css);
 
 .thanks .btn-pink-dark{
-	background-color:#e66e5a;
+	background-color:#14c8b4;
 	border-radius:4px;
 	padding:10px 95px; 
 	color:#FFFFFF;
 	font-weight:bold;
+	 font-family: 'HiraginoSans-W6';
+	 border:1px solid #0abeaa;
 }
