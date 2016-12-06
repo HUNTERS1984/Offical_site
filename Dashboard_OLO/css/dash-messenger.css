@@ -9,12 +9,13 @@
 }
 
 #contents .box .box-header{
-    padding: 10px 15px;
+    padding: 14px 15px;
     border-bottom: 1px solid #d2dce0;
 }
 #contents .box .box-header .box-title{
     color: #646e72;
     font-size: 12px;
+	line-height:1.4;
     margin: 0;
     display: inline-block;
 }
@@ -39,6 +40,7 @@
 }
 #contents ul.list-message li a{
     text-decoration: none;
+	c
 }
 #contents ul.list-message li a img{
     width: 65px;
@@ -78,7 +80,9 @@
     border: 1px solid #14b4c8;
     font-size: 10px;
     margin: 0;
+	color: #14b4c8;
 }
 #contents ul.pagination li.active a{
     background: #14b4c8;
+	color: #fff;
 }

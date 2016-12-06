@@ -23,6 +23,7 @@
 .itemp dl{
 	float:left;
 	margin-top:30px;
+	width:400px;
 }
 .itemp dl dt, .itemp dl dd{
 	line-height:30px;
@@ -39,7 +40,11 @@
 }
 
 .itemp .icon_edit{
+	float:right;
+    vertical-align: bottom;
+	bottom:0!important;
 	margin-top:30px;
+	margin-bottom:28px;
 }
 
 .itemp .icon_edit a{

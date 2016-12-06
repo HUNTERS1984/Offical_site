@@ -28,6 +28,7 @@ html {
 body {
     /* make sure we use the full width but allow for more height */
     font-family: 'HiraKakuPro-W3-AlphaNum';
+	color:#788286;
 	width: 100%;
     min-height: 100vh; /* this helps with the sticky footer */
 }
@@ -46,6 +47,16 @@ body {
 #header{
 
 }
+
+input[placeholder]{
+	font-size:10px;
+	color:#c8d2d6!important;
+}
+lable{
+	font-family: 'HiraKakuPro-W6-AlphaNum';
+	font-size:12px;
+}
+
 #header .logo-2{
     padding: 80px 0 45px;
     text-align: center;

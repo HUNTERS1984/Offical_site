@@ -33,6 +33,8 @@ body {
     /* make sure we use the full width but allow for more height */
     font-family: 'HiraKakuPro-W3-AlphaNum';
 	width: 100%;
+	line-height:1.8;
+	color:#788286;
     min-height: 100vh; /* this helps with the sticky footer */
 }
 .wrapper{

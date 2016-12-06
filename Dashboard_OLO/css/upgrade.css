@@ -59,7 +59,7 @@ a.btn:hover{
 	margin: 0 auto;
 }
 #basic .input-group{
-	margin-bottom: 28px;
+	margin-bottom: 34px;
 }
 #basic .btn-group .btn .caret{
 	margin-left: 10px;
@@ -108,7 +108,7 @@ a.btn:hover{
 	padding-bottom: 150px;
 }
 #confirmation .box{
-	padding: 20px 20px 0 50px;
+	padding: 30px 20px 0 50px;
 	margin:0 auto 80px;
 	width: 720px;
 	background: #fff;
@@ -121,7 +121,7 @@ a.btn:hover{
 #confirmation .box table th,
 #confirmation .box table td{
 	border: none;
-	padding: 17px 0;
+	padding: 26px 0;
 	font-weight: normal;
 }
 #confirmation .box table th{
@@ -175,7 +175,7 @@ a.btn:hover{
 #complete .box{
 	background: #fff;
 	border: 1px solid #c8d2d6;
-	padding: 40px 40px 20px;
+	padding: 17px 40px 20px;
 	border-radius: 4px;
 	width: 720px;
 	margin: 0 auto 40px;
@@ -183,10 +183,11 @@ a.btn:hover{
 #complete .box h3{
 	font-size: 14px;
 	text-align: center;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 #complete .box .panel{
 	box-shadow: none;
+	margin-bottom:33px;
 }
 #complete .box table th,
 #complete .box table td{
@@ -201,7 +202,7 @@ a.btn:hover{
 #complete .box .caution{
 	background: #f4f6f8;
 	border: 1px solid #c8d2d6;
-	padding: 40px 40px 20px;
+	padding: 20px 18px 10px;
 	border-radius: 4px;
 	font-size: 10px;
 }

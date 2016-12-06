@@ -7,7 +7,7 @@
 }
 
 #contents .box .box-header{
-    padding: 10px 0;
+    padding: 13px 0;
     border-bottom: 1px solid #d2dce0;
 }
 #contents .box .box-header .box-title{
@@ -17,18 +17,19 @@
     display: inline-block;
 }
 #contents .box .box-body{
-    padding: 30px 0;
+    padding: 12px 0 26px 0;
 }
 
 
 .search-question-box{
     margin: 0 10px 30px;
-    padding: 15px 100px 30px;
+    padding: 20px 100px 30px;
     background: #14b4c8;
 }
 .search-question-box p{
     color: #fff;
     font-size: 10px;
+	margin-bottom:17px;
 }
 #search-question {
     margin:0;
@@ -38,8 +39,10 @@
 }
 
 #search-question .search-query {
-    padding-right: 4px;
+    padding:2px 12px;
+	padding-right: 4px;
     padding-left: 40px;
+	border:2px solid #c8d2d6;
     /* IE7-8 doesn't have border-radius, so don't indent the padding */
 
     margin-bottom: 0;
