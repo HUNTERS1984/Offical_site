@@ -25,31 +25,32 @@
 	border:1px solid #b4bec2;
 	border-radius:0px;
 	color:#505a5e;
+	padding:12px 0;
 }
 
 #tabs .nav-tabs > li.active > a{
 	border: 0px solid #ddd;
-    border: 1px solid #c47f88;
+    border: 1px solid #dc6450;
 	background-color:#e66e5a;
 	color:#FFFFFF;
 }
 
 #tabs .nav-tabs > li:hover > a{
 	border: 0px solid #ddd;
-	border: 1px solid #c47f88;
-	background-color:e66e5a;
+	border: 1px solid #507864;
+	background-color:507864;
 }
 
 #tabs .nav-tabs > li.first a{
 	border-radius: 0;
-	border-top-left-radius: 2em;
-	border-bottom-left-radius: 2em
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px
 }
 
 #tabs .nav-tabs > li.last a{
 	border-radius: 0;
-	border-top-right-radius: 2em;
-	border-bottom-right-radius: 2em
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px
 }
 
 .thanks .tab-content{
@@ -57,6 +58,9 @@
 	background-color:#fafafa;
 	border:1px solid #b4bec2;
 	border-radius:7px;
+}
+.thanks .tab-content h4{
+	font-weight:bold;
 }
 
 #tabs .tab-pane {
@@ -67,6 +71,10 @@
 	margin-bottom:30px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 479px){
+.thanks .tab-content .item img{
+	border:1px solid #d0dce2;
+}
+
+@media screen and (min-width: 300px) and (max-width: 479px){
 	#tabs .nav-tabs > li{ width:125px; margin:0px -4px;}
 }

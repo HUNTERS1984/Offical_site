@@ -9,25 +9,24 @@
 
 .ss-content {
   height: 100%;
-  width: 100%;
+  width: 108%;
   padding: 0 38px 10px 0;
   position: relative;
   right: -22px;
+  left: -22px;
   overflow: auto;
   box-sizing: border-box;
 }
 
 .ss-scroll {
   position: relative;
-  background: rgba(0, 0, 0, 0.1);
+  background: #505050;
   width: 4px;
-  border-radius: 4px;
+  border-radius: 0px;
   top: 0;
   
   z-index: 2;
   cursor: pointer;
-  opacity: 0;
-  transition: opacity 0.25s linear;
 }
 
 .ss-hidden {
@@ -44,4 +43,10 @@
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
+}
+
+@media screen and (min-width: 300px) and (max-width: 767px) {
+	.ss-content {
+  height: 100%;
+  width: 112%;}
 }
