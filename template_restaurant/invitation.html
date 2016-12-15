@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <!-- Include meta tag to ensure proper rendering and touch zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Include jQuery Mobile stylesheets -->
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css">
+  <link rel="stylesheet" href="css/jqm-demos.css">
+  <!-- Include the jQuery library -->
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <!-- Include the jQuery Mobile library -->
+  <script src="js/index.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  
+  <script>
+		$( document ).on( "pagecreate", function() {
+			$( "body > [data-role='panel']" ).panel();
+			$( "body > [data-role='panel'] [data-role='listview']" ).listview();
+		});
+		$( document ).one( "pageshow", function() {
+			$( "body > [data-role='header']" ).toolbar();
+			$( "body > [data-role='header'] [data-role='navbar']" ).navbar();
+		});
+	</script>
+</head>
+<body class="ui-nosvg">
+
+<div data-role="header" data-position="fixed" data-theme="a">
+	  <a href="index.html" data-ajax="false" data-direction="reverse" data-icon="carat-l" data-iconpos="notext" data-shadow="false" data-icon-shadow="false">Back</a>
+	  <h1>予約</h1>	  
+</div>
+
+<div data-role="page" id="pageone" class="reserv">
+  <div data-role="main" class="ui-content">
+    <div class="text-center">
+			<div class="img_circle reserv"><img src="img/send_mail.png" alt="product01" class=""></div>
+	</div>
+	<h3 class="text-center">友達を招待して特典をGET！</h3>
+	<p class="text-center name-text-green">mathew02</p>
+	<p class="text-center">友人や知人にアプリを紹介すると1000マイルをプレゼント致します。 方法は簡単、アプリの紹介コードを下のSNSから紹介するだけです。</p>
+	
+	<div class="social">
+			<form class="from-froup">
+			<div class="form-input">
+					<div class="ui-field-contain">
+					<label for="user"><img src="img/facebook@2x.png"></label>
+					<input type="text" name="textinput-4" id="user" placeholder="Facebook" value="">
+					<a href="#" class="btn-white ">連携</a>					</div>
+					<div class="ui-field-contain">
+					<label for="pwd"><img src="img/twitter@2x.png"></label>
+					<input type="password" name="pwd" id="pwd" placeholder="Twitter" value="">
+					<a href="#" class="btn-white">連携</a>					</div>
+					<div class="ui-field-contain">
+					<label for="pwd"><img src="img/instagram@2x.png"></label>
+					<input type="password" name="pwd" id="pwd" placeholder="Instagram" value="">
+					<a href="#" class="btn-white">連携</a>					</div>
+					<div class="ui-field-contain">
+					<label for="pwd"><img src="img/mail@2x.png"></label>
+					<input type="password" name="pwd" id="pwd" placeholder="Email" value="">
+					<a href="#" class="btn-white">連携</a>					</div>
+					<div class="ui-field-contain">
+					<label for="pwd"><img src="img/ic_ref_code.png"></label>
+					<input type="password" name="pwd" id="pwd" placeholder="紹介コード" value="">
+					<a href="#coupon_reject" data-rel="popup" data-position-to="window" data-transition="pop" class="btn-white">連携</a>					</div>
+			</div>		</form>
+			<div data-role="popup" id="coupon_reject" data-theme="a" class="ui-corner-all">    
+			        <div style="padding:10px 20px;">
+			            <div class="text-center">
+								<div class="img_circle reserv"><img src="img/send_mail.png" alt="product01" class=""></div>
+								</div>
+						<h3 class="text-center">友達を招待して特典をGET！</h3>
+						<p class="text-center name-text-green">mathew02</p>
+						<p class="text-center">友人や知人にアプリを紹介すると1000マイルをプレゼント致します。 方法は簡単、アプリの紹介コードを下のSNSから紹介するだけです。</p>           <p class="text-center"><img src="img/facebook@2x.png">&nbsp;&nbsp;&nbsp;<img src="img/twitter@2x.png">&nbsp;&nbsp;&nbsp;<img src="img/instagram@2x.png">&nbsp;&nbsp;&nbsp;<img src="img/mail@2x.png"></p>
+			            <p class="text-center"><button type="button" class="ui-btn ui-corner-all ui-shadow ui-btn-b">OK</button></p>
+			        </div>    			</div>
+	</div>
+  </div>
+</div>
+</body>
+</html>

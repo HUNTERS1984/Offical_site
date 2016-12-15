@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>プロフィール編集</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <!-- Include meta tag to ensure proper rendering and touch zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Include jQuery Mobile stylesheets -->
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css">
+  <!-- Include the jQuery library -->
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <!-- Include the jQuery Mobile library -->
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script>
+		$( document ).on( "pagecreate", function() {
+			$( "body > [data-role='panel']" ).panel();
+			$( "body > [data-role='panel'] [data-role='listview']" ).listview();
+		});
+		$( document ).one( "pageshow", function() {
+			$( "body > [data-role='header']" ).toolbar();
+			$( "body > [data-role='header'] [data-role='navbar']" ).navbar();
+		});
+	</script>
+</head>
+<body class="ui-nosvg">
+<div data-role="page" id="pageone"> 
+  <div data-role="main" class="ui-content">
+	  <div class="content-main">	  			
+		<div class="social coupon-staff">
+			<a href="#" class="ui-btn-left">連携</a>
+			<div class="text-center title-heading ">スタッフを選ぶ</div>
+			<div class="from-froup">
+			<div class="form-input">
+					<div class="ui-field-contain">
+					<label for="user"><img src="img/staff01.jpg" class="img_circle" alt="" height="36px" width="36px"></label>
+					<div class="text_staff">
+						リオのあゆみ<br>
+						<span>仲居</span>
+						
+					</div>
+					<a href="#" class="btn-white ui-btn-right">連携</a>
+						
+					</div>
+					<div class="ui-field-contain">
+					<label for="pwd"><img src="img/staff01.jpg" class="img_circle" alt="" height="36px" width="36px"></label>
+					<div class="text_staff">
+						リオのあゆみ<br>
+						<span>仲居</span>						
+					</div>
+					<a href="#" class="btn-white ui-btn-right">連携</a>
+					
+					</div>
+					<div class="ui-field-contain">
+					<label for="pwd"><img src="img/staff01.jpg" class="img_circle" alt="" height="36px" width="36px"></label>
+					<div class="text_staff">
+						リオのあゆみ<br>
+						<span>仲居</span>						
+					</div>
+					<a href="#" class="btn-white ui-btn-right">連携</a>	
+					</div>
+					<div class="ui-field-contain">
+					<label for="pwd"><img src="img/staff01.jpg" class="img_circle" alt="" height="36px" width="36px"></label>
+					<div class="text_staff">
+						リオのあゆみ<br>
+						<span>仲居</span>						
+					</div>
+					<a href="#" class="btn-white ui-btn-right">連携</a>
+					</div>
+					<div class="ui-field-contain">
+					<label for="pwd"><img src="img/staff01.jpg" class="img_circle" alt="" height="36px" width="36px"></label>
+					<div class="text_staff">
+						リオのあゆみ<br>
+						<span>仲居</span>						
+					</div>
+					<a href="#" class="btn-white ui-btn-right">連携</a>
+					</div>
+					<div class="ui-field-contain">
+					<label for="pwd"><img src="img/staff01.jpg" class="img_circle" alt="" height="36px" width="36px"></label>
+					<div class="text_staff">
+						リオのあゆみ<br>
+						<span>仲居</span>						
+					</div>
+					<a href="#" class="btn-white ui-btn-right">連携</a>
+					</div>
+				</div>	
+			</div>			
+		</div>		
+	  </div><!--content-main-->	  
+  </div>
+</div> 
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <!-- Include meta tag to ensure proper rendering and touch zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Include jQuery Mobile stylesheets -->
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css">
+  <!-- Include the jQuery library -->
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <!-- Include the jQuery Mobile library -->
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script>
+		$( document ).on( "pagecreate", function() {
+			$( "body > [data-role='panel']" ).panel();
+			$( "body > [data-role='panel'] [data-role='listview']" ).listview();
+		});
+		$( document ).one( "pageshow", function() {
+			$( "body > [data-role='header']" ).toolbar();
+			$( "body > [data-role='header'] [data-role='navbar']" ).navbar();
+		});
+	</script>
+</head>
+<body class="ui-nosvg">
+<div data-role="header" data-position="fixed" data-theme="a">
+	  <a href="./menu.html" data-ajax="false" class="ui-btn-left ui-btn ui-alt-icon ui-icon-delete ui-btn-icon-notext" data-shadow="false" data-icon-shadow="false">Back</a>
+	  <h1>QRコード</h1>	  
+  </div>
+<div data-role="page" id="pageone"> 
+  <div data-role="main" class="ui-content">
+	  <div class="content-main">
+	  	<div class="img-bg-code">
+		<figure>
+		  <img src="img/coupon_bg.jpg" alt="news_big">
+		</figure>	
+		</div>
+			<a href="#coupon_reject" data-rel="popup" data-position-to="window" class="select-code" data-transition="pop">coupon_reject</a>
+			<div data-role="popup" id="coupon_reject" data-theme="a" class="ui-corner-all modal-pink">    
+			        <div style="padding:10px 20px;">
+			            <figure>
+						  <img src="img/icon_reject.png" alt="news_big">
+						</figure>
+						<h3>申し訳ございません</h3>
+						<p>こちらのクーポンはご利用頂けません！</p>            
+			            <button type="button" class="ui-btn ui-corner-all ui-shadow ui-btn-b">OK</button>
+			        </div>    
+			</div>
+	  </div><!--content-main-->	  
+  </div>
+</div> 
+</body>
+</html>

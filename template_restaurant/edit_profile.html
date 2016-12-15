@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>プロフィール編集</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <!-- Include meta tag to ensure proper rendering and touch zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Include jQuery Mobile stylesheets -->
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css">
+  <!-- Include the jQuery library -->
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <!-- Include the jQuery Mobile library -->
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script>
+		$( document ).on( "pagecreate", function() {
+			$( "body > [data-role='panel']" ).panel();
+			$( "body > [data-role='panel'] [data-role='listview']" ).listview();
+		});
+		$( document ).one( "pageshow", function() {
+			$( "body > [data-role='header']" ).toolbar();
+			$( "body > [data-role='header'] [data-role='navbar']" ).navbar();
+		});
+	</script>
+</head>
+<body class="ui-nosvg">
+<div data-role="header" data-position="fixed" data-theme="a">
+	  <a href="./confi.html"data-ajax="false" class="ui-btn-left ui-btn ui-alt-icon ui-icon-delete ui-btn-icon-notext" data-shadow="false" data-icon-shadow="false">Back</a>
+	  <h1>プロフィール編集</h1>	  
+  </div>
+<div data-role="page" id="pageone"> 
+  <div data-role="main" class="ui-content">
+	  <div class="content-main">
+	  	<div class="edite_user">
+		<figure>
+		  <img src="img/user.png" class="img_circle">
+		</figure>	
+		</div>	
+		<div class="des profile">
+			<form>
+			<div class="ui-field-contain">
+				<label for="name2">ユーザーID</label>
+				<div class="ui-text">tenposs1234</div>
+			</div>
+			<div class="ui-field-contain">
+				<label for="textarea2">ユーザー名</label>
+				<div class="ui-text">マシュー</div>
+			</div>
+			<div class="ui-field-contain">
+				<label for="flip2">メールアドレス</label>
+				<div class="ui-text">matthew@gmail.com</div>
+			</div>
+			
+			<div class="ui-field-contain">
+				<label for="select-choice-1" class="select">性別</label>
+				<div class="ui-select">
+				<select name="select-choice-mini" id="select-choice-mini" >
+				    <option value="standard">性別</option>
+				    <option value="rush">性別01</option>
+				    <option value="express">性別02</option>
+				    <option value="overnight">性別03</option>
+				</select></div>
+			</div>	
+			<div class="ui-field-contain">
+				<label for="select-choice-1" class="select">年代</label>
+				<div class="ui-select">
+				<select name="select-choice-mini" id="select-choice-mini" >
+				    <option value="standard">東京都</option>
+				    <option value="rush">東京都01</option>
+				    <option value="express">東京都02</option>
+				    <option value="overnight">東京都03</option>
+				</select></div>
+			</div>		
+		</form>
+		</div>		
+		<div class="social">
+			<form class="from-froup">
+			<div class="form-input">
+					<div class="ui-field-contain">
+					<label for="user"><img src="img/facebook@2x.png"></label>
+					<input type="text" name="textinput-4" id="user" placeholder="Facebook" value="">
+					<a href="#" class="btn-white ">連携</a>	
+					</div>
+					<div class="ui-field-contain">
+					<label for="pwd"><img src="img/twitter@2x.png"></label>
+					<input type="password" name="pwd" id="pwd" placeholder="Twitter" value="">
+					<a href="#" class="btn-white">連携</a>	
+					</div>
+					<div class="ui-field-contain">
+					<label for="pwd"><img src="img/instagram@2x.png"></label>
+					<input type="password" name="pwd" id="pwd" placeholder="Instagram" value="">
+					<a href="#" class="btn-white">連携</a>	
+					</div>
+			</div>		</form>			
+		</div>		
+	  </div><!--content-main-->	  
+  </div>
+</div> 
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <!-- Include meta tag to ensure proper rendering and touch zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Include jQuery Mobile stylesheets -->
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css">
+  <link rel="stylesheet" href="css/jqm-demos.css">
+  <!-- Include the jQuery library -->
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <!-- Include the jQuery Mobile library -->
+  <script src="js/index.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  
+  <script>
+		$( document ).on( "pagecreate", function() {
+			$( "body > [data-role='panel']" ).panel();
+			$( "body > [data-role='panel'] [data-role='listview']" ).listview();
+		});
+		$( document ).one( "pageshow", function() {
+			$( "body > [data-role='header']" ).toolbar();
+			$( "body > [data-role='header'] [data-role='navbar']" ).navbar();
+		});
+	</script>
+	
+	<script src="http://bxslider.com/lib/jquery.bxslider.js"></script>  
+	
+	<script>
+		$(document).ready(function(){
+		  $('.bxslider').bxSlider({
+			slideWidth: 300,
+			minSlides: 1,
+			maxSlides: 4,
+			moveSlides: 2,
+			slideMargin: 10
+		  });
+	});
+	</script>
+   <link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css" />  
+</head>
+<body  class="ui-nosvg">
+
+<div data-role="header" data-position="fixed" data-theme="a">
+	  <a href="#outside" data-icon="carat-l" data-iconpos="notext">Menu</a>
+	  <h1>クーポン</h1>	
+	  <a href="coupon_qrcode.html" data-ajax="false" ><img src="img/icon_code.jpg" alt=""></a>  
+</div>
+<div data-role="page" id="pageone">
+  <div data-role="main" class="ui-content">
+    <ul class="bxslider coupon">
+	  <li>
+	  <div class="border-coupon">
+	  <img src="img/photo01_detail.jpg" alt="photo01_detail">
+	  		<div class="bx-caption">
+				<h3>15％の割引</h3>
+				<p>最初の購入のための</p>
+				<p>Code <span>GETTING15</span></p>
+				<button>アクセス</button>
+			</div>
+			<div class="des">
+				<p class="code">ID123456・クーポンタイプ</p>
+				<h3>20％の割引 初回来店クーポン</h3>
+				<span>有効期間 2016年7月7日まで</span>
+				<p class="text-center"><figure class="text-center">
+					  <a href="coupon_qrcode.html" data-ajax="false" ><img src="img/coupon_code.jpg" alt="product01"></a>
+					</figure>
+				</p>
+				<button>使う</button>
+			</div>
+	  </div>
+	  </li>
+	  <li><div class="border-coupon">
+	  <img src="img/photo01_detail.jpg" alt="photo01_detail">
+	  		<div class="bx-caption">
+				<h3>15％の割引</h3>
+				<p>最初の購入のための</p>
+				<p>Code <span>GETTING15</span></p>
+				<button>アクセス</button>
+			</div>
+			<div class="des">
+				<p class="code">ID123456・クーポンタイプ</p>
+				<h3>20％の割引 初回来店クーポン</h3>
+				<span>有効期間 2016年7月7日まで</span>
+				<p class="text-center"><figure class="text-center">
+					  <a href="coupon_qrcode.html" data-ajax="false" ><img src="img/coupon_code.jpg" alt="product01"></a>
+					</figure>
+				</p>
+				<button>使う</button>
+			</div>
+	  </div>
+	  </li>
+	  <li><div class="border-coupon">
+	  <img src="img/photo01_detail.jpg" alt="photo01_detail">
+	  		<div class="bx-caption">
+				<h3>15％の割引</h3>
+				<p>最初の購入のための</p>
+				<p>Code <span>GETTING15</span></p>
+				<button>アクセス</button>
+			</div>
+			<div class="des">
+				<p class="code">ID123456・クーポンタイプ</p>
+				<h3>20％の割引 初回来店クーポン</h3>
+				<span>有効期間 2016年7月7日まで</span>
+				<p class="text-center"><figure class="text-center">
+					  <a href="coupon_qrcode.html" data-ajax="false" ><img src="img/coupon_code.jpg" alt="product01"></a>
+					</figure>
+				</p>
+				<button>使う</button>
+			</div>
+	  </div>
+	  </li>
+	</ul><!--bxslider-->
+  </div>
+</div>
+</body>
+</html>

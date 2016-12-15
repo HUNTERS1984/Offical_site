@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>メニュー</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <!-- Include meta tag to ensure proper rendering and touch zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Include jQuery Mobile stylesheets -->
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css">
+  <link rel="stylesheet" href="css/jqm-demos.css">
+  <!-- Include the jQuery library -->
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <!-- Include the jQuery Mobile library -->
+  <script src="js/index.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  
+  <script>
+		$( document ).on( "pagecreate", function() {
+			$( "body > [data-role='panel']" ).panel();
+			$( "body > [data-role='panel'] [data-role='listview']" ).listview();
+		});
+		$( document ).one( "pageshow", function() {
+			$( "body > [data-role='header']" ).toolbar();
+			$( "body > [data-role='header'] [data-role='navbar']" ).navbar();
+		});
+	</script>
+</head>
+<body class="ui-nosvg">
+
+<div data-role="header" data-position="fixed" data-theme="a">
+	  <a href="index.html" data-ajax="false" data-direction="reverse" data-icon="carat-l" data-iconpos="notext" data-shadow="false" data-icon-shadow="false">Back</a>
+	  <h1>メニュー</h1>	  
+</div>
+
+
+<div data-role="page" class="jqm-demos" data-quicklinks="true">
+	<div data-role="main" class="ui-content">
+		<div data-role="tabs" class="tabs">
+			<div data-role="navbar">
+				<ul>
+			      <li ><a href="#one" data-theme="a" data-ajax="false" class="ui-btn-active">全て</a></li>
+			      <li><a href="#two" data-theme="a" data-ajax="false">朝食</a></li>
+			      <li><a href="#three" data-theme="a" data-ajax="false">昼食</a></li>
+				  <li><a href="#four" data-theme="a" data-ajax="false">夕食</a></li>
+			    </ul>
+			</div>
+
+			<div id="one" class="ui-content">
+				<div class="ui-grid-a">
+				  <div class="ui-block-a">
+				    <div class="items">
+					<figure>
+					  <img src="img/product01.jpg" alt="product01">					</figure>
+					<a href="product_detail.html" data-ajax="false">松阪牛コース 紅葉</a><br>
+					<span class="">会席料理コース</span>
+					<div class="price">¥20,000</div>
+					</div>
+				  </div>
+			
+				  <div class="ui-block-b">
+				    <div class="items">
+					<figure>
+					  <img src="img/product02.jpg" alt="product02">					</figure>
+					<a href="product_detail.html" data-ajax="false">松阪牛コース 紅葉</a><br>
+					<span class="">会席料理コース</span>
+					<div class="price">¥20,000</div>
+					</div>
+				  </div>
+				</div>
+				<div class="ui-grid-a">
+				  <div class="ui-block-a">
+				  	<div class="items">
+					<figure>
+					  <img src="img/product03.jpg" alt="product03">					</figure>
+					<a href="#">松阪牛コース 紅葉</a><br>
+					<span class="">会席料理コース</span>
+					<div class="price">¥20,000</div>
+					</div>
+				  </div>
+			
+				  <div class="ui-block-b">
+					<div class="items">
+					<figure>
+					  <img src="img/product04.jpg" alt="product04">					</figure>
+					<a href="#">松阪牛コース 紅葉</a><br>
+					<span class="">会席料理コース</span>
+					<div class="price">¥20,000</div>
+					</div>
+				  </div>
+				</div>
+			</div><!--one-->
+			<div id="two" class="ui-content">
+				<div class="ui-grid-a">
+				  <div class="ui-block-a">
+				  	<div class="items">
+				    <figure>
+					  <img src="img/product01.jpg" alt="product01">					</figure>
+					<a href="#">松阪牛コース 紅葉</a><br>
+					<span class="">会席料理コース</span>
+					<div class="price">¥20,000</div>
+					</div>
+				  </div>
+			
+				  <div class="ui-block-b">
+				    <div class="items">
+				    <figure>
+					  <img src="img/product02.jpg" alt="product02">					</figure>
+					<a href="#">松阪牛コース 紅葉</a><br>
+					<span class="">会席料理コース</span>
+					<div class="price">¥20,000</div>
+					</div>
+				  </div>
+				</div>
+				<div class="ui-grid-a">
+				  <div class="ui-block-a">
+				    <div class="items">
+					<figure>
+					  <img src="img/product03.jpg" alt="product03">					</figure>
+					<a href="#">松阪牛コース 紅葉</a><br>
+					<span class="">会席料理コース</span>
+					<div class="price">¥20,000</div>
+					</div>
+				  </div>
+			
+				  <div class="ui-block-b">
+				  	<div class="items">
+					<figure>
+					  <img src="img/product04.jpg" alt="product04">					</figure>
+					<a href="#">松阪牛コース 紅葉</a><br>
+					<span class="">会席料理コース</span>
+					<div class="price">¥20,000</div>
+					</div>
+				  </div>
+				</div>
+			</div>
+			<div id="three" class="ui-content">
+				<div class="ui-grid-a">
+				  <div class="ui-block-a">
+				  	<div class="items">
+				    <figure>
+					  <img src="img/product01.jpg" alt="product01">					</figure>
+					<a href="#">松阪牛コース 紅葉</a><br>
+					<span class="">会席料理コース</span>
+					<div class="price">¥20,000</div>
+					</div>
+				  </div>
+			
+				  <div class="ui-block-b">
+				    <div class="items">
+					<figure>
+					  <img src="img/product02.jpg" alt="product02">					</figure>
+					<a href="#">松阪牛コース 紅葉</a><br>
+					<span class="">会席料理コース</span>
+					<div class="price">¥20,000</div>
+					</div>
+				  </div>
+				</div>
+				<div class="ui-grid-a">
+				  <div class="ui-block-a">
+					<div class="items">
+					<figure>
+					  <img src="img/product03.jpg" alt="product03">					</figure>
+					<a href="#">松阪牛コース 紅葉</a><br>
+					<span class="">会席料理コース</span>
+					<div class="price">¥20,000</div>
+					</div>
+				  </div>
+			
+				  <div class="ui-block-b">
+					<div class="items">
+					<figure>
+					  <img src="img/product04.jpg" alt="product04">					</figure>
+					<a href="#">松阪牛コース 紅葉</a><br>
+					<span class="">会席料理コース</span>
+					<div class="price">¥20,000</div>
+					</div>
+				  </div>
+				</div>
+			</div>
+			<div id="four" class="ui-content">
+				<div class="ui-grid-a">
+				  <div class="ui-block-a">
+					<div class="items">
+					<a href="#">松阪牛コース 紅葉</a><br>
+					<span class="">会席料理コース</span>
+					<div class="price">¥20,000</div>
+					</div>
+				  </div>
+			
+				  <div class="ui-block-b">
+					<div class="items">
+					<a href="#">松阪牛コース 紅葉</a><br>
+					<span class="">会席料理コース</span>
+					<div class="price">¥20,000</div>
+					</div>
+				  </div>
+				</div>
+				<div class="ui-grid-a">
+				  <div class="ui-block-a">
+				    <div class="items">
+					<a href="#">松阪牛コース 紅葉</a><br>
+					<span class="">会席料理コース</span>
+					<div class="price">¥20,000</div>
+					</div>
+				  </div>
+			
+				  <div class="ui-block-b">
+				    <div class="items">
+					<a href="#">松阪牛コース 紅葉</a><br>
+					<span class="">会席料理コース</span>
+					<div class="price">¥20,000</div>
+					</div>
+				  </div>
+				</div>
+			</div>
+		</div>		
+	</div>
+</div>
+<!-- /page -->
+</body>
+</html>

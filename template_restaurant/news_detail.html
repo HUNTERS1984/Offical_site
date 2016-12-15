@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ニュース</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <!-- Include meta tag to ensure proper rendering and touch zooming -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Include jQuery Mobile stylesheets -->
+  <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css">
+  <!-- Include the jQuery library -->
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <!-- Include the jQuery Mobile library -->
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script>
+		$( document ).on( "pagecreate", function() {
+			$( "body > [data-role='panel']" ).panel();
+			$( "body > [data-role='panel'] [data-role='listview']" ).listview();
+		});
+		$( document ).one( "pageshow", function() {
+			$( "body > [data-role='header']" ).toolbar();
+			$( "body > [data-role='header'] [data-role='navbar']" ).navbar();
+		});
+	</script>
+</head>
+<body class="ui-nosvg">
+<div data-role="header" data-position="fixed" data-theme="a">
+	  <a href="./news.html" data-ajax="false" class="ui-btn-left ui-btn ui-alt-icon ui-icon-delete ui-btn-icon-notext" data-shadow="false" data-icon-shadow="false">Back</a>
+	  <h1>ニュース</h1>	  
+</div>
+<div data-role="page" id="pageone"> 
+  <div data-role="main" class="ui-content">
+	  <div class="content-main">
+	  	<figure>
+		  <img src="img/news01_big.jpg" alt="news_big">
+		</figure>		
+		<div class="des">
+			<h3>顧客が店でパンを受信するには無料ドリンクを与えます</h3>
+			<p>アメリカ大統領選挙に向けた最後のテレビ討論会が行われ、共和党のトランプ候補の女性に対する言動や民主党のクリントン候補のメールをめぐる問題をお互いの候補が取り上げ、大統領としての適性を非難する激しい論戦となりました。</p>
+			<p class="date">10月20日 12時23分</p>
+			<p>先付、お造り、焚き合わせ、お凌ぎ（松阪牛握り、松阪牛と鮪の裏巻寿司）、 冷菜、揚げ物（松阪牛の天ぷら他）、 焼き物（伊勢海老またはあわび(あわびは＋800円)</p>
+			<figure>
+			  <img src="img/news01_detail.jpg" alt="news01_detail">
+			  <p>松阪牛コース 紅葉</p>
+			</figure>
+			<p>先付、お造り、焚き合わせ、お凌ぎ（松阪牛握り、松阪牛と鮪の裏巻寿司）、 冷菜、揚げ物（松阪牛の天ぷら他）、 焼き物【A5等級】（松阪牛ロース80ｇ、焼き野菜）、 お食事（季節の土鍋ご飯、味噌汁、香の物）、デザート</p>
+			<figure>
+			  <img src="img/news02_detail.jpg" alt="news02_detail">
+			  <p>松阪牛コース 紅葉</p>
+			</figure>
+		</div>		
+	  </div><!--content-main-->	  
+  </div>
+</div> 
+</body>
+</html>
