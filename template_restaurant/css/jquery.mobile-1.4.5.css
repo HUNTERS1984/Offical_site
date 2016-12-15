@@ -675,7 +675,7 @@ html body .ui-group-theme-a a:visited {
 html .ui-bar-a a:hover,
 html .ui-body-a a:hover,
 html body .ui-group-theme-a a:hover {
-	color: #005599 /*{a-link-hover}*/;
+	color: #3cb963;
 }
 .ui-page-theme-a a:active,
 html .ui-bar-a a:active,
@@ -3915,7 +3915,7 @@ textarea.ui-input-text.ui-textinput-autogrow {
 .ui-flipswitch {
 	display: inline-block;
 	vertical-align: middle;
-	width: 5.875em; /* Override this and padding-left in next rule if you use labels other than "on/off" and need more space */
+	width: 3.875em; /* Override this and padding-left in next rule if you use labels other than "on/off" and need more space */
 	height: 1.875em;
 	border-width: 1px;
 	border-style: solid;
@@ -3937,7 +3937,7 @@ textarea.ui-input-text.ui-textinput-autogrow {
 	cursor: pointer;
 }
 .ui-flipswitch.ui-flipswitch-active {
-	padding-left: 4em;  /* Override this and width in previous rule if you use labels other than "on/off" and need more space */
+	padding-left: 2.0em;  /* Override this and width in previous rule if you use labels other than "on/off" and need more space */
 	width: 1.875em;
 }
 .ui-flipswitch-input {
@@ -3962,7 +3962,7 @@ textarea.ui-input-text.ui-textinput-autogrow {
 .ui-flipswitch .ui-btn.ui-flipswitch-on {
 	width: 1.75em;
 	padding: 0;
-	text-indent: -1.6em; /* Override this to center text if you use a label other than "on" */
+	text-indent: -11111.6em; /* Override this to center text if you use a label other than "on" */
 	text-align: left;
 	border-width: 1px;
 	border-style: solid;
@@ -3977,13 +3977,13 @@ textarea.ui-input-text.ui-textinput-autogrow {
 }
 .ui-flipswitch .ui-flipswitch-off {
 	padding: 1px;
-	text-indent: 1em; /* Override this to center text if you use a label other than "off" */
+	text-indent: -11111.6em; /* Override this to center text if you use a label other than "off" */
 }
 /* Override field container CSS to prevent the flipswitch from becomming full width */
 html .ui-field-contain > label + .ui-flipswitch,
 html .ui-popup .ui-field-contain > label + .ui-flipswitch {
 	display: inline-block;
-	width: 5.875em; /* If you override the width for .ui-flipswitch you should repeat the same value here */
+	width: 3.875em; /* If you override the width for .ui-flipswitch you should repeat the same value here */
 	-webkit-box-sizing: content-box;
 	-moz-box-sizing: content-box;
 	box-sizing: content-box;
@@ -4481,6 +4481,9 @@ figure.logo{
 .ui-navbar a{
 	color:#3cb963!important;
 }
+.ui-navbar a:hover{
+	color:#333;
+}
 
 .ui-btn-icon-top:after {
     content: "";
@@ -4599,6 +4602,10 @@ font-size:12px;
 
 .coupon .bx-wrapper .bx-pager{
 	bottom:0px;
+}
+
+.coupon .bx-wrapper{
+	margin-bottom:0px;
 }
 
 /*#menu*/
@@ -5033,7 +5040,7 @@ html .ui-bar-a .ui-btn{
 }
 
 .content-conf .ui-listview .ui-btn{
-	background-color:transparent!important;
+	background-color:#fff!important;
 	color:#828282;
 	padding:6px 0px;
 	font-weight:500;
@@ -5058,15 +5065,22 @@ html .ui-bar-a .ui-btn{
 }
 
 .content-conf .ui-listview .ui-field-contain label{
-	margin:2px 0px 0px;
+	margin:6px 0px 6px;
 	font-size:12px;
+	width:50%;
+	float:left;
 }
 
 .content-conf .ui-field-contain .ui-flipswitch {
     float: right;
     margin-right: 10px;
-	background-color:#A8A8A8;
+	background-color:#f3f3f3;
 	border-radius:20px;
+	border:1px solid #ebebeb;
+}
+
+.content-conf .ui-field-contain .ui-flipswitch.ui-flipswitch-active{
+	background-color:#3cb963;
 }
 
 .content-conf .ui-field-contain > label ~ [class*="ui-link"]{
