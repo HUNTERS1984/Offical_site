@@ -2,7 +2,8 @@
 
 window.onload = initialize;
 
-  var map;
+  var map;  
+  
   function initialize() {
     var myLatlng = new google.maps.LatLng(35.174227, 136.902573);
     var myOptions = {
@@ -10,10 +11,12 @@ window.onload = initialize;
       center: myLatlng,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     }
+	var iconBase = 'img/icon/';
     map = new google.maps.Map(document.getElementById("map"), myOptions);
   
     var marker = new google.maps.Marker({
         position: myLatlng, 
+		icon: iconBase + 'ico_map.png',
         map: map
     });
   }
