@@ -9,6 +9,7 @@ window.onload = initialize;
     var myOptions = {
       zoom: 15,
       center: myLatlng,
+	  scrollwheel: false,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     }
 	var iconBase = 'img/icon/';
