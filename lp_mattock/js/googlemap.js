@@ -5,9 +5,9 @@ window.onload = initialize;
   var map;  
   
   function initialize() {
-    var myLatlng = new google.maps.LatLng(35.174227, 136.902573);
+    var myLatlng = new google.maps.LatLng(35.631328,139.7915675);
     var myOptions = {
-      zoom: 15,
+      zoom: 19,
       center: myLatlng,
 	  scrollwheel: false,
       mapTypeId: google.maps.MapTypeId.ROADMAP
