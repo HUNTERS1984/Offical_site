@@ -562,6 +562,18 @@
 <div id="pagetop"><a href="#"><i class="icon icon-pagetop"></i></a></div><!--pagetop-->
 <!-- jQuery library (served from Google) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/modal.js"></script>
+	<script>
+	$(document).ready(function(){
+	    $("#myBtn").click(function(){
+	        $("#myModal").modal("show");
+	    });
+	        $("#myModal").on('show.bs.modal', function () {
+	            alert('The modal is about to be shown.');
+	    });
+	});
+	</script>
+	
 	<!-- bxSlider Javascript file -->
 	<script src="js/jquery.bxslider.min.js"></script>
 	<script>
