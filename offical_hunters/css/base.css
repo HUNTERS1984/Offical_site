@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+/*
+
+Last Update 2009-11-20
+
+サイトの基本要素に対するスタイルシートの指定です。
+以下の箇所以外、変更は行わないでください。
+
+・bodyの文字色
+・リンク色
+
+もしここで指定されている値で、上書きが必要なものに関しては、ここの内容を
+変更せずに、各ページごとのスタイルシートで上書きしてください。
+
+*/
+
+/* font-color
+--------------------------------------------------------------------*/
+@font-face {
+    font-family: HiraKakuProN-W3;
+    src: url(../fonts/HiraKakuProN-W3.otf);
+}
+@font-face {
+    font-family: HiraKakuProN-W6;
+    src: url(../fonts/HiraKakuProN-W6.otf);
+}
+
+body {
+	background: #ffffff;
+	color: #000000;
+	font-family: "HiraKakuProN-W3","HiraKakuProN-W6","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","Osaka","ＭＳ Ｐゴシック","MS P Gothic",Arial,Helvetica,sans-serif;
+}
+
+/* heading
+--------------------------------------------------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 1em;
+	font-weight:normal;
+	font-family: "HiraKakuProN-W6",Arial,Helvetica,sans-serif;
+}
+
+h1 strong,
+h1 em,
+h2 strong,
+h2 em,
+h3 strong,
+h3 em,
+h4 strong,
+h4 em,
+h5 strong,
+h5 em,
+h6 strong,
+h6 em {
+	font-weight: inherit;
+	_font-weight: expression(this.parentNode.currentStyle.fontWeight);
+	*font-weight: expression(this.parentNode.currentStyle.fontWeight);
+}
+
+/* normal block
+--------------------------------------------------------------------*/
+
+p {
+	text-align: justify;
+	text-justify: distribute;
+}
+
+/* anchor
+--------------------------------------------------------------------*/
+
+a:link {
+	color: #fff;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #337ab7;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+a:hover {
+	font-weight: normal;
+	text-decoration: none;
+	color: #1f9797;
+}
+
+a:active {
+}
+
+/* table
+--------------------------------------------------------------------*/
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
